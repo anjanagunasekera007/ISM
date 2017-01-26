@@ -1,0 +1,5 @@
+sink("D:\\R\\outfile.txt")
+cat("hello")
+cat("\n")
+cat("world")
+sink()
