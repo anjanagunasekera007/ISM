@@ -10,6 +10,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/ISM SCSI$Data_Preprocessor.coverage" NAME="Data_Preprocessor Coverage Results" MODIFIED="1485453351764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ISM SCSI$ISM_SCSI.coverage" NAME="ISM SCSI Coverage Results" MODIFIED="1485448799357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -28,12 +29,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="221" column="35" lean-forward="true" selection-start-line="221" selection-start-column="35" selection-end-line="221" selection-end-column="35" />
+            <state relative-caret-position="241">
+              <caret line="215" column="27" lean-forward="false" selection-start-line="215" selection-start-column="27" selection-end-line="215" selection-end-column="27" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Data_Preprocessor.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Data_Preprocessor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+              <folding>
+                <element signature="e#12#22#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -44,6 +57,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -64,6 +78,7 @@
         <option value="$PROJECT_DIR$/templates/tables.html" />
         <option value="$PROJECT_DIR$/ISM SCSI.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/Data_Preprocessor.py" />
       </list>
     </option>
   </component>
@@ -170,7 +185,7 @@
       <recent name="D:\Google Drive\ISM SCSI\templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ISM SCSI">
+  <component name="RunManager" selected="Python.Data_Preprocessor">
     <configuration default="false" name="Unittests in ISM SCSI" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -208,6 +223,24 @@
       <module name="ISM SCSI" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ISM SCSI.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Data_Preprocessor" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ISM SCSI" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data_Preprocessor.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -426,14 +459,16 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in ISM SCSI" />
       <item index="1" class="java.lang.String" itemvalue="Python.ISM SCSI" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Data_Preprocessor" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.ISM SCSI" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in ISM SCSI" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.Data_Preprocessor" />
+        <item index="1" class="java.lang.String" itemvalue="Python.ISM SCSI" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in ISM SCSI" />
       </list>
     </recent_temporary>
   </component>
@@ -743,9 +778,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="221" column="35" lean-forward="true" selection-start-line="221" selection-start-column="35" selection-end-line="221" selection-end-column="35" />
+        <state relative-caret-position="241">
+          <caret line="215" column="27" lean-forward="false" selection-start-line="215" selection-start-column="27" selection-end-line="215" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data_Preprocessor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+          <folding>
+            <element signature="e#12#22#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

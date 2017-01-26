@@ -23,7 +23,7 @@ print(inspect(ry[1:5]))
 #apassata kiyawapan 
 print("========================")
 roy <- sort(ry,by="confidence",decreasing = TRUE)
-print(rysorted)
+print(roy)
 
 print(",.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,")
 options(digits = 2)
@@ -35,7 +35,7 @@ fileConn<-file("D:\\R\\mba\\FW.txt")
 fileConn2<-file("D:\\R\\mba\\Output.txt")
 writeLines(c("Hello","World"), fileConn)
 
-write(roy, file = "D:\\R\\mba\\data.csv", sep = ",")
+write(roy, file = "D:\\FYP\\R\\mba\\newdata.csv", sep = ",")
 
 
 close(fileConn)
