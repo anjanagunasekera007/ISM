@@ -24,7 +24,7 @@ print(inspect(ry[1:5]))
 print("========================")
 roy <- sort(ry,by="confidence",decreasing = TRUE)
 print(roy)
-
+#print("aiyooooooooooooooooooo")
 print(",.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,")
 options(digits = 2)
 print(inspect(roy[1:35]))
@@ -53,7 +53,7 @@ rah<-sort(rah, decreasing=TRUE,by="confidence")
 
 print(inspect(rah[1:5]))
 
-
+#print(rah)
 #sortedrah < -sort(rah, decreasing=TRUE,by="confidence")
 
 print("--------------------------------")
