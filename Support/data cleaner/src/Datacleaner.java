@@ -21,7 +21,7 @@ public class Datacleaner {
 		 BufferedWriter bw = null;
  		FileWriter fw = null;
 		try {
-			fw = new FileWriter("processed.txt");
+			fw = new FileWriter("finalrecords.csv");
 		} catch (IOException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
@@ -41,7 +41,7 @@ public class Datacleaner {
 	            System.out.println( counter + "    " + r );
 	            String complete = counter + "     "  + r;
 
-	    			bw.write(complete);
+	    			bw.write(r);
 //	    			bw.append("/n");
 	    			bw.newLine();
 	    		
