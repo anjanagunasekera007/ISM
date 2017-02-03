@@ -42,9 +42,10 @@ print(km6$cluster)
 
 
 print(km6$cluster==1)
-
 print(km6$cluster==2)
 print(km6$cluster==3)
 print(km6$cluster==4)
 print(km6$cluster==5)
 print(km6$cluster==6)
+
+
