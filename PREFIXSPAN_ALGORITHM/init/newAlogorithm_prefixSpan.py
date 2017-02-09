@@ -48,4 +48,6 @@ def mine_rec(patt, mdb):
 mine_rec([], [(i, 0) for i in xrange(len(db))])
 
 print (type(results))
-print(results)
+
+for l in results:
+    print l
