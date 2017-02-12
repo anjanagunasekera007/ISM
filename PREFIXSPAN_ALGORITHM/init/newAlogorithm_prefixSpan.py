@@ -21,18 +21,20 @@ print(len(db))
 for items in db:
     print items
 
+minsup = int(8)
+
 print ("PAUSE")
+print ("GENERATING FREQUENT ITEM SETS WITH A MINIMUM OF " + str(minsup) +  " OCCOURENCES")
 time.sleep(2)
 print ("BEGIN")
 
-minsup = int(8)
+# minsup = int(8)
 
 results = []
 
 print ("Initiating frequest item list generation")
 def mine_rec(patt, mdb):
     results.append((patt, len(mdb)))
-
     occurs = defaultdict(list)
     for (i, startpos) in mdb:
         seq = db[i]
@@ -40,7 +42,6 @@ def mine_rec(patt, mdb):
             l = occurs[seq[j]]
             if len(l) == 0 or l[-1][0] != i:
                 l.append((i, j + 1))
-
     for (c, newmdb) in occurs.iteritems():
         if len(newmdb) >= minsup:
             mine_rec(patt + [c], newmdb)
