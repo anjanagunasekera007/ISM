@@ -1,0 +1,169 @@
+Instant food products,77,0,0
+UHT-milk,322,0,0
+abrasive cleaner,33,0,0
+artif. sweetener,31,0,0
+baby cosmetics,6,0,0
+baby food,1,0,0
+bags,4,0,0
+baking powder,172,0,0
+bathroom cleaner,27,0,0
+beef,510,0,0
+berries,321,0,0
+beverages,253,0,0
+bottled beer,782,0,0
+bottled water,1068,0,0
+brandy,40,0,0
+brown bread,627,0,0
+butter,534,0,0
+butter milk,270,0,0
+cake bar,127,0,0
+candles,88,0,0
+candy,292,0,0
+canned beer,760,0,0
+canned fish,148,0,0
+canned fruit,32,0,0
+canned vegetables,103,0,0
+cat food,224,0,0
+cereals,56,0,0
+chewing gum,203,0,0
+chicken,412,0,0
+chocolate,479,0,0
+chocolate marshmallow,88,0,0
+citrus fruit,800,0,0
+cleaner,50,0,0
+cling film/bags,110,0,0
+cocoa drinks,22,0,0
+coffee,555,0,0
+condensed milk,98,0,0
+cooking chocolate,24,0,0
+cookware,27,0,0
+cream,12,0,0
+cream cheese ,383,0,0
+curd,517,0,0
+curd cheese,47,0,0
+decalcifier,15,0,0
+dental care,55,0,0
+dessert,357,0,0
+detergent,186,0,0
+dish cleaner,103,0,0
+dishes,170,0,0
+dog food,84,0,0
+domestic eggs,615,0,0
+female sanitary products,59,0,0
+finished products,63,0,0
+fish,29,0,0
+flour,168,0,0
+flower (seeds),99,0,0
+flower soil/fertilizer,19,0,0
+frankfurter,572,0,0
+frozen chicken,6,0,0
+frozen dessert,104,0,0
+frozen fish,114,0,0
+frozen fruits,12,0,0
+frozen meals,269,0,0
+frozen potato products,83,0,0
+frozen vegetables,468,0,0
+fruit/vegetable juice,699,0,0
+grapes,218,0,0
+hair spray,11,0,0
+ham,251,0,0
+hamburger meat,319,0,0
+hard cheese,239,0,0
+herbs,156,0,0
+honey,15,0,0
+house keeping products,80,0,0
+hygiene articles,316,0,0
+ice cream,242,0,0
+instant coffee,71,0,0
+jam,53,0,0
+ketchup,40,0,0
+kitchen towels,57,0,0
+kitchen utensil,4,0,0
+light bulbs,41,0,0
+liqueur,9,0,0
+liquor,109,0,0
+liquor (appetizer),76,0,0
+liver loaf,50,0,0
+long life bakery product,360,0,0
+make up remover,8,0,0
+male cosmetics,45,0,0
+margarine,567,0,0
+mayonnaise,89,0,0
+meat,251,0,0
+meat spreads,41,0,0
+misc. beverages,279,0,0
+mustard,118,0,0
+napkins,505,0,0
+newspapers,769,0,0
+nut snack,31,0,0
+nuts/prunes,32,0,0
+oil,270,0,0
+onions,300,0,0
+organic products,16,0,0
+organic sausage,22,0,0
+other vegetables,1874,0,0
+packaged fruit/vegetables,127,0,0
+pasta,144,0,0
+pastry,851,0,0
+pet care,93,0,0
+photo/film,90,0,0
+pickled vegetables,174,0,0
+pip fruit,733,0,0
+popcorn,71,0,0
+pork,558,0,0
+pot plants,170,0,0
+potato products,27,0,0
+preservation products,2,0,0
+processed cheese,162,0,0
+prosecco,20,0,0
+pudding powder,23,0,0
+ready soups,18,0,0
+red/blush wine,184,0,0
+rice,75,0,0
+roll products ,101,0,0
+rolls/buns,1779,0,0
+root vegetables,1055,0,0
+rubbing alcohol,10,0,0
+rum,41,0,0
+salad dressing,8,0,0
+salt,103,0,0
+salty snack,365,0,0
+sauces,54,0,0
+sausage,909,0,0
+seasonal products,139,0,0
+semi-finished bread,172,0,0
+shopping bags,958,0,0
+skin care,35,0,0
+sliced cheese,231,0,0
+snack products,30,0,0
+soap,26,0,0
+soda,1694,0,0
+soft cheese,164,0,0
+softener,52,0,0
+sound storage medium,1,0,0
+soups,67,0,0
+sparkling wine,55,0,0
+specialty bar,264,0,0
+specialty cheese,84,0,0
+specialty chocolate,294,0,0
+specialty fat,36,0,0
+specialty vegetables,17,0,0
+spices,51,0,0
+spread cheese,109,0,0
+sugar,327,0,0
+sweet spreads,88,0,0
+syrup,32,0,0
+tea,37,0,0
+tidbits,23,0,0
+toilet cleaner,7,0,0
+tropical fruit,1015,0,0
+turkey,80,0,0
+vinegar,61,0,0
+waffles,366,0,0
+whipped/sour cream,694,0,0
+whisky,8,0,0
+white bread,409,0,0
+white wine,187,0,0
+whole milk,2467,0,0
+yogurt,1344,0,0
+zwieback,66,0,0

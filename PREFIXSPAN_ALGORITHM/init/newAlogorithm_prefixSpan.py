@@ -45,7 +45,6 @@ def mine_rec(patt, mdb):
     for (c, newmdb) in occurs.iteritems():
         if len(newmdb) >= minsup:
             mine_rec(patt + [c], newmdb)
-
 mine_rec([], [(i, 0) for i in xrange(len(db))])
 
 print (type(results))

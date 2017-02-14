@@ -17,11 +17,11 @@ public class Datacleaner {
 	public static void main(String[] args) {
 		
 		//System.out.println("lol");
-		File file = new File("groceries.csv");
+		File file = new File("quart3.csv");
 		 BufferedWriter bw = null;
  		FileWriter fw = null;
 		try {
-			fw = new FileWriter("finalrecords.csv");
+			fw = new FileWriter("quart3_sales.csv");
 		} catch (IOException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
