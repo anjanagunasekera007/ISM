@@ -1,7 +1,6 @@
 from Item_Class import Item
 import csv
 import time
-import itertools
 import sys
 
 inventorylist = []
@@ -82,8 +81,6 @@ def Q2sales():
                     print "MATCHED " + purchasedItem + " == = = = = == " + obj.name
                     obj.soldQ2 = obj.soldQ2 + 1
 
-
-
 def Q3sales():
     for purchase in Q3:
         for purchasedItem in purchase:
@@ -91,7 +88,6 @@ def Q3sales():
                 if purchasedItem == obj.name:
                     print "MATCHED " + purchasedItem + " == = = = = == " + obj.name
                     obj.soldQ3 = obj.soldQ3 + 1
-
 
 def Q4sales():
     for purchase in Q4:
@@ -107,28 +103,53 @@ def createTotal():
         objects.soldTotal = objects.soldQ1 + objects.soldQ2 + objects.soldQ3 + objects.soldQ4
 
 
-createInventoryList()
-createobjectlist()
 
-createQ1Transactions()
-createQ2Transactions()
-createQ3Transactions()
-createQ4Transactions()
+def returnSales():
+    createInventoryList()
+    createobjectlist()
+
+    createQ1Transactions()
+    createQ2Transactions()
+    createQ3Transactions()
+    createQ4Transactions()
+
+    print "ALL LISTS CREATED "
+
+    Q1sales()
+    time.sleep(2)
+    Q2sales()
+    time.sleep(2)
+    Q3sales()
+    time.sleep(2)
+    Q4sales()
+    time.sleep(2)
+
+    createTotal()
+    return objectlist
 
 
-
-print "ALL LISTS CREATED "
-
-Q1sales()
-time.sleep(2)
-Q2sales()
-time.sleep(2)
-Q3sales()
-time.sleep(2)
-Q4sales()
-time.sleep(2)
-
-createTotal()
+# createInventoryList()
+# createobjectlist()
+#
+# createQ1Transactions()
+# createQ2Transactions()
+# createQ3Transactions()
+# createQ4Transactions()
+#
+#
+#
+# print "ALL LISTS CREATED "
+#
+# Q1sales()
+# time.sleep(2)
+# Q2sales()
+# time.sleep(2)
+# Q3sales()
+# time.sleep(2)
+# Q4sales()
+# time.sleep(2)
+#
+# createTotal()
 print "PRINING Q1"
 for l in Q1:
     print l
@@ -143,4 +164,4 @@ time.sleep(2)
 print "OBJECT LIST FINAL"
 for j in objectlist:
     print j.name + " Q1 :" + str(j.soldQ1) + " Q2 :" + str(j.soldQ2) + " Q3 :" + str(j.soldQ3) + " Q4 :" + str(j.soldQ4) + " Q4 :" + str(j.soldTotal)
-sys.exit(54)
+# sys.exit(54)
