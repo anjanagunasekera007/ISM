@@ -217,9 +217,10 @@
                         <ol class="breadcrumb">
                             <li class="active">
                                 <i class="fa fa-dashboard"></i> {{ name }}
-                                  {% for tyty in data %}
-                                    <li>{{ tyty }}</li>
-                                    {% endfor %}
+{#                                  {% for tyty in data %}#}
+{#                                    <li>{{ tyty }}</li>#}
+{#                                    {% endfor %}#}
+                                 <a href="{{ url_for('login') }}">log in</a>
                             </li>
                         </ol>
                     </div>
