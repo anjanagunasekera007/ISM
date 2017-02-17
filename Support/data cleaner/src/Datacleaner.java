@@ -17,11 +17,11 @@ public class Datacleaner {
 	public static void main(String[] args) {
 		
 		//System.out.println("lol");
-		File file = new File("quart3.csv");
+		File file = new File("1509plus.csv");
 		 BufferedWriter bw = null;
  		FileWriter fw = null;
 		try {
-			fw = new FileWriter("quart3_sales.csv");
+			fw = new FileWriter("1509plus_C.csv");
 		} catch (IOException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
@@ -38,7 +38,7 @@ public class Datacleaner {
 	            
 	           
 	            String r = line.replace(",,","");
-	            System.out.println( counter + "    " + r );
+	            System.out.println(r );
 	            String complete = counter + "     "  + r;
 
 	    			bw.write(r);

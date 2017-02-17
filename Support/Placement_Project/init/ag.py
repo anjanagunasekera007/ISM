@@ -5,7 +5,7 @@ import time
 import sys
 from collections import defaultdict
 
-# db = [["A","B","C"],["A"],["B"],["C","D"],["A","B","D"],["A","B","E"],["A","B","C"],["A","B","C","D","E"]]
+
 db = []
 
 
@@ -32,22 +32,26 @@ print ("BEGIN")
 
 results = []
 
-print ("Initiating frequest item list generation")
+print ("ahaaaaaaa")
 def mine_rec(patt, mdb):
     results.append((patt, len(mdb)))
     occurs = defaultdict(list)
     for (i, startpos) in mdb:
         seq = db[i]
+        print " in for  - - "
         for j in xrange(startpos, len(seq)):
             l = occurs[seq[j]]
             if len(l) == 0 or l[-1][0] != i:
                 l.append((i, j + 1))
     for (c, newmdb) in occurs.iteritems():
         if len(newmdb) >= minsup:
+            print "found more than minsupport"
             mine_rec(patt + [c], newmdb)
+
+            # call
 mine_rec([], [(i, 0) for i in xrange(len(db))])
 
 print (type(results))
 
-for l in results:
-    print l
+# for l in results:
+#     print l

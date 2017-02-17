@@ -88,5 +88,22 @@ print(inspect(reresorted[1:5]))
 print("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*")
 
 library(arulesViz)
+png("D:\\FYP\\R\\mba\\wholemilk.png", width=4, height=4, units="in", res=300)
 plot(reresorted,method="graph",interactive=TRUE,shading=NA)
+dev.off()
+
+
+#==============
+
+x <- rnorm(1000000)
+y <- rnorm(1000000)
+
+png("D:\\FYP\\R\\mba\\myplot.png", width=4, height=4, units="in", res=300)
+par(mar=c(4,4,1,1))
+plot(x,y,col=rgb(0,0,0,0.03), pch=".", cex=2)
+dev.off()
+
+#==============
+
+
 
