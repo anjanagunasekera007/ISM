@@ -17,35 +17,35 @@
 
 	<h1> LOL </h1>
 
-	<div height="400px" width="800px">
-    <canvas id="chart"></canvas>
-</div>
+<!-- 	<div height="400px" width="800px">
+    		<canvas id="skills"></canvas>
+	</div> -->
+
+	<canvas id="clients" width="500" height="400"></canvas>
 
 
-	<script type="text/javascript">                                                                                                                                                          
-		
-		var ctx = document.getElementById('chart').getContext('2d');
-var myChart = new Chart(ctx, {
-  type: 'line',
- options: {
-        responsive: true,
-        maintainAspectRatio: false
-    },
-  data: {
-    labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
-    datasets: [{
-      label: 'apples',
-      data: [12, 19, 3, 17, 6, 3, 7],
-      backgroundColor: "rgba(153,255,51,0.4)"
-    }, {
-      label: 'oranges',
-      data: [2, 29, 5, 5, 2, 3, 10],
-      backgroundColor: "rgba(255,153,0,0.4)"
-    }]
-  }
-});
+<script type="text/javascript">
+	
+var barData = {
+    labels: ['Italy', 'UK', 'USA', 'Germany', 'France', 'Japan'],
+    datasets: [
+        {
+            label: '2010 customers #',
+            fillColor: '#382765',
+            data: [2500, 1902, 1041, 610, 1245, 952]
+        },
+        {
+            label: '2014 customers #',
+            fillColor: '#7BC225',
+            data: [3104, 1689, 1318, 589, 1199, 1436]
+        }
+    ]
+};
 
-	</script>
+var context = document.getElementById('clients').getContext('2d');
+var clientsChart = new Chart(context).Bar(barData);
+
+</script>
 
 </body>
 </html>
