@@ -42,18 +42,18 @@ print(inspect(roy[1:35]))
 print(",.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,")
 
 #============================================
-fileConn<-file("D:\\R\\mba\\FW.txt")
-fileConn2<-file("D:\\R\\mba\\Output.txt")
-writeLines(c("Hello","World"), fileConn)
+#fileConn<-file("D:\\FYP\\R\\FINAL_RULE_MINING_SCRIPT\\FW.txt")
+#fileConn2<-file("D:\\FYP\\R\\FINAL_RULE_MINING_SCRIPT\\Output.txt")
+#writeLines(c("Hello","World"), fileConn)
 
 print("/n")
 print("/n")
 print("Commencing file writing off all association rules")
 
-write(roy, file = "D:\\FYP\\R\\mba\\newdata.csv", sep = ",")
+write(roy, file = "D:\\FYP\\R\\FINAL_RULE_MINING_SCRIPT\\association_rules.csv", sep = ",")
 
 
-close(fileConn)
+#close(fileConn)
 print("/n")
 print("/n")
 
@@ -76,6 +76,7 @@ print(inspect(rah[1:5]))
 #print("--------------------------------")
 #print(inspect(sortedrah[1:5]))
 
+#************************************************************************************************************************
 print("Commencing Specialized association rule mining for -  whole milk - MINIMUM LENGTH OF RULE = 2")
 rere<-apriori(data=Groceries, parameter=list(supp=0.001,conf = 0.15,minlen=2), 
                appearance = list(default="rhs",lhs="whole milk"),
@@ -83,6 +84,20 @@ rere<-apriori(data=Groceries, parameter=list(supp=0.001,conf = 0.15,minlen=2),
 
 reresorted<-sort(rere, decreasing=TRUE,by="confidence")
 
+#Write Association rules with whole milk as LHS 
+write(reresorted, file = "D:\\FYP\\R\\FINAL_RULE_MINING_SCRIPT\\whole_milk.csv", sep = ",")
+
+#*************************************************************************************************************************
+print("Commencing Specialized association rule mining for -  Brown bread - MINIMUM LENGTH OF RULE = 2")
+rere<-apriori(data=Groceries, parameter=list(supp=0.001,conf = 0.15,minlen=2), 
+              appearance = list(default="rhs",lhs="brown bread"),
+              control = list(verbose=F))
+
+reresorted<-sort(rere, decreasing=TRUE,by="confidence")
+
+#Write Association rules with whole milk as LHS 
+write(reresorted, file = "D:\\FYP\\R\\FINAL_RULE_MINING_SCRIPT\\brown_bread.csv", sep = ",")
+#*************************************************************************************************************************
 print("Prining Specialized association rule mining for -  whole milk - MINIMUM LENGTH OF RULE = 2")
 print(inspect(reresorted[1:5]))
 print("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*")
@@ -95,13 +110,13 @@ dev.off()
 
 #==============
 
-x <- rnorm(1000000)
-y <- rnorm(1000000)
+#x <- rnorm(1000000)
+#y <- rnorm(1000000)
 
-png("D:\\FYP\\R\\mba\\myplot.png", width=4, height=4, units="in", res=300)
-par(mar=c(4,4,1,1))
-plot(x,y,col=rgb(0,0,0,0.03), pch=".", cex=2)
-dev.off()
+#png("D:\\FYP\\R\\mba\\myplot.png", width=4, height=4, units="in", res=300)
+#par(mar=c(4,4,1,1))
+#plot(x,y,col=rgb(0,0,0,0.03), pch=".", cex=2)
+#dev.off()
 
 #==============
 

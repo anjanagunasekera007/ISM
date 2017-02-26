@@ -17,8 +17,8 @@ print(dat)
 plot(dat, main = "% Age vs Distance
      ", pch =20, cex =2)
 
-#set.seed(7)
-#km1 = kmeans(dat, 2, nstart=100)
+set.seed(7)
+km1 = kmeans(dat, 2, nstart=100)
 
 # Plot results
 #plot(dat, col =(km1$cluster +1) , main="K-Means result with 2 clusters", pch=20, cex=2)
@@ -37,8 +37,10 @@ plot(1:15, wss, type="b", xlab="Number of Clusters",
 
 
 #identified number of clusters
+
+#identified number of clusters
 set.seed(12)
-km2 = kmeans(dat, 9, nstart=100)
+km2 = kmeans(dat, 7, nstart=100)
 
 # Examine the result of the clustering algorithm
 print(km2)
@@ -69,5 +71,4 @@ print("/n")
 
 print(nrow(dat))
 #print(km2$cluster)
-
 

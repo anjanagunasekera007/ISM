@@ -1,4 +1,5 @@
 #setdir
+library(dummies)
 
 path <- "D:\\FYP\\R\\PCA"
 
@@ -30,6 +31,9 @@ print(colnames(my_data))
 
 print("-----")
 print(str(my_data))
+
+#make frames
+new_my_data <- dummy.data.frame(my_data,names = )
 
 
 
