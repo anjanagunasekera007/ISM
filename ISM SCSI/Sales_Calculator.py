@@ -1,6 +1,7 @@
 from Item_Class import Item
 import csv
 import time
+from Item_Class import FullItem
 import sys
 
 inventorylist = []
@@ -29,12 +30,26 @@ def createInventoryList():
         for i in ib:
             print i
             inventorylist.append(i)
-
+#----------------------------------------------------------------
 def createobjectlist():
-    for inventoryItem in inventorylist:
-        I = Item(inventoryItem)
+    counter = 1
+    for it in inventorylist:
+        print it
+        print type(it)
+        I = FullItem(counter,it[0], it[1], it[2])
         objectlist.append(I)
+        counter = counter +1
 
+def creteitemdetailist():
+    with open('./datasets/category list.csv') as csvfile:
+        readCSV = csv.reader(csvfile, delimiter=',')
+        for transaction in readCSV:
+            inventorylist.append(transaction)
+            print transaction
+            print type(transaction)
+
+
+#-------------------------------------------------------------------
 def writeToFile():
     thefile = open('./datasets/itemsales.txt', 'w')
     for item in objectlist:
@@ -105,7 +120,8 @@ def createTotal():
 
 
 def returnSales():
-    createInventoryList()
+    # createInventoryList()
+    creteitemdetailist()
     createobjectlist()
 
     createQ1Transactions()
@@ -125,6 +141,10 @@ def returnSales():
     time.sleep(2)
 
     createTotal()
+
+    for it in objectlist:
+        print it.name + " : " + str(it.soldQ2)
+    # sys.exit(698)
     return objectlist
 
 

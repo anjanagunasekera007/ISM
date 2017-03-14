@@ -33,7 +33,7 @@ def read():
 
 def readtransactionlist():
     print "reading transactions"
-    with open("../DATASETS/testitem20.csv", 'rb') as f:
+    with open("../DATASETS/item list.csv", 'rb') as f:
         reader = csv.reader(f)
         counter = 0
         for row in reader:
@@ -81,7 +81,7 @@ def printcategorylist():
 
 
 print ("Initiating frequest item list generation")
-minsup = 9
+minsup = 120
 def run_100(patt, mdb):
     results.append((patt, len(mdb)))
     occurs = defaultdict(list)
@@ -101,7 +101,9 @@ run_100([], [(i, 0) for i in xrange(len(db))])
 
 
 read()
+# sys.exit(1)
 readtransactionlist()
+# sys.exit(2)
 replacce()
 time.sleep(2)
 run_100([], [(i, 0) for i in xrange(len(db))])
@@ -116,4 +118,14 @@ for item in results:
         print type(item)
         print str(len(item))
         print "\n"
+
 print " COMPLETED"
+print " Attempting to write : . . . "
+myfile = open("../DATASETS/frequentitems.csv", 'wb')
+wr = csv.writer(myfile, quoting=csv.QUOTE_ALL)
+
+for item in results:
+    wr.writerow(item)
+
+print "WRITING COMPLETED"
+print "EXITING NOW"

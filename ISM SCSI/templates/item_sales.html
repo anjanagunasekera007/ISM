@@ -147,26 +147,27 @@
                 </li>
             </ul>
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
+           <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li>
-                        <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
-                    </li>
-                    <li>
-                        <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Charts</a>
+                        <a href="index.html"><i class="fa fa-fw fa-dashboard"></i>Home</a>
                     </li>
                     <li class="active">
-                        <a href="tables.html"><i class="fa fa-fw fa-table"></i> Tables</a>
+                        <a href="{{ url_for('login') }}"><i class="fa fa-fw fa-bar-chart-o"></i> Item Sales</a>
+{#                        <a href="{{ url_for('login') }}">log in</a>#}
                     </li>
                     <li>
-                        <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Forms</a>
+                        <a href="tables.html"><i class="fa fa-fw fa-table"></i> Item Options</a>
                     </li>
                     <li>
-                        <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
+                        <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Item Placement</a>
                     </li>
                     <li>
-                        <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
+                        <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Customer management </a>
                     </li>
+                    <!--<li>-->
+                        <!--<a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>-->
+                    <!--</li>-->
                     <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
@@ -224,9 +225,11 @@
                                 <thead>
                                     <tr>
                                         <th>Item ID</th>
+                                        <th>Item Category</th>
                                         <th>Item name</th>
                                         <th>Item Description</th>
                                         <th>Item Total Sales</th>
+
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -248,9 +251,10 @@
                                                 {% else %}
                                                      <tr class="active">
                                        {% endif %}
-                                        <td>001</td>
+                                        <td>{{ item.id }}</td>
+                                        <td>{{ item.category }}</td>
                                         <td>{{ item.name }}</td>
-                                        <td> DES</td>
+                                        <td>{{ item.description }}</td>
                                         <td>{{ item.soldTotal }}</td>
                                     </tr>
                                     {% endfor %}
@@ -259,6 +263,16 @@
                             </table>
                         </div>
                     </div>
+
+                     <div>
+                         <div class="row">
+                             <div class="col-lg-1"></div>
+                             <div class="col-lg-10"> <p> k k k k k k </p> </div>
+                             <div class="col-lg-1"></div>
+
+                         </div>
+                    </div>
+
                     <div class="col-lg-6">
                         <h2>Bootstrap Docs</h2>
                         <p>For complete documentation, please visit <a target="_blank" href="http://getbootstrap.com/css/#tables">Bootstrap's Tables Documentation</a>.</p>
