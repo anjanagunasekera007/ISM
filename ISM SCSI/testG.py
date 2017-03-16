@@ -22,12 +22,6 @@ Q2 = []
 Q3 = []
 Q4 = []
 
-#============
-# newlist = []
-# most = []
-# least = []
-
-#============
 def createInventoryList():
     with open("./datasets/all_items.txt") as f:
         ib = f.read().splitlines()
@@ -151,44 +145,9 @@ def returnSales():
     for it in objectlist:
         print it.name + " : " + str(it.soldQ2)
     # sys.exit(698)
-    return objectlist
+    # return objectlist
 
 
-# def returnmostandleast():
-#
-#     for j in newlist:
-#         print type(newlist)
-#         # print j.name + " Q1 :" + str(j.soldQ1) + " Q2 :" + str(j.soldQ2) + " Q3 :" + str(j.soldQ3) + " Q4 :" + str(j.soldQ4) + " Q4 :" + str(j.soldTotal)
-#         print j.name + " TOTAL SALES :" + str(j.soldTotal)
-#     print str(len(newlist))
-
-    # print "MOST SOLD ITEMS : "
-
-def sortlist():
-    newlist = sorted(objectlist, key=lambda x: x.soldTotal, reverse=True)
-    for j in newlist:
-        print type(newlist)
-        print j.name + " Q1 :" + str(j.soldQ1) + " Q2 :" + str(j.soldQ2) + " Q3 :" + str(j.soldQ3) + " Q4 :" + str(j.soldQ4) + " Q4 :" + str(j.soldTotal)
-    return newlist
-# def returnmostsold():
-#     sortlist()
-#     print "SORTED"
-#     time.sleep(3)
-#     most = newlist[0:5]
-#     print "MOST SOLD ITEMS ARE : ========================= "
-#     for j in most:
-#         print j.name + " TOTAL SALES :" + str(j.soldTotal)
-#     return most
-
-# def retunleastsold():
-#     sortlist()
-#     print "SORTED"
-#     time.sleep(3)
-#     least = newlist[164:]
-#     print "LEASE SOLD ITEMS ARE : ======================== "
-#     for j in least:
-#         print j.name + " TOTAL SALES :" + str(j.soldTotal)
-#     return least
 # createInventoryList()
 # createobjectlist()
 #
@@ -211,18 +170,43 @@ def sortlist():
 # time.sleep(2)
 #
 # createTotal()
-print "PRINING Q1"
-for l in Q1:
-    print l
-    print type(l)
-time.sleep(2)
-
-print "ITEM LIST"
-for item in inventorylist:
-    print item
-time.sleep(2)
-
+# print "PRINING Q1"
+# for l in Q1:
+#     print l
+#     print type(l)
+# time.sleep(2)
+#
+# print "ITEM LIST"
+# for item in inventorylist:
+#     print item
+# time.sleep(2)
+returnSales()
 print "OBJECT LIST FINAL"
-for j in objectlist:
-    print j.name + " Q1 :" + str(j.soldQ1) + " Q2 :" + str(j.soldQ2) + " Q3 :" + str(j.soldQ3) + " Q4 :" + str(j.soldQ4) + " Q4 :" + str(j.soldTotal)
+# for j in objectlist:
+#     print j.name + " Q1 :" + str(j.soldQ1) + " Q2 :" + str(j.soldQ2) + " Q3 :" + str(j.soldQ3) + " Q4 :" + str(j.soldQ4) + " Q4 :" + str(j.soldTotal)
+
+newlist = sorted(objectlist, key=lambda x: x.soldTotal, reverse=True)
+
+for j in newlist:
+    print type(newlist)
+    # print j.name + " Q1 :" + str(j.soldQ1) + " Q2 :" + str(j.soldQ2) + " Q3 :" + str(j.soldQ3) + " Q4 :" + str(j.soldQ4) + " Q4 :" + str(j.soldTotal)
+    print j.name + " TOTAL SALES :" + str(j.soldTotal)
+print str(len(newlist))
+
+# print "MOST SOLD ITEMS : "
+most = newlist[0:5]
+least = newlist[164:]
+
+print "MOST SOLD ITEMS ARE : ========================= "
+for j in most:
+    print j.name + " TOTAL SALES :" + str(j.soldTotal)
+
+
+print "LEASE SOLD ITEMS ARE : ======================== "
+for j in least:
+    print j.name + " TOTAL SALES :" + str(j.soldTotal)
+
+
+
+
 # sys.exit(54)

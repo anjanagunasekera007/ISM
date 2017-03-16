@@ -9,7 +9,7 @@ baking powder,Grocery Items,C4
 bathroom cleaner,Cleaning Items,C3
 beef,Fish and Meat,C6
 berries,Fruits and Vegetables,C7
-C8,Beverages,C8
+bathroom cleaner,Beverages,C8
 bottled beer,Liquor,C9
 bottled water,Beverages,C8
 brandy,Liquor,C9
@@ -80,9 +80,9 @@ ketchup,Grocery Items,C4
 kitchen towels,Kitchenware,C11
 kitchen utensil,Kitchenware,C11
 light bulbs,Miscellaneous ,C1 
-liqueur,Liquor,C9
-C9,Liquor,C9
-C9 (appetizer),Liquor,C9
+liqueur,Dessert Liquor,C9
+liquor,Liquor,C9
+liquor (appetizer),Liquor,C9
 liver loaf,Fish and Meat,C6
 long life bakery product,Bakery Products,C16
 make up remover,Cosmetic Item,C14
@@ -91,7 +91,7 @@ margarine,Dairy Products,C2
 mayonnaise,Grocery Items,C4
 meat,Fish and Meat,C6
 meat spreads,Processed Meat Products,C15
-misc. C8,Beverages,C8
+misc. beverages,Beverages,C8
 mustard,Grocery Items,C4
 napkins,Kitchenware,C11
 newspapers,Miscellaneous ,C1 

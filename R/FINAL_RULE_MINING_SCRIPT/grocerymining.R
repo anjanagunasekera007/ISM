@@ -98,6 +98,36 @@ reresorted<-sort(rere, decreasing=TRUE,by="confidence")
 #Write Association rules with whole milk as LHS 
 write(reresorted, file = "D:\\FYP\\R\\FINAL_RULE_MINING_SCRIPT\\brown_bread.csv", sep = ",")
 #*************************************************************************************************************************
+
+#*************************************************************************************************************************
+print("Commencing Specialized association rule mining for -  beef - MINIMUM LENGTH OF RULE = 2")
+rere<-apriori(data=Groceries, parameter=list(supp=0.001,conf = 0.15,minlen=2), 
+              appearance = list(default="rhs",lhs="beef"),
+              control = list(verbose=F))
+
+reresorted<-sort(rere, decreasing=TRUE,by="confidence")
+
+#Write Association rules with whole milk as LHS 
+write(reresorted, file = "D:\\FYP\\R\\FINAL_RULE_MINING_SCRIPT\\beef.csv", sep = ",")
+#*************************************************************************************************************************
+
+#*************************************************************************************************************************
+print("Commencing Specialized association rule mining for -  chicken - MINIMUM LENGTH OF RULE = 2")
+rere<-apriori(data=Groceries, parameter=list(supp=0.001,conf = 0.15,minlen=2), 
+              appearance = list(default="rhs",lhs="chicken"),
+              control = list(verbose=F))
+
+reresorted<-sort(rere, decreasing=TRUE,by="confidence")
+
+#Write Association rules with whole milk as LHS 
+write(reresorted, file = "D:\\FYP\\R\\FINAL_RULE_MINING_SCRIPT\\chicken.csv", sep = ",")
+#*************************************************************************************************************************
+
+
+
+
+
+
 print("Prining Specialized association rule mining for -  whole milk - MINIMUM LENGTH OF RULE = 2")
 print(inspect(reresorted[1:5]))
 print("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*")
