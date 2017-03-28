@@ -229,6 +229,10 @@
                                         <th>Item name</th>
                                         <th>Item Description</th>
                                         <th>Item Total Sales</th>
+                                        <th>Item price</th>
+                                        <th>Item In stock</th>
+                                        <th>Item In shelf</th>
+
 
                                     </tr>
                                 </thead>
@@ -256,6 +260,9 @@
                                         <td>{{ item.name }}</td>
                                         <td>{{ item.description }}</td>
                                         <td>{{ item.soldTotal }}</td>
+                                        <td> {{ item.price }}$</td>
+                                        <td>{{ item.instock }}</td>
+                                        <td> {{ item.inshelf }}</td>
                                     </tr>
                                     {% endfor %}
 

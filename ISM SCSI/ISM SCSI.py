@@ -12,34 +12,6 @@ app.config['DEBUG'] = True
 #EXTERNAL FUNCTIONS
 
 
-#External Functions
-# newlist = []
-# def sortlist():
-#     newlist = sorted(ItemList, key=lambda x: x.soldTotal, reverse=True)
-#     for j in newlist:
-#         print type(newlist)
-#         print j.name + " Q1 :" + str(j.soldQ1) + " Q2 :" + str(j.soldQ2) + " Q3 :" + str(j.soldQ3) + " Q4 :" + str(j.soldQ4) + " Q4 :" + str(j.soldTotal)
-#     return newlist
-
-# def returnmostsold():
-#     sortlist()
-#     print "SORTED"
-#     time.sleep(3)
-#     most = newlist[0:5]
-#     print "MOST SOLD ITEMS ARE : ========================= "
-#     for j in most:
-#         print j.name + " TOTAL SALES :" + str(j.soldTotal)
-#     return most
-#
-# def retunleastsold():
-#     sortlist()
-#     print "SORTED"
-#     time.sleep(3)
-#     least = newlist[164:]
-#     print "LEASE SOLD ITEMS ARE : ======================== "
-#     for j in least:
-#         print j.name + " TOTAL SALES :" + str(j.soldTotal)
-#     return least
 
 
 #*************************************************************
@@ -51,11 +23,7 @@ newlist = sortlist()
 most = newlist[0:5]
 least = newlist[164:]
 print "--------------------------------------------------------------- 8 8 8 ---------------------------------------"
-# print str(len(ItemList))
-# print str(len(most))
-# print str(len(least))
-# print " NEW LIST : " + str(len(newlist))
-# sys.exit(89)
+
 
 
 

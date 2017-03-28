@@ -42,17 +42,23 @@ def createobjectlist():
     for it in inventorylist:
         print it
         print type(it)
-        I = FullItem(counter,it[0], it[1], it[2])
+        I = FullItem(it[0], it[1], it[2],it[3],it[4],it[5],it[6],it[7],it[8],it[9])
+        #              id,   name, description, categoryname, category, instock, inshelf, minorder, price, weight):
         objectlist.append(I)
         counter = counter +1
+        # print "[][][][][][][][]][]][]["
+        # sys.exit(99999)
 
 def creteitemdetailist():
-    with open('./datasets/category list.csv') as csvfile:
+    with open('./datasets/full_item_detail_list.csv') as csvfile:
         readCSV = csv.reader(csvfile, delimiter=',')
         for transaction in readCSV:
             inventorylist.append(transaction)
             print transaction
             print type(transaction)
+            # print str(len(transaction))
+            # print ";;;;;;;;;;;;;;;;;;;;;"
+            # sys.exit(99999)
 
 
 #-------------------------------------------------------------------
