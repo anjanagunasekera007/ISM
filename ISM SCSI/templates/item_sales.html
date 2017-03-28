@@ -231,7 +231,10 @@
                                         <th>Item Total Sales</th>
                                         <th>Item price</th>
                                         <th>Item In stock</th>
+                                        <th>ADD ITEM TO SHELF</th>
                                         <th>Item In shelf</th>
+                                        <th>BUY ITEM</th>
+{#                                        <th>Item In shelf</th>#}
 
 
                                     </tr>
@@ -257,12 +260,14 @@
                                        {% endif %}
                                         <td>{{ item.id }}</td>
                                         <td>{{ item.category }}</td>
-                                        <td>{{ item.name }}</td>
+                                        <td>"{{ item.name }}</td>
                                         <td>{{ item.description }}</td>
                                         <td>{{ item.soldTotal }}</td>
                                         <td> {{ item.price }}$</td>
                                         <td>{{ item.instock }}</td>
+                                        <td>  <button onclick="restockshelf()" type="button" class="btn btn-default" id="{{ item.id }}"> + </button> </td>
                                         <td> {{ item.inshelf }}</td>
+                                        <td> <button onclick="reorder()" type="button" class="btn btn-default" id="{{ item.id }}" > - </button></td>
                                     </tr>
                                     {% endfor %}
 
@@ -303,6 +308,21 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="../static/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $('#lol').click( function() { alert('clicked'); });
+
+
+        function restockshelf()
+        {
+            alert("You clicked  shelf restock")
+        }
+
+        function reorder()
+        {
+            alert("You clicked  REORDER")
+        }
+    </script>
 
 </body>
 
