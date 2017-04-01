@@ -157,6 +157,522 @@
 {#                        <a href="{{ url_for('login') }}">log in</a>#}
                     </li>
                     <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo" class="collapse">
+                            <li>
+                                <a href="{{ url_for('Instantfoodproducts') }}">Instant food products</a>
+                            </li>
+                            <li>
+                                <a href="{{ url_for('UHTmilk') }}">UHT-milk</a>
+                            </li>
+{#                            <li>#}
+{#                                <a href="{{ url_for('abrasivecleaner') }}">abrasive cleaner</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('Artificialsweetener') }}">Artificial sweetener</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('babycosmetics') }}">baby cosmetics</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('babyfood') }}">baby food</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('bags') }}">bags</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('bakingpowder') }}">baking powder</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('bathroomcleaner') }}">bathroom cleaner</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('beef') }}">beef</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('berries') }}">berries</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('beverages') }}">beverages</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('bottledbeer') }}">bottled beer</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('bottledwater') }}">bottled water</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('brandy') }}">brandy</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('brown bread') }}">brownbread</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('butter') }}">butter</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('buttermilk') }}">butter milk</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('cakebar') }}">cake bar</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('candles') }}">candles</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('candy') }}">candy</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('cannedbeer') }}">canned beer</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('cannedfish') }}">cannedfish</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('cannedfruit') }}">canned fruit</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('cannedvegetables') }}">cannedvegetables</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('catfood') }}">cat food</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('cereals') }}">cereals</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('chewinggum') }}">chewing gum</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('chicken') }}">chicken</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('chocolate') }}">chocolate</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('chocolatemarshmallow') }}">chocolate marshmallow</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('citrusfruit') }}">citrus fruit</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('cleaner') }}">cleaner</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('clingfilmbags') }}">cling film/bags</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('cocoadrinks') }}"> cocoa drinks </a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('coffee') }}">coffee</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('condensedmilk') }}">condensed milk</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('cookingchocolate') }}">cooking chocolate</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('cookware') }}">cookware</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('cream') }}">cream</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('creamcheese') }}">cream cheese</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('curd') }}">curd</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('curdcheese') }}">curd cheese</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('decalcifier') }}">decalcifier</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('dentalcare') }}">dental care</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('dessert') }}">dessert</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('detergent') }}">detergent</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('dishcleaner') }}">dish cleaner</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('dishes') }}">dishes</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('dogfood') }}">dog food</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('domesticeggs') }}">domestic eggs</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('femalesanitaryproducts') }}">female sanitary products</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('finishedproducts') }}">finished products</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('fish') }}">fish</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('flour') }}">flour</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('flowerseeds') }}">flower (seeds)</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('flowersoilfertilizer') }}">flower soil/fertilizer</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('frankfurter') }}">frankfurter</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('frozenchicken') }}">frozen chicken</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('frozendessert') }}">frozen dessert</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('frozenfish') }}">frozen fish</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('frozenfruits') }}">frozen fruits</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('frozenmeals') }}">frozen meals</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('frozenpotatoproducts') }}">frozen potato products</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('frozenvegetables') }}">frozen vegetables</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('fruitvegetablejuice') }}">fruit/vegetable juice</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('grapes') }}"> grapes</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('hairspray') }}">hair spray</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('ham') }}">ham</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('hamburgermeat') }}">hamburger meat</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('hardcheese') }}">hard cheese</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('herbs') }}">herbs</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('honey') }}">honey</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('housekeepingproducts') }}">house keeping products</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('hygienearticles') }}">hygiene articles</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('icecream') }}">ice cream</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('instantcoffee') }}">instant coffee</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('jam') }}">jam</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('ketchup') }}">ketchup</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('kitchentowels') }}">kitchen towels</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('kitchenutensil') }}">kitchen utensil</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('lightbulbs') }}">light bulbs</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('liqueur') }}">liqueur</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('liquor') }}">liquor</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('liquorappetizer') }}">liquor (appetizer)</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('liverloaf') }}">liver loaf</a>#}
+{#                            </li>liver loaf#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('longlifebakeryproduct') }}">long life bakery product</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('makeupremover') }}">make up remover</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('malecosmetics') }}">male cosmetics</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('margarine') }}">margarine</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('mayonnaise') }}">mayonnaise</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('meat') }}">meat</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('meatspreads') }}">meat spreads</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('miscbeverages') }}">misc. beverages</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('mustard') }}">mustard</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('napkins') }}">napkins</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('newspapers') }}">newspapers</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('nutsnack') }}">nut snack</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('nutsprunes') }}">nuts/prunes</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('oil') }}">oil</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('onions') }}">onions</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('organicproducts') }}">organic products</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('organicsausage') }}">organic sausage</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('othervegetables') }}">other vegetables</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('packagedfruitvegetables') }}">packaged fruit/vegetables</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('pasta') }}">pasta</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('pastry') }}">pastry</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('petcare') }}">pet care</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('photofilm') }}">photo/film</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('pickledvegetables') }}">pickled vegetables</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('pipfruit') }}">pip fruit</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('popcorn') }}">popcorn</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('pork') }}">pork</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('potplants') }}">pot plants</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('potatoproducts') }}">potato products</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('preservationproducts') }}">preservation products</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('processedcheese') }}">processed cheese</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('prosecco') }}">prosecco</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('puddingpowder') }}">pudding powder</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('readysoups') }}">ready soups</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('redblushwine') }}">red/blush wine</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('rice') }}">rice</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('rollproducts') }}">roll products</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('rollsbuns') }}">rolls/buns</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('rootvegetables') }}">root vegetables</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('rubbingalcohol') }}">rubbing alcohol</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('rum') }}">rum</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('saladdressing') }}">salad dressing</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('salt') }}">salt</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('saltysnack') }}">saltysnack</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('sauces') }}">sauces</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('sausage') }}">sausage</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('seasonalproducts') }}">seasonal products</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('semifinishedbread') }}">semi-finished bread</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('shoppingbags') }}">shopping bags</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('skincare') }}">skin care</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('slicedcheese') }}">sliced cheese</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('snackproducts') }}">snack products</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('soap') }}">soap</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('soda') }}">soda</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('softcheese') }}">soft cheese</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('softener') }}">softener</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('soundstoragemedium') }}">sound storage medium</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('soups') }}">soups</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('sparklingwine') }}">sparkling wine</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('specialtybar') }}">specialty bar</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('specialtycheese') }}">specialty cheese</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('specialtychocolate') }}">specialty chocolate</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('specialtyfat') }}">specialty fat</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('specialtyvegetables') }}">specialty vegetables</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('spices') }}">spices</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('spreadcheese') }}">spread cheese</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('sugar') }}">sugar</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('sweetspreads') }}">sweet spreads</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('syrup') }}">syrup</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('tea') }}">tea</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('tidbits') }}">tidbits</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('toiletcleaner') }}">toilet cleaner</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('tropicalfruit') }}">tropical fruit</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('turkey') }}">turkey</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('vinegar') }}">vinegar</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('waffles') }}">waffles</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('whippedsourcream') }}"> whipped/sour cream</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('whisky') }}">whisky</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('whitebread') }}">white bread</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('whitewine') }}">white wine</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('wholemilk') }}">whole milk</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('yogurt') }}">yogurt</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="{{ url_for('zwieback') }}">zwieback</a>#}
+{#                            </li>#}
+
+
+
+
+                        </ul>
+                    </li>
+                    <li>
                         <a href="tables.html"><i class="fa fa-fw fa-table"></i> Item Options</a>
                     </li>
                     <li>
@@ -232,7 +748,8 @@
                                         <th>Item price</th>
                                         <th>Item In stock</th>
                                         <th>ADD ITEM TO SHELF</th>
-                                        <th>Item In shelf</th>
+                                        <th><b> Shelf Capacity</b></th>
+                                        <th>Items In shelf</th>
                                         <th>BUY ITEM</th>
 {#                                        <th>Item In shelf</th>#}
 
@@ -258,14 +775,15 @@
                                                 {% else %}
                                                      <tr class="active">
                                        {% endif %}
-                                        <td>{{ item.id }}</td>
-                                        <td>{{ item.category }}</td>
-                                        <td>"{{ item.name }}</td>
-                                        <td>{{ item.description }}</td>
-                                        <td>{{ item.soldTotal }}</td>
-                                        <td> {{ item.price }}$</td>
-                                        <td>{{ item.instock }}</td>
+                                        <td> <div>  {{ item.id }} </div></td>
+                                        <td><div id="{{ item.category }}"> {{ item.category }} </div></td>
+                                        <td><div id="{{ item.name }}  "> {{ item.name }}   </div>   </td>
+                                        <td> <div id="{{ item.description }}  ">{{ item.description }}  </div>    </td>
+                                        <td> <div id="{{ item.soldTotal }}     "> {{ item.soldTotal }}     </div>    </td>
+                                        <td> <div id="{{ item.price }}"> {{ item.price }}$ </div>      </td>
+                                        <td>{{ item.instock }}      </td>
                                         <td>  <button onclick="restockshelf()" type="button" class="btn btn-default" id="{{ item.id }}"> + </button> </td>
+                                        <td> <b> {{ item.inshelf  }}</b></td>
                                         <td> {{ item.inshelf }}</td>
                                         <td> <button onclick="reorder()" type="button" class="btn btn-default" id="{{ item.id }}" > - </button></td>
                                     </tr>
@@ -310,12 +828,23 @@
     <script src="../static/js/bootstrap.min.js"></script>
 
     <script type="text/javascript">
+
+        $( document ).ready(function() {
+            alert('document is ready')
+        });
+
+        $( "#1" ).click(function() {
+          alert( "Handler for .click() called." );
+        });
+
         $('#lol').click( function() { alert('clicked'); });
 
 
         function restockshelf()
         {
             alert("You clicked  shelf restock")
+{#            var c = {{ datalist|tojson }};#}
+{#            alert(c.type)#}
         }
 
         function reorder()

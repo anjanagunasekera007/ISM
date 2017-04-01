@@ -29,92 +29,92 @@
 29,chicken,Tyson Premium Chunk White Chicken Breast,Fish and Meat ,C6,2,525,10,20,2.48,7.0 Oz
 30,chocolate,HERSHEY'S Milk Chocolate Bars,Grocery Items,C4,3,550,35,70,3,9.3 Oz
 31,chocolate marshmallow,Jet-Puffed S'moreMallows Chocolate Stripe Marshmallows,Grocery Items,C4,1,600,30,60,1.96,17.0 Oz
-32,citrus fruit,Oranges ,Fruits and Vegetables ,C7,0,375,2,4,0.75,3.0 Oz
-33,cleaner,Lysol All Purpose Cleaner ,Cleaning Items ,C3,2,350,8,16,2.27,32.0 Oz
+32,citrus fruit,Oranges ,Fruits and Vegetables ,C7,0,375,10,20,0.75,3.0 Oz
+33,cleaner,Lysol All Purpose Cleaner ,Cleaning Items ,C3,2,350,10,20,2.27,32.0 Oz
 34,cling film/bags,Stretch-Tite Premium Plastic Food Wrap,Miscellaneous ,C1,4,425,50,100,4.89,500 sq ft
 35,cocoa drinks,Kras Express Instant Cocoa Drink,Beverages ,C8,4,400,15,30,4.47,330g
 36,coffee,Maxwell House Original Medium Roast Ground Coffee,Grocery Items,C4,7,575,10,20,7.78,30.06 Oz
 37,condensed milk,NESTLE LA LECHERA Sweetened Condensed Milk,Grocery Items,C4,1,450,12,24,1.5,14.0 Oz
 38,cooking chocolate,KRAS Cooking Chocolate Dark ,Grocery Items,C4,4,550,10,20,4.36,300g
-39,cookware,Tramontina PrimaWare 18-Piece Nonstick Cookware Set,Kitchenware,C11,39,425,6,12,39.98,0
+39,cookware,Tramontina PrimaWare 18-Piece Nonstick Cookware Set,Kitchenware,C11,39,425,20,40,39.98,0
 40,cream,Olay Active Hydrating Facial Moisturizer Cream,Cosmetic Item,C14,5,475,10,20,5.85,2.0 Oz
 41,cream cheese ,Great Value Cream Cheese ,Dairy Products ,C2,4,350,15,30,4.28,8.0 Oz
 42,curd,Dickinsons Curd,Dairy Products ,C2,2,500,12,24,2.48,10.0 Oz
 43,curd cheese,Henning S Cheese Henning White Cheese Curd,Dairy Products ,C2,4,350,15,30,4.28,10.0 Oz
-44,decalcifier,Durgol Swiss Espresso Decalcifier,Miscellaneous ,C1,15,475,6,12,15.95,0
-45,dental care,Plackers Micro Mint Flossups,Miscellaneous ,C1,3,600,8,16,3.25,0
+44,decalcifier,Durgol Swiss Espresso Decalcifier,Miscellaneous ,C1,15,475,20,40,15.95,0
+45,dental care,Plackers Micro Mint Flossups,Miscellaneous ,C1,3,600,25,50,3.25,0
 46,dessert,Betty Crocker? Hershey's Dessert Bar Mix S'mores,Bakery Products ,C16,2,375,15,30,2.31,15.4 OZ
 47,detergent,Gain Laundry Detergent Powder ,Cleaning Items ,C3,19,600,20,40,19.45,175.0 Oz
 48,dish cleaner,"Palmolive Dish Liquid, Original",Cleaning Items ,C3,2,575,30,60,2.98,52.0 Oz
-49,dishes,"32-Piece Dinnerware Set, White",Kitchenware,C11,30,450,6,12,30.12,0
+49,dishes,"32-Piece Dinnerware Set, White",Kitchenware,C11,30,450,20,40,30.12,0
 50,dog food,Kibbles 'n Bits Savory Beef and Chicken Flavors Dry Dog Food,Pet Food,C10,22,375,15,30,22.98,50lb
-51,domestic eggs,Great Value Large Grade A Eggs ,Grocery Items,C4,4,550,9,18,4.23,0
+51,domestic eggs,Great Value Large Grade A Eggs ,Grocery Items,C4,4,550,25,50,4.23,0
 52,female sanitary products,U By Kotex ,Miscellaneous ,C1 ,6,425,10,20,6.78,0
-53,finished products,Twin Blanket ,Miscellaneous ,C1,18,350,6,12,18.58,0
-54,fish,Fish ,Fish and Meat ,C6,2,450,8,16,2.12,7.0 Oz
+53,finished products,Twin Blanket ,Miscellaneous ,C1,18,350,20,40,18.58,0
+54,fish,Fish ,Fish and Meat ,C6,2,450,20,40,2.12,7.0 Oz
 55,flour,Pillsbury All Purpose Flour ,Grocery Items,C4,3,375,18,36,3.98,10Lb
 56,flower (seeds),Jobe's Organics Rose & Flower Seed,Gardening Product,C12,5,550,15,30,5.71,0
 57,flower soil/fertilizer,Jobe's Organics Rose & Flower Fertilizer,Gardening Product,C12,7,475,15,30,7.78,4Lb
-58,frankfurter,Wild Bill's Hickory Smoked Beef Jerky,Processed Meat Products,C15,5,600,9,18,5.54,3.0 Oz
-59,frozen chicken,Tyson Grilled & Ready Chicken Breast Strips,Frozen Food Items,C13,12,550,8,16,12.25,22.0 Oz
+58,frankfurter,Wild Bill's Hickory Smoked Beef Jerky,Processed Meat Products,C15,5,600,15,30,5.54,3.0 Oz
+59,frozen chicken,Tyson Grilled & Ready Chicken Breast Strips,Frozen Food Items,C13,12,550,15,30,12.25,22.0 Oz
 60,frozen dessert,Ben & Jerry's P.B. and Cookies Non-Dairy Frozen Dessert,Frozen Food Items,C13,63,400,12,24,63.3,16.0 Oz
-61,frozen fish,Walmart Seafood Frozen Cod Fillets?,Frozen Food Items,C13,13,475,9,18,13.21,22.0 Oz
+61,frozen fish,Walmart Seafood Frozen Cod Fillets?,Frozen Food Items,C13,13,475,15,30,13.21,22.0 Oz
 62,frozen fruits,Great Value Frozen Fruit Mix,Frozen Food Items,C13,12,350,20,40,12.11,16.0 Oz
-63,frozen meals,Healthy Choice? Classic Meat Loaf,Frozen Food Items,C13,20,375,8,16,20.14,18.0 Oz
-64,frozen potato products,Ore-Ida Diced Hash Brown Potatoes,Frozen Food Items,C13,21,525,5,10,21.2,32.0 Oz
-65,frozen vegetables,Great Value Hong Kong Blend Frozen Vegetables,Frozen Food Items,C13,9,600,5,10,9.25,16.0 Oz
+63,frozen meals,Healthy Choice? Classic Meat Loaf,Frozen Food Items,C13,20,375,20,40,20.14,18.0 Oz
+64,frozen potato products,Ore-Ida Diced Hash Brown Potatoes,Frozen Food Items,C13,21,525,8,16,21.2,32.0 Oz
+65,frozen vegetables,Great Value Hong Kong Blend Frozen Vegetables,Frozen Food Items,C13,9,600,8,16,9.25,16.0 Oz
 66,fruit/vegetable juice,Welch's Juice Drink Fruit Punch,Beverages ,C8,3,425,15,30,3.12,500ml
-67,grapes,Grapes ,Fruits and Vegetables ,C7,15,375,8,16,15.14,2 Lb
+67,grapes,Grapes ,Fruits and Vegetables ,C7,15,375,10,20,15.14,2 Lb
 68,hair spray,TRESemme TRES TWO Extra Hold Hair Spray,Cosmetic Item,C14,6,450,10,20,6.58,14.6 Oz
-69,ham,Double Honey Glazed Ham,Processed Meat Products,C15,58,500,8,16,58.45,10Lb
-70,hamburger meat,Ground Beef Patties,Processed Meat Products,C15,12,600,6,12,12.21,3 Lb
-71,hard cheese,Kraft Sharp Cheddar Cheese,Dairy Products ,C2,15,575,7,14,15.45,16.0 Oz
-72,herbs,Chia Chefs Garden?Herbs,Miscellaneous ,C1,3,525,5,10,3.14,5.0 Oz
-73,honey,Great Value Clover Honey,Miscellaneous ,C1,7,425,6,12,7.18,32.0 Oz
-74,house keeping products,Fabuloso Multi Purpose Cleaner,Cleaning Items ,C3,5,475,4,8,5.48,128.5 Oz
-75,hygiene articles,Dove Men+Care Extra Fresh Hygiene Kit,Miscellaneous ,C1,9,350,8,16,9.97,0
+69,ham,Double Honey Glazed Ham,Processed Meat Products,C15,58,500,10,20,58.45,10Lb
+70,hamburger meat,Ground Beef Patties,Processed Meat Products,C15,12,600,10,20,12.21,3 Lb
+71,hard cheese,Kraft Sharp Cheddar Cheese,Dairy Products ,C2,15,575,8,16,15.45,16.0 Oz
+72,herbs,Chia Chefs Garden?Herbs,Miscellaneous ,C1,3,525,8,16,3.14,5.0 Oz
+73,honey,Great Value Clover Honey,Miscellaneous ,C1,7,425,8,16,7.18,32.0 Oz
+74,house keeping products,Fabuloso Multi Purpose Cleaner,Cleaning Items ,C3,5,475,10,20,5.48,128.5 Oz
+75,hygiene articles,Dove Men+Care Extra Fresh Hygiene Kit,Miscellaneous ,C1,9,350,10,20,9.97,0
 76,ice cream,Ben & Jerry's Brownie Batter Core Ice Cream,Grocery Items,C4,49,375,10,20,49.45,16.2 Oz
 77,instant coffee,Great Value Classic Roast Instant Coffee,Grocery Items,C4,4,600,12,24,4.48,8.0 Oz
 78,jam,Welch's Jam Concord Grape,Grocery Items,C4,1,475,16,32,1.48,6.3 Oz
 79,ketchup,Great Value: Tomato Ketchup,Grocery Items,C4,3,450,15,30,3.67,64.2 Oz
-80,kitchen towels,Ritz Terry Cotton Kitchen Towels,Kitchenware,C11,15,375,5,10,15.88,0
-81,kitchen utensil,Mainstays Kitchen Set ,Kitchenware,C11,7,350,6,12,7.74,0
+80,kitchen towels,Ritz Terry Cotton Kitchen Towels,Kitchenware,C11,15,375,10,20,15.88,0
+81,kitchen utensil,Mainstays Kitchen Set ,Kitchenware,C11,7,350,10,20,7.74,0
 82,light bulbs,Great Value LED Light Bulbs 8.5W,Miscellaneous ,C1 ,6,475,10,20,6.58,0
 83,liqueur,Baileys Hazelnut Irish Cream Liqueur,Liquor,C9,9,500,15,30,9.25,1.69 fl Oz
-84,liquor,Jack Daniels Tennessee Sour Mash Whiskey,Liquor,C9,10,375,8,16,10.25,750ml
+84,liquor,Jack Daniels Tennessee Sour Mash Whiskey,Liquor,C9,10,375,10,20,10.25,750ml
 85,liquor (appetizer),Bruschetta with Prosecutto ,Liquor,C9,8,425,10,20,8.14,8.0 Oz
-86,liver loaf,Maling Luncheon Loaf,Fish and Meat ,C6,3,575,5,10,3.75,12.0 Oz
-87,long life bakery product,Barry's Bakery French Twists Chocolate Chip Puffed Pastry,Bakery Products ,C16,28,600,9,18,28.78,4.8 Oz
+86,liver loaf,Maling Luncheon Loaf,Fish and Meat ,C6,3,575,10,20,3.75,12.0 Oz
+87,long life bakery product,Barry's Bakery French Twists Chocolate Chip Puffed Pastry,Bakery Products ,C16,28,600,10,20,28.78,4.8 Oz
 88,make up remover,Equate Oil-Free Eye Makeup Remover,Cosmetic Item,C14,3,350,12,24,3.97,5.5 fl Oz
 89,male cosmetics,BOD Man Fresh Blue Musk Body Spray,Cosmetic Item,C14,6,475,20,40,6.98,8.2 Oz
 90,margarine,Canoleo Premium Canola Margarine,Dairy Products ,C2,4,425,35,70,4.21,16.2 Oz
 91,mayonnaise,Great Value Real Mayonnaise ,Grocery Items,C4,3,350,20,40,3.58,30 fl Oz
-92,meat,Roast Meat,Fish and Meat ,C6,5,375,5,10,5.78,12.3 Oz
-93,meat spreads,Spam Meat Spread ,Processed Meat Products,C15,1,400,8,16,1.14,3.9 Oz
-94,misc. beverages,Apple Juice ,Beverages ,C8,2,600,8,16,2.48,30 fl Oz
-95,mustard,French Classic Yellow Mustard,Grocery Items,C4,3,575,6,12,3.25,20.3 Oz
+92,meat,Roast Meat,Fish and Meat ,C6,5,375,10,20,5.78,12.3 Oz
+93,meat spreads,Spam Meat Spread ,Processed Meat Products,C15,1,400,10,20,1.14,3.9 Oz
+94,misc. beverages,Apple Juice ,Beverages ,C8,2,600,10,20,2.48,30 fl Oz
+95,mustard,French Classic Yellow Mustard,Grocery Items,C4,3,575,10,20,3.25,20.3 Oz
 96,napkins,Geat Value Quilted Napkins ,Kitchenware,C11,1,375,35,70,1.22,0
 97,newspapers,New York Times,Miscellaneous ,C1 ,0,600,40,80,0.5,0
 98,nut snack,Planters Deluxe Unsalted Mixed Nuts,Grocery Items,C4,20,475,25,50,20.44,43.2 Oz
 99,nuts/prunes,Great Value Pitted Prunes,Grocery Items,C4,3,425,10,20,3.24,18.3 Oz
 100,oil,Great Value Canola Oil ,Grocery Items,C4,2,350,12,24,2.93,48.0 Oz
 101,onions,Onions ,Fruits and Vegetables ,C7,4,400,10,20,4.12,20.1 Oz
-102,organic products,Organic Coconut Oil ,Grocery Items,C4,6,575,5,10,6.92,2.25Lb
+102,organic products,Organic Coconut Oil ,Grocery Items,C4,6,575,10,20,6.92,2.25Lb
 103,organic sausage,Applegates Farm Organic Sausages ,Grocery Items,C4,12,550,16,32,12.48,10.20 Oz
-104,other vegetables,Broccolli ,Fruits and Vegetables ,C7,2,350,5,10,2.45,4.0 Oz
-105,packaged fruit/vegetables,Oregon Fruit Products ,Fruits and Vegetables ,C7 ,30,475,5,10,30.21,15.12 Oz
-106,pasta,Great Value Rigotonni Pasta ,Grocery Items,C1,4,475,5,10,4.48,5Lb
-107,pastry,Tulip Street Bakery Puff Pastry ,Bakery Products ,C16,6,500,6,12,6.12,17.2 Oz
-108,pet care,Oster Animal Care: Pro Trimmer Pet Grooming Kit,Pet Food,C10,16,550,8,16,16.47,0
-109,photo/film,Double Umbrella Continuous Lighting Kit with Light Stands,Miscellaneous ,C1,132,350,5,10,132,0
-110,pickled vegetables,Terra Real Vegetable Chips Pickled Beets,Fruits and Vegetables ,C7,16,375,9,18,16.54,10.5 Oz
-111,pip fruit,Del Monte Tropical Fruit Salad,Fruits and Vegetables ,C7,2,450,5,10,2.5,25.0 Oz
+104,other vegetables,Broccolli ,Fruits and Vegetables ,C7,2,350,10,20,2.45,4.0 Oz
+105,packaged fruit/vegetables,Oregon Fruit Products ,Fruits and Vegetables ,C7 ,30,475,10,20,30.21,15.12 Oz
+106,pasta,Great Value Rigotonni Pasta ,Grocery Items,C1,4,475,10,20,4.48,5Lb
+107,pastry,Tulip Street Bakery Puff Pastry ,Bakery Products ,C16,6,500,10,20,6.12,17.2 Oz
+108,pet care,Oster Animal Care: Pro Trimmer Pet Grooming Kit,Pet Food,C10,16,550,10,20,16.47,0
+109,photo/film,Double Umbrella Continuous Lighting Kit with Light Stands,Miscellaneous ,C1,132,350,10,20,132,0
+110,pickled vegetables,Terra Real Vegetable Chips Pickled Beets,Fruits and Vegetables ,C7,16,375,10,20,16.54,10.5 Oz
+111,pip fruit,Del Monte Tropical Fruit Salad,Fruits and Vegetables ,C7,2,450,10,20,2.5,25.0 Oz
 112,popcorn,Pop Weaver Extra Butter Microwave Popcorn,Grocery Items,C4,4,475,20,40,4.98,24 Pkts
-113,pork,Smithfield Original Fresh Ground Pork,Fish and Meat ,C6,5,550,6,12,5.69,1.5 Lb
-114,pot plants,Potted Anubia Hastifolia Aquarium Plant,Gardening Product,C12,6,575,5,10,6.95,0
+113,pork,Smithfield Original Fresh Ground Pork,Fish and Meat ,C6,5,550,10,20,5.69,1.5 Lb
+114,pot plants,Potted Anubia Hastifolia Aquarium Plant,Gardening Product,C12,6,575,10,20,6.95,0
 115,potato products,Great Value Mashed Potatoes,Grocery Items,C4,5,600,20,40,5.24,26.0 Oz
-116,preservation products,FoodSaver Food Preservation System and Vacuum Sealer,Miscellaneous ,C1,169,450,5,10,169,0
-117,processed cheese,Great Value Fat Free Pasteurized Process Cheese,Dairy Products ,C2,6,375,5,10,6.78,12.2 Oz
+116,preservation products,FoodSaver Food Preservation System and Vacuum Sealer,Miscellaneous ,C1,169,450,10,20,169,0
+117,processed cheese,Great Value Fat Free Pasteurized Process Cheese,Dairy Products ,C2,6,375,10,20,6.78,12.2 Oz
 118,prosecco,Lamarca Prosecco,Liquor,C9,15,550,12,24,15.48,750 ml
 119,pudding powder,Pudding Powder - Vanilla,Grocery Items,C4,2,600,15,30,2.21,129g
 120,ready soups,Campbell's Ready To Serve Cream Of Mushroom Soup,Grocery Items,C4,26,575,20,40,26.87,10.5 Oz
@@ -123,7 +123,7 @@
 123,roll products ,The Bakery Yeasty Rolls,Bakery Products ,C16,9,350,15,30,9.87,17.2 Oz
 124,rolls/buns,Bunny Original Hamburger Buns,Bakery Products ,C16,3,600,30,60,3.25,12.0 Oz
 125,root vegetables,Beetroot,Fruits and Vegetables ,C7,1,350,10,20,1.21,10.3 Oz
-126,rubbing alcohol,91% Isopropyl Rubbing Alcohol,Miscellaneous ,C1,2,575,5,10,2.58,32.3 Oz
+126,rubbing alcohol,91% Isopropyl Rubbing Alcohol,Miscellaneous ,C1,2,575,10,20,2.58,32.3 Oz
 127,rum,Bacardi 151,Liquor,C9,12,550,20,40,12,1Ltr
 128,salad dressing,Kraft Salad Dressing ,Grocery Items,C4,1,600,20,40,1.98,16 fl Oz
 129,salt,Hain Pure Sea Salt ,Grocery Items,C4,1,350,30,60,1.78,26.2 Oz
@@ -140,9 +140,9 @@
 140,soda,Great Value Club Soda,Beverages ,C8,0,600,14,28,0.85,8.5 Oz
 141,soft cheese,Cambozola Simply Gourmet Soft-Ripened Blue Cheese,Dairy Products ,C2,7,375,14,28,7.58,4.4 Oz
 142,softener,Snuggle Blue Sparkle Liquid Fabric Softener,Miscellaneous ,C1 ,2,450,20,40,2.14,64.3 Oz
-143,sound storage medium,Western Digital Elements 1TB Portable External Hard Drive,Miscellaneous ,C1 ,79,425,5,10,79.85,1 TB
+143,sound storage medium,Western Digital Elements 1TB Portable External Hard Drive,Miscellaneous ,C1 ,79,425,10,20,79.85,1 TB
 144,soups,Campbell's Chunky New England Clam Chowder Soup?,Grocery Items,C4,1,475,12,24,1.14,18.0 Oz
-145,sparkling wine,Zonin Prosecco Sparkling Wine,Liquor,C9,9,600,5,10,9.87,750ml
+145,sparkling wine,Zonin Prosecco Sparkling Wine,Liquor,C9,9,600,10,20,9.87,750ml
 146,specialty bar,Almond Joy Candy Bar,Grocery Items,C4,0,350,15,30,0.54,2.0 Oz
 147,specialty cheese,Great Value Cheese ,Dairy Products ,C2,5,600,23,46,5.12,5.2 Oz
 148,specialty chocolate,Zonin Prosecco Sparkling Wine,Grocery Items,C4,3,375,15,30,3.56,5 Lb
@@ -151,13 +151,13 @@
 151,spices,McCormick Ground Red Pepper,Grocery Items,C4,1,450,15,30,1.01,1.2 Oz
 152,spread cheese,Great Value Original Cheddar Cheese Spread ,Dairy Products ,C2,2,475,20,40,2.98,16.5 Oz
 153,sugar,Great Value Pure Cane Sugar,Grocery Items,C4,2,350,35,70,2.47,4Lb
-154,sweet spreads,Rees Peanut Butter Chocolate Spread,Dairy Products ,C2,3,375,5,10,3.44,13.2 Oz
+154,sweet spreads,Rees Peanut Butter Chocolate Spread,Dairy Products ,C2,3,375,10,20,3.44,13.2 Oz
 155,syrup,Great Value Original Syrup ,Grocery Items,C4,2,450,20,40,2.5,36 fl Oz
 156,tea,Great Value All Natural Tea ,Grocery Items,C4,1,500,20,40,1.98,8.5 Oz
 157,tidbits,Sincerely Nuts Pineapple Tidbits ,Grocery Items,C4,12,575,35,70,12.45,2Lb
 158,toilet cleaner,The Works Disinfectant Toilet Bowl Cleaner ,Cleaning Items ,C3,2,600,40,80,2.76,64.2 Oz
 159,tropical fruit,Del Monte Tropical Fruit Cocktail,Fruits and Vegetables ,C7,2,550,20,40,2.54,29.3 Oz
-160,turkey,Riverside Frozen Tom Turkey,Fish and Meat ,C6,8,475,5,10,8.21,24Lb
+160,turkey,Riverside Frozen Tom Turkey,Fish and Meat ,C6,8,475,10,20,8.21,24Lb
 161,vinegar,Great Value Distilled White Vinegar ,Grocery Items,C4,1,450,15,30,1.24,1L
 162,waffles,Great Value Buttermilk Waffles,Bakery Products ,C16,7,350,12,24,7.89,24.3 Oz
 163,whipped/sour cream,Great Value Original Whipped Cream ,Dairy Products ,C2,5,600,20,40,5.89,13.5 Oz

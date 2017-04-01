@@ -22,7 +22,7 @@ class FullItem:
    'Common base class for all employees'
    itemCount = 0
 
-   def __init__(self, id, name,description,categoryname,category,price,instock,inshelf,minorder,weight):
+   def __init__(self, id, name,description,categoryname,category,price,instock,inshelf,orderQty,weight):
       self.id = id
       self.name = name
       self.description = description
@@ -36,8 +36,10 @@ class FullItem:
       self.price = price
       self.instock = instock
       self.inshelf = inshelf
-      self.minorder = minorder
+      self.orderQty = orderQty
       self.weight = weight
+      self.shelfcapacity = 50
+
 
       Item.itemCount += 1
 
@@ -64,3 +66,4 @@ class Item:
       self.itemc7 = 0
       self.soldTotal = 0
       Item.itemCount += 1
+
