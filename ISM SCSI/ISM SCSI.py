@@ -1,10 +1,14 @@
 from Item_Class import FullItem
-from flask import Flask , render_template
+from flask import Flask , render_template ,json ,request
 from Sales_Calculator import returnSales
 from Sales_Calculator import sortlist
 # from Sales_Calculator import retunleastsold
 import time
 import sys
+import json
+# import request
+# import urllib2.request
+
 
 
 app = Flask(__name__)
@@ -41,7 +45,9 @@ least = newlist[164:]
 print "--------------------------------------------------------------- 8 8 8 ---------------------------------------"
 
 
-
+def printem(usernamee, passwordd):
+    print usernamee
+    print passwordd
 
 print ("  6969696969696969696969696969696969 ")
 print str(len(ItemList))
@@ -85,9 +91,16 @@ def Instantfoodproducts():
 @app.route('/UHTmilk', methods=['GET', 'POST'])
 def UHTmilk():
     error = None;
-    return render_template('itemextended.html', error=error,datalist=ItemList,mostlist=most,leastlist=least)
+    return render_template('ajaxjquery.html', error=error,datalist=ItemList,mostlist=most,leastlist=least)
 
-
+@app.route('/signUpUser', methods=['POST'])
+def signUpUser():
+    print "WORKING = = = =  * * FUCKKKK"
+    user = request.form['username']
+    password = request.form['password']
+    pis = " yu gi oh"
+    printem(user,password)
+    return json.dumps({'status':'OK','user':user,'pass':password,'pi':pis});
 
 if __name__ == '__main__':
     app.run(debug=True)

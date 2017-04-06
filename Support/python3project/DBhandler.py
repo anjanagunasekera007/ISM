@@ -1,6 +1,5 @@
-import MySQLdb
+import
 import csv
-from ITEMCLASS import Item
 from ITEMCLASS import Item
 import time
 
