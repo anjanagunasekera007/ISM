@@ -29,7 +29,7 @@ Q4 = []
 
 #============
 def createInventoryList():
-    with open("./datasets/all_items.txt") as f:
+    with open("D:/FYP/ISM SCSI/datasets/all_items.txt") as f:
         ib = f.read().splitlines()
         print len(ib)
         time.sleep(2)
@@ -48,9 +48,10 @@ def createobjectlist():
         counter = counter +1
         # print "[][][][][][][][]][]][]["
         # sys.exit(99999)
-
+#D:\FYP\ISM SCSI\datasets\
 def creteitemdetailist():
-    with open('./datasets/full_item_detail_list.csv') as csvfile:
+    # with open('./datasets/full_item_detail_list.csv') as csvfile:
+    with open('D:/FYP/ISM SCSI/datasets/full_item_detail_list.csv') as csvfile:
         readCSV = csv.reader(csvfile, delimiter=',')
         for transaction in readCSV:
             inventorylist.append(transaction)
@@ -63,30 +64,30 @@ def creteitemdetailist():
 
 #-------------------------------------------------------------------
 def writeToFile():
-    thefile = open('./datasets/itemsales.txt', 'w')
+    thefile = open('D:/FYP/ISM SCSI/datasets/itemsales.txt', 'w')
     for item in objectlist:
         thefile.write(item.name+","+str(item.soldQ1)+","+str(item.soldQ2)+","+str(item.soldQ3)+"\n")
 
 def createQ1Transactions():
-    with open('./datasets/Q1.csv') as csvfile:
+    with open('D:/FYP/ISM SCSI/datasets/Q1.csv') as csvfile:
         readCSV = csv.reader(csvfile, delimiter=',')
         for transaction in readCSV:
             Q1.append(transaction)
 
 def createQ2Transactions():
-    with open('./datasets/Q2.csv') as csvfile:
+    with open('D:/FYP/ISM SCSI/datasets/Q2.csv') as csvfile:
         readCSV = csv.reader(csvfile, delimiter=',')
         for transaction in readCSV:
             Q2.append(transaction)
 
 def createQ3Transactions():
-    with open('./datasets/Q3.csv') as csvfile:
+    with open('D:/FYP/ISM SCSI/datasets/Q3.csv') as csvfile:
         readCSV = csv.reader(csvfile, delimiter=',')
         for transaction in readCSV:
             Q3.append(transaction)
 
 def createQ4Transactions():
-    with open('./datasets/Q4.csv') as csvfile:
+    with open('D:/FYP/ISM SCSI/datasets/Q4.csv') as csvfile:
         readCSV = csv.reader(csvfile, delimiter=',')
         for transaction in readCSV:
             Q4.append(transaction)
