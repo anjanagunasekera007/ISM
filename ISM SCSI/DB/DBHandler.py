@@ -178,35 +178,20 @@ print ("EXECUTIONS")
 creteitemdetailist()
 createobjectlist()
 print ("----")
-# printobjects()
 print ("-------------------")
 time.sleep(2)
 print (" STARTING TO PUT ITEMS")
-# insertItems()
-# time.sleep(2)
-# print "*******************************   ***********************   ***     * * ** ** **  * * ** *** ** "
-# for y in objectlist:
-#     print y.name + " " + y.description + " => " + y.url
-# print " run "
 
-# insertItems()
-# print "completed "
+
+#****************************************************************************************************
 # getallitems()
 # updateitem()
+#****************************************************************************************************
 
 ilist = returnSales()
 g = ilist[0]
-#
-# print " : : : : : : : : : : : : : : : :"
-# print type(g)
-# print str(g)
-# print str(len(ilist))
-# for i in ilist:
-#     print str(i.id) + " " + i.name + " " + i.description + " = = || = = " + str(i.soldQ1) + " " + str(i.soldQ2) + " TOTAL " + str(i.soldTotal)
-# print "DONE - - - =  - = - = - = -"
 insertSalesdata()
-# time.sleep(2)
-# printobjects()
+
 
 #****************************************************************************************************
 # insertItems()
