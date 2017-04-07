@@ -4,10 +4,11 @@ from ITEMCLASS import Item
 from ITEMCLASS import Item
 from Sales_Calculator import returnSales
 import time
+import sys
 
 print( "Handler initiated")
 print("10")
-
+ilist = returnSales()
 db = MySQLdb.connect("localhost","root","","ISM")
 
 #cursor object
@@ -63,7 +64,7 @@ def insertData():
 inventorylist = []
 objectlist = []
 def creteitemdetailist():
-    with open('alldata.csv') as csvfile:
+    with open('D:/FYP/ISM SCSI/datasets/alldata.csv') as csvfile:
         readCSV = csv.reader(csvfile, delimiter=',')
         for it in readCSV:
             inventorylist.append(it)
@@ -158,6 +159,7 @@ def insertSalesdata():
 
 # def databaseObjList():
 finalobjectlist = []
+dblist = []
 def crObjfromDB():
     print "creating list"
     counter =1
@@ -173,49 +175,47 @@ def crObjfromDB():
         finalobjectlist.append(I)
 
 
-print ("EXECUTIONS")
-# createTables()
-creteitemdetailist()
-createobjectlist()
-print ("----")
-print ("-------------------")
-time.sleep(2)
-print (" STARTING TO PUT ITEMS")
+def getitemscreateobj():
+    fobjlist = []
+    itemslist = getallitems()
+    for t in itemslist:
+        print t
+    print "creating list"
+    counter =1
+    for it in itemslist:
+        print it
+        I = Item(counter, it[1], it[2], it[3], it[4], it[5], int(it[6]), int(it[7]), int(it[8]), it[9], it[10], it[11], it[12], it[13])
+        I.soldQ1 = int(it[14])
+        I.soldQ2 = int(it[15])
+        I.soldQ3 = int(it[16])
+        I.soldQ4 = int(it[17])
+        I.soldTotal = int(it[18])
+        counter = counter +1
+        fobjlist.append(I)
+    return fobjlist
+def returnobjs():
+    print ("EXECUTIONS")
+    creteitemdetailist()
+    createobjectlist()
 
+    insertSalesdata()
+    print " INSERTED ALL ITEMS"
+    getallitems()
+    dblist = getallitems()
+    print " u u u u u u u u"
+    print "YAWOOOOOOOOOOOO"
+    print "CREATING OBJECT LIST YOOOOOO"
+    crObjfromDB()
+    print str(len(finalobjectlist))
+    sys.exit(888)
+    for y in finalobjectlist:
+        print str(y.id) + " " + y.name + " " + str(y.soldTotal)
+    print "FINALLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL"
+    print "COMPLETED ALL OPERATIONS"
 
-#****************************************************************************************************
-# getallitems()
-# updateitem()
-#****************************************************************************************************
-
-ilist = returnSales()
-g = ilist[0]
-insertSalesdata()
-
-
-#****************************************************************************************************
-# insertItems()
-print " INSERTED ALL ITEMS"
-#****************************************************************************************************
-time.sleep(3)
-getallitems()
-dblist = getallitems()
-for g in dblist:
-    print g
-    print "--------------------------------------------"
-    print g[0]
-    print int(g[0])
-    # print str(type(g[0])) + " ; ; ; " + g[0]
-    print "--------------------------------------------"
-time.sleep(2)
-print " u u u u u u u u"
-print "YAWOOOOOOOOOOOO"
-time.sleep(2)
-time.sleep(2)
-print "CREATING OBJECT LIST YOOOOOO"
-crObjfromDB()
-# printobjects()
-for y in finalobjectlist:
-    print str(y.id) + " " + y.name + " " + str(y.soldTotal)
-print "FINALLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL"
-print "COMPLETED ALL OPERATIONS"
+punklist = getitemscreateobj()
+print str(len(punklist))
+# sys.exit(9876)
+for t in punklist:
+    print t.name + " " + t.description + "  = = " + str(t.soldTotal)
+print "C O M P L E T E D - * - *- +*- +*- -+ *- +-* + *- + *- +*- 9* - *- * * + *-"

@@ -3,19 +3,25 @@ from flask import Flask , render_template ,json ,request
 from Sales_Calculator import returnSales
 from Sales_Calculator import sortlist
 # from Sales_Calculator import retunleastsold
+from DBHandler import getitemscreateobj
 import time
 import sys
 import json
 # import request
 # import urllib2.request
 
-
+# punklist = getitemscreateobj()
+# print str(len(punklist))
+# # sys.exit(9876)
+# for t in punklist:
+#     print t.name + " " + t.description + "  = = " + str(t.soldTotal)
+# print "C O M P L E T E D - * - *- +*- +*- -+ *- +-* + *- + *- +*- 9* - *- * * + *-"
+# sys.exit(678)
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
 
 #EXTERNAL FUNCTIONS
-
 
 
 
@@ -37,10 +43,9 @@ print " @@@@@@@@@@@@@@@@@@@@@@@@ "
 time.sleep(2)
 for g in ItemList:
     print g
-    print
 time.sleep(2)
 print "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
-sys.exit(6969)
+# sys.exit(6969)
 print "===================== 0 0 0 0 0==============="
 # sys.exit(889)
 newlist = sortlist()
