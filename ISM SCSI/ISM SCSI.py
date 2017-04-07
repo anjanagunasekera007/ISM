@@ -10,12 +10,12 @@ import json
 # import request
 # import urllib2.request
 
-# punklist = getitemscreateobj()
-# print str(len(punklist))
-# # sys.exit(9876)
-# for t in punklist:
-#     print t.name + " " + t.description + "  = = " + str(t.soldTotal)
-# print "C O M P L E T E D - * - *- +*- +*- -+ *- +-* + *- + *- +*- 9* - *- * * + *-"
+punklist = getitemscreateobj()
+print str(len(punklist))
+# sys.exit(9876)
+for t in punklist:
+    print t.name + " " + t.description + "  = = " + str(t.soldTotal)
+print "C O M P L E T E D - * - *- +*- +*- -+ *- +-* + *- + *- +*- 9* - *- * * + *-"
 # sys.exit(678)
 
 app = Flask(__name__)
@@ -26,22 +26,22 @@ app.config['DEBUG'] = True
 
 
 #*************************************************************
-ItemList = returnSales()
+# ItemList = returnSales()
 print "================"
-print str(type(ItemList[0]))
-print (ItemList[0])
-print (ItemList[0])
-print ItemList[0].name
-print ItemList[0].description
+print str(type(punklist[0]))
+print (punklist[0])
+print (punklist[0])
+print punklist[0].name
+print punklist[0].description
 print ";;;;;;;;"
-y = ItemList[0]
+y = punklist[0]
 print type(y)
 print y.name
 print y.description
 
 print " @@@@@@@@@@@@@@@@@@@@@@@@ "
 time.sleep(2)
-for g in ItemList:
+for g in punklist:
     print g
 time.sleep(2)
 print "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
@@ -62,9 +62,9 @@ def printem(usernamee, passwordd):
     print passwordd
 
 print ("  6969696969696969696969696969696969 ")
-print str(len(ItemList))
+print str(len(punklist))
 
-for i in ItemList:
+for i in punklist:
     print i.name
     print type(i)
 print ("  6969696969696969696969696969696969 888")
@@ -84,14 +84,14 @@ def main():
 def login():
     error = None;
     listx  = [2,4,6,8,10]
-    return render_template('item_sales.html', error=error,datalist=ItemList)
+    return render_template('item_sales.html', error=error,datalist=punklist)
 
 
 @app.route('/home', methods=['GET', 'POST'])
 def home():
     error = None;
     listx  = [2,4,6,8,10]
-    return render_template('index.html', error=error,datalist=ItemList,mostlist=most,leastlist=least)
+    return render_template('index.html', error=error,datalist=punklist,mostlist=most,leastlist=least)
 
 minstock = 300
 # =============================================== ITEMS =========================================================================?
@@ -103,7 +103,7 @@ def Instantfoodproducts():
 @app.route('/UHTmilk', methods=['GET', 'POST'])
 def UHTmilk():
     error = None;
-    return render_template('ajaxjquery.html', error=error,datalist=ItemList,mostlist=most,leastlist=least)
+    return render_template('ajaxjquery.html', error=error,datalist=punklist,mostlist=most,leastlist=least)
 
 @app.route('/signUpUser', methods=['POST'])
 def signUpUser():
