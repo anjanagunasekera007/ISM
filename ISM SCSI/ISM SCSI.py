@@ -4,6 +4,7 @@ from Sales_Calculator import returnSales
 from Sales_Calculator import sortlist
 # from Sales_Calculator import retunleastsold
 from DBHandler import getitemscreateobj
+from DBHandler import updatesales
 import time
 import sys
 import json
@@ -80,7 +81,7 @@ def main():
     mylist = [1,2,3,4,5,6];
     return render_template('index.html', data = mylist,name="the name",mostlist=most,leastlist=least )
 
-@app.route('/login', methods=['GET', 'POST'])
+@app.route('/login', methods=['GET',  'POST'])
 def login():
     error = None;
     listx  = [2,4,6,8,10]
@@ -95,10 +96,11 @@ def home():
 
 minstock = 300
 # =============================================== ITEMS =========================================================================?
+y = punklist[0]
 @app.route('/Instantfoodproducts', methods=['GET', 'POST'])
 def Instantfoodproducts():
     error = None;
-    return render_template('itemextended.html', error=error,item=y,minstock=minstock)
+    return render_template('itemwisesales.html', error=error,item=y,minstock=minstock)
 
 @app.route('/UHTmilk', methods=['GET', 'POST'])
 def UHTmilk():
@@ -113,6 +115,32 @@ def signUpUser():
     pis = " yu gi oh"
     printem(user,password)
     return json.dumps({'status':'OK','user':user,'pass':password,'pi':pis});
+
+
+
+#************************ BUY ITEM **************************************
+@app.route('/buyitem', methods=['POST'])
+def buyitem():
+    print "WORKING = = = =  * * FUCKKKK"
+    # user = request.form['name']
+    itemid = request.form['name']
+    itemshelfcount = request.form['inshelf']
+    newcount = int(itemshelfcount) - 1
+    print "SENDING UPDATE"
+    updatesales(newcount,itemid)
+    print "COMPLETED UPDATE"
+    # itemshelfcount = int(itemshelfcount) - 1
+    # password = request.form['password']
+    print itemid
+    pis = " yu gi oh hohohohooo"
+    printem(itemid,itemshelfcount)
+    # print str(type(itemid))
+    # print str(type(itemshelfcount))
+    print " YAWOOOOZZZAAAAAA"
+    time.sleep(2)
+    # return json.dumps({'status':'OK','user':itemid,'pass':itemshelfcount,'pi':pis});
+    return json.dumps({'status':'OK','user':newcount,'pi':pis});
+
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -785,7 +785,7 @@
                                         <td>  <button onclick="restockshelf()" type="button" class="btn btn-default" id="{{ item.id }}"> + </button> </td>
                                         <td> <b> {{ item.inshelf  }}</b></td>
                                         <td> {{ item.inshelf }}</td>
-                                        <td> <button onclick="reorder()" type="button" class="btn btn-default" id="{{ item.id }}" > - </button></td>
+                                        <td> <button onclick="reorder('{{ item.name }}','{{ item.inshelf }}')" type="button" class="btn btn-default" id="{{ item.id }}" > - </button></td>
                                     </tr>
                                     {% endfor %}
 
@@ -818,7 +818,7 @@
         </div>
         <!-- /#page-wrapper -->
 
-    </div>
+</div>
     <!-- /#wrapper -->
 
     <!-- jQuery -->
@@ -829,28 +829,39 @@
 
     <script type="text/javascript">
 
-        $( document ).ready(function() {
-            alert('document is ready')
+{#        $( document ).ready(function() {#}
+{#            alert('document is ready')#}
+{#        });#}
+
+
+        function reorder(itemname,iteminshelf)
+        {
+            alert("lol oiiii   =>  "+ itemname  + "  +*+  " + iteminshelf)
+
+            $.ajax({
+            url: '/buyitem',
+            data: {name: itemname, inshelf :iteminshelf},
+            type: 'POST',
+            success: function(response) {
+                console.log(response);
+                alert(response + " - - - ")
+            },
+            error: function(error) {
+                console.log(error);
+                alert("not working you ass")
+            }
         });
 
-        $( "#1" ).click(function() {
-          alert( "Handler for .click() called." );
-        });
 
-        $('#lol').click( function() { alert('clicked'); });
+        }
 
 
         function restockshelf()
         {
             alert("You clicked  shelf restock")
-{#            var c = {{ datalist|tojson }};#}
-{#            alert(c.type)#}
         }
 
-        function reorder()
-        {
-            alert("You clicked  REORDER")
-        }
+
     </script>
 
 </body>

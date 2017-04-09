@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/templates/item_sales.html" line="839" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="5751d18b-3f9e-4ee8-a82d-920889cd5fcf" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,7 +28,7 @@
     <SUITE FILE_PATH="coverage/ISM SCSI$DBHandler__1_.coverage" NAME="DBHandler (1) Coverage Results" MODIFIED="1491600431806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ISM SCSI$WWWitemER.coverage" NAME="WWWitemER Coverage Results" MODIFIED="1491578091314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FINAL_DB" />
     <SUITE FILE_PATH="coverage/ISM SCSI$ItemCounter.coverage" NAME="ItemCounter Coverage Results" MODIFIED="1486986463784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ISM SCSI$ISM_SCSI.coverage" NAME="ISM SCSI Coverage Results" MODIFIED="1491603677871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ISM SCSI$ISM_SCSI.coverage" NAME="ISM SCSI Coverage Results" MODIFIED="1491750266881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -53,8 +50,8 @@
       <file leaf-file-name="ISM SCSI.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ISM SCSI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="105" column="17" lean-forward="true" selection-start-line="105" selection-start-column="17" selection-end-line="105" selection-end-column="17" />
+            <state relative-caret-position="368">
+              <caret line="130" column="28" lean-forward="true" selection-start-line="130" selection-start-column="28" selection-end-line="130" selection-end-column="28" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -62,11 +59,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ITEMCLASS.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ITEMCLASS.py">
+      <file leaf-file-name="itemwisesales.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/itemwisesales.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="11080">
+              <caret line="947" column="26" lean-forward="false" selection-start-line="947" selection-start-column="26" selection-end-line="947" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ajaxjquery.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/ajaxjquery.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="163">
+              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="73" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="item_sales.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/item_sales.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="433">
+              <caret line="842" column="12" lean-forward="false" selection-start-line="842" selection-start-column="12" selection-end-line="842" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -75,33 +92,44 @@
       <file leaf-file-name="DBHandler.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DBHandler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="215" column="0" lean-forward="false" selection-start-line="215" selection-start-column="0" selection-end-line="220" selection-end-column="83" />
+            <state relative-caret-position="420">
+              <caret line="144" column="25" lean-forward="true" selection-start-line="144" selection-start-column="25" selection-end-line="144" selection-end-column="25" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
-                <marker date="1491600431733" expanded="true" signature="450:621" ph="CREATE TABLE... IF" />
-                <marker date="1491600431733" expanded="true" signature="682:808" ph="INSERT INTO EMPLOYEE... " />
-                <marker date="1491600431733" expanded="true" signature="986:1100" ph="INSERT INTO EMPLOYEE... " />
-                <marker date="1491600431733" expanded="true" signature="3649:3933" ph="INSERT INTO items... " />
-                <marker date="1491600431733" expanded="true" signature="4509:4528" ph="SELECT * FRO... items" />
-                <marker date="1491600431733" expanded="true" signature="4968:5027" ph="UPDATE items... " />
+                <marker date="1491750242099" expanded="true" signature="450:621" ph="CREATE TABLE... IF" />
+                <marker date="1491750242099" expanded="true" signature="682:808" ph="INSERT INTO EMPLOYEE... " />
+                <marker date="1491750242099" expanded="true" signature="986:1100" ph="INSERT INTO EMPLOYEE... " />
+                <marker date="1491750242099" expanded="true" signature="3649:3933" ph="INSERT INTO items... " />
+                <marker date="1491750242099" expanded="true" signature="4509:4528" ph="SELECT * FRO... items" />
+                <marker date="1491750242099" expanded="true" signature="4968:5027" ph="UPDATE items... " />
+                <marker date="1491750242099" expanded="true" signature="5273:5323" ph="UPDATE items... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="alldata.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FINAL_DB/alldata.csv">
+      <file leaf-file-name="WWWitemER.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FINAL_DB/WWWitemER.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="-505">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="30" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WWWITEMCLASS.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FINAL_DB/WWWITEMCLASS.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-265">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="alldata.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/datasets/alldata.csv">
+      <file leaf-file-name="WWWalldata.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FINAL_DB/WWWalldata.csv">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -113,7 +141,7 @@
       <file leaf-file-name="Sales_Calculator.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sales_Calculator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
+            <state relative-caret-position="5100">
               <caret line="174" column="31" lean-forward="false" selection-start-line="174" selection-start-column="21" selection-end-line="174" selection-end-column="31" />
               <folding />
             </state>
@@ -123,7 +151,7 @@
       <file leaf-file-name="Item_Class.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Item_Class.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="750">
               <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="40" selection-end-column="29" />
               <folding />
             </state>
@@ -161,6 +189,9 @@
       <find>insertda</find>
       <find>insertdata</find>
       <find>ilist</find>
+      <find>btn1</find>
+      <find>y</find>
+      <find>F</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -194,7 +225,6 @@
         <option value="$PROJECT_DIR$/testG.py" />
         <option value="$PROJECT_DIR$/ITEMREADER.py" />
         <option value="$PROJECT_DIR$/datasets/ITEM_FULL_LIST.csv" />
-        <option value="$PROJECT_DIR$/templates/item_sales.html" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/Item_Class.py" />
         <option value="$PROJECT_DIR$/templates/itemextended.html" />
@@ -204,9 +234,11 @@
         <option value="$PROJECT_DIR$/FINAL_DB/itemER.py" />
         <option value="$PROJECT_DIR$/FINAL_DB/WWWitemER.py" />
         <option value="$PROJECT_DIR$/DB/DBHandler.py" />
-        <option value="$PROJECT_DIR$/DBHandler.py" />
         <option value="$PROJECT_DIR$/Sales_Calculator.py" />
+        <option value="$PROJECT_DIR$/templates/itemwisesales.html" />
+        <option value="$PROJECT_DIR$/templates/item_sales.html" />
         <option value="$PROJECT_DIR$/ISM SCSI.py" />
+        <option value="$PROJECT_DIR$/DBHandler.py" />
       </list>
     </option>
   </component>
@@ -333,16 +365,16 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\FYP\ISM SCSI\datasets" />
-      <recent name="D:\Google Drive\ISM SCSI\static" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\FYP\ISM SCSI\templates" />
       <recent name="D:\FYP\ISM SCSI" />
       <recent name="D:\FYP\ISM SCSI\datasets" />
       <recent name="D:\FYP\ISM SCSI\FINAL_DB" />
-      <recent name="D:\FYP\ISM SCSI\templates" />
       <recent name="D:\FYP\ISM SCSI\DB" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\FYP\ISM SCSI\datasets" />
+      <recent name="D:\Google Drive\ISM SCSI\static" />
     </key>
   </component>
   <component name="RunManager" selected="Python.ISM SCSI">
@@ -713,7 +745,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2391" y="-9" width="2418" height="1318" extended-state="6" />
+    <frame x="2391" y="-9" width="2418" height="1318" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22041667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -722,7 +754,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938188" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32006773" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31752753" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -747,7 +779,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/datasets/quater1_sales.csv" />
     <entry file="file://$PROJECT_DIR$/datasets/groceries_cleaned.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
@@ -911,24 +942,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/itemextended.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28170">
-          <caret line="939" column="25" lean-forward="false" selection-start-line="939" selection-start-column="25" selection-end-line="939" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/datasets/itemsales.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ajaxjquery.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2070">
-          <caret line="69" column="35" lean-forward="false" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -946,19 +963,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/item_sales.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23580">
-          <caret line="786" column="60" lean-forward="false" selection-start-line="786" selection-start-column="53" selection-end-line="786" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/tables.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="14430">
           <caret line="481" column="52" lean-forward="false" selection-start-line="481" selection-start-column="52" selection-end-line="481" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -966,7 +974,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4740">
           <caret line="158" column="56" lean-forward="false" selection-start-line="158" selection-start-column="56" selection-end-line="158" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -974,24 +981,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5010">
           <caret line="167" column="24" lean-forward="false" selection-start-line="167" selection-start-column="24" selection-end-line="167" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FINAL_DB/WWWalldata.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WWWalldata.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="13" column="77" lean-forward="false" selection-start-line="13" selection-start-column="77" selection-end-line="13" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/WWWalldata.csv" />
     <entry file="file://$PROJECT_DIR$/datasets/WWWalldata.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -999,65 +992,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WWWITEMCLASS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FINAL_DB/WWWitemER.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="30" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FINAL_DB/WWWITEMCLASS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/WWWITEMCLASS.py" />
     <entry file="file://$PROJECT_DIR$/datasets/alldata.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Item_Class.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="40" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DB/alldata.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DB/ITEMCLASS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FINAL_DB/alldata.csv">
+    <entry file="file://$PROJECT_DIR$/DB/alldata.csv" />
+    <entry file="file://$PROJECT_DIR$/DB/ITEMCLASS.py" />
+    <entry file="file://$PROJECT_DIR$/DB/DBHandler.py" />
+    <entry file="file://$PROJECT_DIR$/templates/itemwisesales.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1073,42 +1019,99 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DB/DBHandler.py">
+    <entry file="file://$PROJECT_DIR$/FINAL_DB/alldata.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6570">
-          <caret line="219" column="26" lean-forward="false" selection-start-line="219" selection-start-column="11" selection-end-line="219" selection-end-column="26" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sales_Calculator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5100">
+          <caret line="174" column="31" lean-forward="false" selection-start-line="174" selection-start-column="21" selection-end-line="174" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Item_Class.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="40" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/itemwisesales.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11080">
+          <caret line="947" column="26" lean-forward="false" selection-start-line="947" selection-start-column="26" selection-end-line="947" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FINAL_DB/WWWitemER.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-505">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="30" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FINAL_DB/WWWITEMCLASS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-265">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FINAL_DB/WWWalldata.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ajaxjquery.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="73" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/item_sales.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="842" column="12" lean-forward="false" selection-start-line="842" selection-start-column="12" selection-end-line="842" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DBHandler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="215" column="0" lean-forward="false" selection-start-line="215" selection-start-column="0" selection-end-line="220" selection-end-column="83" />
+        <state relative-caret-position="420">
+          <caret line="144" column="25" lean-forward="true" selection-start-line="144" selection-start-column="25" selection-end-line="144" selection-end-column="25" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1491600431733" expanded="true" signature="450:621" ph="CREATE TABLE... IF" />
-            <marker date="1491600431733" expanded="true" signature="682:808" ph="INSERT INTO EMPLOYEE... " />
-            <marker date="1491600431733" expanded="true" signature="986:1100" ph="INSERT INTO EMPLOYEE... " />
-            <marker date="1491600431733" expanded="true" signature="3649:3933" ph="INSERT INTO items... " />
-            <marker date="1491600431733" expanded="true" signature="4509:4528" ph="SELECT * FRO... items" />
-            <marker date="1491600431733" expanded="true" signature="4968:5027" ph="UPDATE items... " />
+            <marker date="1491750242099" expanded="true" signature="450:621" ph="CREATE TABLE... IF" />
+            <marker date="1491750242099" expanded="true" signature="682:808" ph="INSERT INTO EMPLOYEE... " />
+            <marker date="1491750242099" expanded="true" signature="986:1100" ph="INSERT INTO EMPLOYEE... " />
+            <marker date="1491750242099" expanded="true" signature="3649:3933" ph="INSERT INTO items... " />
+            <marker date="1491750242099" expanded="true" signature="4509:4528" ph="SELECT * FRO... items" />
+            <marker date="1491750242099" expanded="true" signature="4968:5027" ph="UPDATE items... " />
+            <marker date="1491750242099" expanded="true" signature="5273:5323" ph="UPDATE items... " />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sales_Calculator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="174" column="31" lean-forward="false" selection-start-line="174" selection-start-column="21" selection-end-line="174" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ISM SCSI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="105" column="17" lean-forward="true" selection-start-line="105" selection-start-column="17" selection-end-line="105" selection-end-column="17" />
+        <state relative-caret-position="368">
+          <caret line="130" column="28" lean-forward="true" selection-start-line="130" selection-start-column="28" selection-end-line="130" selection-end-column="28" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>

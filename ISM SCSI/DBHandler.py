@@ -145,6 +145,14 @@ def updateitem():
     # cursor.execute(sql)
     db.commit()
 
+def updatesales(count,itemname):
+    # sql = "UPDATE items SET instock = instock - "+ "%s" + "WHERE itemname = '%s'"
+    cursor.execute("UPDATE items SET inshelf =  %s WHERE itemname = %s",
+                (count, itemname))
+    # args = (20,"UHT-milk")
+    # cursor.execute(sql)
+    db.commit()
+
 def insertSalesdata():
     h = 0
     for i in ilist:
