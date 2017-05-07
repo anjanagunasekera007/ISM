@@ -3,7 +3,6 @@ import sys
 import time
 from Item_Category_Class import ItemC
 from collections import defaultdict
-import timeit
 
 
 print "BEGIN"
@@ -40,7 +39,7 @@ def readtransactionlist():
         for row in reader:
             # f.append(row)
             print row
-            db.append(row)
+            transactionlist.append(row)
             # print row
             # print type(row)
             # t = filter(None, row)
@@ -88,6 +87,7 @@ def run_100(patt, mdb):
     occurs = defaultdict(list)
     for (i, startpos) in mdb:
         seq = db[i]
+        print "  - " + str(startpos) + "  to " + str(len(seq))
         for j in xrange(startpos, len(seq)):
             l = occurs[seq[j]]
             if len(l) == 0 or l[-1][0] != i:
@@ -100,39 +100,32 @@ run_100([], [(i, 0) for i in xrange(len(db))])
 
 
 
-# read()
+read()
 # sys.exit(1)
 readtransactionlist()
 # sys.exit(2)
-# replacce()
-# time.sleep(2)
-start_time = timeit.default_timer()
-run_100([], [(i, 0) for i in xrange(len(db))])
-elapsed = timeit.default_timer() - start_time
-print "--------------------"
-print elapsed
-print "--------------------"
-sys.exit(56)
+replacce()
 time.sleep(2)
-for u in results:
-    print u
-    print "\n"
-# printcategorylist()
-# print "--------------------"
-# print " RESULTS : "
-# for item in results:
-#         print item
-#         print type(item)
-#         print str(len(item))
-#         print "\n"
+run_100([], [(i, 0) for i in xrange(len(db))])
+print "--------------------"
+time.sleep(2)
+
+printcategorylist()
+print "--------------------"
+print " RESULTS : "
+for item in results:
+        print item
+        print type(item)
+        print str(len(item))
+        print "\n"
 
 print " COMPLETED"
-# print " Attempting to write : . . . "
-# myfile = open("../DATASETS/20170319.csv", 'wb')
-# wr = csv.writer(myfile, quoting=csv.QUOTE_ALL)
-#
-# for item in results:
-#     wr.writerow(item)
+print " Attempting to write : . . . "
+myfile = open("../DATASETS/frequentitems.csv", 'wb')
+wr = csv.writer(myfile, quoting=csv.QUOTE_ALL)
+
+for item in results:
+    wr.writerow(item)
 
 print "WRITING COMPLETED"
 print "EXITING NOW"

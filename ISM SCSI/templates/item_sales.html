@@ -147,9 +147,9 @@
                 </li>
             </ul>
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
-           <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav side-nav">
-                    <li>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                 <ul class="nav navbar-nav side-nav">
+                    <li >
                         <a href="{{ url_for('home') }}"><i class="fa fa-fw fa-dashboard"></i>Home</a>
                     </li>
                     <li class="active">
@@ -673,8 +673,12 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="tables.html"><i class="fa fa-fw fa-table"></i> Item Options</a>
+                        <a href="{{ url_for('itemPatterns') }}"><i class="fa fa-fw fa-bar-chart-o"></i> Item Patterns</a>
                     </li>
+{#                    <li >#}
+{#                        <a href="{{ url_for('itemPatterns') }}"><i class="fa fa-fw fa-bar-chart-o"></i> Item Patterns</a>#}
+{#                        <a href="{{ url_for('login') }}">log in</a>#}
+{#                    </li>#}
                     <li>
                         <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Item Placement</a>
                     </li>
@@ -748,7 +752,7 @@
                                         <th>Item price</th>
                                         <th>Item In stock</th>
                                         <th>ADD ITEM TO SHELF</th>
-                                        <th><b> Shelf Capacity</b></th>
+{#                                        <th><b> Shelf Capacity</b></th>#}
                                         <th>Items In shelf</th>
                                         <th>BUY ITEM</th>
 {#                                        <th>Item In shelf</th>#}
@@ -777,14 +781,16 @@
                                        {% endif %}
                                         <td> <div>  {{ item.id }} </div></td>
                                         <td><div id="{{ item.category }}"> {{ item.category }} </div></td>
-                                        <td><div id="{{ item.name }}  "> {{ item.name }}   </div>   </td>
+                                        <td><div> {{ item.name }}   </div>   </td>
                                         <td> <div id="{{ item.description }}  ">{{ item.description }}  </div>    </td>
                                         <td> <div id="{{ item.soldTotal }}     "> {{ item.soldTotal }}     </div>    </td>
                                         <td> <div id="{{ item.price }}"> {{ item.price }}$ </div>      </td>
                                         <td>{{ item.instock }}      </td>
                                         <td>  <button onclick="restockshelf()" type="button" class="btn btn-default" id="{{ item.id }}"> + </button> </td>
-                                        <td> <b> {{ item.inshelf  }}</b></td>
-                                        <td> {{ item.inshelf }}</td>
+{#                                        <td> <b> {{ item.inshelf  }}</b></td>#}
+
+                                        <td> <div id="{{ item.name }}">{{ item.inshelf }} </div></td>
+
                                         <td> <button onclick="reorder('{{ item.name }}','{{ item.inshelf }}')" type="button" class="btn btn-default" id="{{ item.id }}" > - </button></td>
                                     </tr>
                                     {% endfor %}
@@ -807,6 +813,30 @@
                         <h2>Bootstrap Docs</h2>
                         <p>For complete documentation, please visit <a target="_blank" href="http://getbootstrap.com/css/#tables">Bootstrap's Tables Documentation</a>.</p>
                     </div>
+
+                  <!-- ============= RESTCOK NOTIFICATION MODAL ================= -->
+
+                        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Some text in the modal.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+                    <!-- ====================== MODAL END ======================= -->
                 </div>
 
                 </div> <!-- ================================================================ -->
@@ -837,14 +867,19 @@
         function reorder(itemname,iteminshelf)
         {
             alert("lol oiiii   =>  "+ itemname  + "  +*+  " + iteminshelf)
-
+            if(iteminshelf < 30)
+            {
+                $('#myModal').modal('show');
+            }
             $.ajax({
             url: '/buyitem',
             data: {name: itemname, inshelf :iteminshelf},
             type: 'POST',
             success: function(response) {
                 console.log(response);
-                alert(response + " - - - ")
+                alert(response.user + " - - - ")
+{#                var result = $('<div />').append(data).find('#showresults').html();#}
+                $(itemname).html(response.user);
             },
             error: function(error) {
                 console.log(error);

@@ -1,4 +1,4 @@
-from Item_Class import Item
+# from Item_Class import Item
 import csv
 import time
 from Item_Class import FullItem
@@ -60,7 +60,6 @@ def creteitemdetailist():
             # print str(len(transaction))
             # print ";;;;;;;;;;;;;;;;;;;;;"
             # sys.exit(99999)
-
 
 #-------------------------------------------------------------------
 def writeToFile():
@@ -125,12 +124,9 @@ def Q4sales():
                     print "MATCHED " + purchasedItem + " == = = = = == " + obj.name
                     obj.soldQ4 = obj.soldQ4 + 1
 
-
 def createTotal():
     for objects in objectlist:
         objects.soldTotal = objects.soldQ1 + objects.soldQ2 + objects.soldQ3 + objects.soldQ4
-
-
 
 def returnSales():
     # createInventoryList()
@@ -233,3 +229,13 @@ print "OBJECT LIST FINAL"
 for j in objectlist:
     print j.name + " Q1 :" + str(j.soldQ1) + " Q2 :" + str(j.soldQ2) + " Q3 :" + str(j.soldQ3) + " Q4 :" + str(j.soldQ4) + " Q4 :" + str(j.soldTotal)
 # sys.exit(54)
+
+# =========================================
+
+def checkSales():
+    for item_n in objectlist:
+        if item_n.soldQ1==0 & item_n.soldQ2==0 & item_n.soldQ3==0 & item_n.soldQ4:
+            print "SOLD"
+
+
+# =============================================

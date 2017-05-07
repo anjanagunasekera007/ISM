@@ -1,13 +1,17 @@
-from Item_Class import FullItem
+# from Item_Class import FullItem
 from flask import Flask , render_template ,json ,request
-from Sales_Calculator import returnSales
+# from Sales_Calculator import returnSales
 from Sales_Calculator import sortlist
 # from Sales_Calculator import retunleastsold
+from Association_Class import Association
 from DBHandler import getitemscreateobj
 from DBHandler import updatesales
 import time
 import sys
 import json
+from ARProcessor import returnAssociations
+
+# from AR_Reader import ARProcessor as arp
 # import request
 # import urllib2.request
 
@@ -17,14 +21,21 @@ print str(len(punklist))
 for t in punklist:
     print t.name + " " + t.description + "  = = " + str(t.soldTotal)
 print "C O M P L E T E D - * - *- +*- +*- -+ *- +-* + *- + *- +*- 9* - *- * * + *-"
+time.sleep(3)
+AssociationsList = returnAssociations()
+for t in AssociationsList:
+    print t.rule
+    print type(t.rule)
 # sys.exit(678)
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
 
 #EXTERNAL FUNCTIONS
-
-
+#
+# ty = arp.returnAssociations()
+# print (len(ty))
+# sys.exit(88)
 
 #*************************************************************
 # ItemList = returnSales()
@@ -74,7 +85,13 @@ print str(len(most))
 time.sleep(2)
 for j in least:
     print j.name + " TOTAL SALES :" + str(j.soldTotal)
-
+print " k j k j k j k j k jk j j jk k j k"
+# for y in punklist:
+#     print y.soldQ1
+#     print y.soldQ2
+#     print y.soldQ3
+#     print y.soldQ4
+#     print y.soldTotal
 
 @app.route('/', methods=['GET', 'POST'])
 def main():
@@ -100,12 +117,20 @@ y = punklist[0]
 @app.route('/Instantfoodproducts', methods=['GET', 'POST'])
 def Instantfoodproducts():
     error = None;
-    return render_template('itemwisesales.html', error=error,item=y,minstock=minstock)
+    return render_template('itemwisesales.html', error=error,item=punklist[0],minstock=minstock)
 
 @app.route('/UHTmilk', methods=['GET', 'POST'])
 def UHTmilk():
     error = None;
     return render_template('ajaxjquery.html', error=error,datalist=punklist,mostlist=most,leastlist=least)
+
+@app.route('/abrasivecleaner', methods=['GET', 'POST'])
+def abrasivecleaner():
+    error = None;
+    return render_template('itemwisesales.html', error=error,item=punklist[2],minstock=minstock)
+
+
+# =============================================== ITEMS =========================================================================?
 
 @app.route('/signUpUser', methods=['POST'])
 def signUpUser():
@@ -116,6 +141,16 @@ def signUpUser():
     printem(user,password)
     return json.dumps({'status':'OK','user':user,'pass':password,'pi':pis});
 
+@app.route('/itemPatterns', methods=['GET', 'POST'])
+def itemPatterns():
+    print "WORKING = = = =  * * FUCKKKK"
+    error = None;
+    # user = request.form['username']
+    # password = request.form['password']
+    # pis = " yu gi oh"
+    # printem(user,password)
+    # return render_template('tables.html', error=error, datalist=punklist, mostlist=most, leastlist=least)
+    return render_template('itempatterns.html', error=error,datalist=AssociationsList)
 
 
 #************************ BUY ITEM **************************************
@@ -139,7 +174,7 @@ def buyitem():
     print " YAWOOOOZZZAAAAAA"
     time.sleep(2)
     # return json.dumps({'status':'OK','user':itemid,'pass':itemshelfcount,'pi':pis});
-    return json.dumps({'status':'OK','user':newcount,'pi':pis});
+    return json.dumps({'user':newcount});
 
 
 if __name__ == '__main__':

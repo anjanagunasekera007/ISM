@@ -7,7 +7,7 @@ library(datasets)
 data(Groceries)
 
 #create frequency list
-#itemFrequencyPlot(Groceries,topN=20,type="absolute")
+itemFrequencyPlot(Groceries,topN=169,type="absolute")
 
 #fit <- lm(itemFrequencyPlot(Groceries,topN=20,type="absolute"))
 
@@ -63,8 +63,8 @@ print("/n")
 #rules <- apriori(Groceries,parameter = list(support=0.001,conf=0.8, maxlen=3))
 print("Commencing Specialized association rule mining for -  whole milk - ")
 rah<-apriori(data=Groceries, parameter=list(supp=0.001,conf = 0.08), 
-               appearance = list(default="lhs",rhs="whole milk"),
-               control = list(verbose=F))
+             appearance = list(default="lhs",rhs="whole milk"),
+             control = list(verbose=F))
 
 rah<-sort(rah, decreasing=TRUE,by="confidence")
 print("Prining Specialized association rule mining for -  whole milk - ")
@@ -79,11 +79,12 @@ print(inspect(rah[1:5]))
 #************************************************************************************************************************
 print("Commencing Specialized association rule mining for -  whole milk - MINIMUM LENGTH OF RULE = 2")
 rere<-apriori(data=Groceries, parameter=list(supp=0.001,conf = 0.15,minlen=2), 
-               appearance = list(default="rhs",lhs="whole milk"),
-               control = list(verbose=F))
+              appearance = list(default="rhs",lhs="whole milk"),
+              control = list(verbose=F))
 
 reresorted<-sort(rere, decreasing=TRUE,by="confidence")
-
+print(inspect(rere[1:5]))
+print(" 8 8 8 8 8 7 8 7 8 7 8 7 8 7 8 7 8 7 888888 7 8 7 8 7 8 7 8 7 8 7 8888888")
 #Write Association rules with whole milk as LHS 
 write(reresorted, file = "D:\\FYP\\R\\FINAL_RULE_MINING_SCRIPT\\whole_milk.csv", sep = ",")
 

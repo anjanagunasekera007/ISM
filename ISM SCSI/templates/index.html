@@ -49,7 +49,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"> SB</a>
+                <a class="navbar-brand" href="index.html"> ISMCxES - ZEUS Superstore(Nugegoda) - Superbranch</a>
 
 
 
@@ -174,10 +174,10 @@
                             <li>
                                 <a href="{{ url_for('UHTmilk') }}">UHT-milk</a>
                             </li>
-{#                            <li>#}
-{#                                <a href="{{ url_for('abrasivecleaner') }}">abrasive cleaner</a>#}
-{#                            </li>#}
-{#                            <li>#}
+                            <li>
+                                <a href="{{ url_for('abrasivecleaner') }}">abrasive cleaner</a>
+                            </li>
+                            <li>
 {#                                <a href="{{ url_for('Artificialsweetener') }}">Artificial sweetener</a>#}
 {#                            </li>#}
 {#                            <li>#}
@@ -682,8 +682,12 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="tables.html"><i class="fa fa-fw fa-table"></i> Item Options</a>
+                        <a href="{{ url_for('itemPatterns') }}"><i class="fa fa-fw fa-bar-chart-o"></i> Item Patterns</a>
                     </li>
+{#                    <li >#}
+{#                        <a href="{{ url_for('itemPatterns') }}"><i class="fa fa-fw fa-bar-chart-o"></i> Item Patterns</a>#}
+{#                        <a href="{{ url_for('login') }}">log in</a>#}
+{#                    </li>#}
                     <li>
                         <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Item Placement</a>
                     </li>

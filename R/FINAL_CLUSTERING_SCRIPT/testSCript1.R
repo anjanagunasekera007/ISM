@@ -44,7 +44,7 @@ km2 = kmeans(dat, 9, nstart=100)
 print(km2)
 print("completed")
 
-plot(dat, col =(km2$cluster +1) , main="K-Means result with 7 clusters", pch=20, cex=2)
+plot(dat, col =(km2$cluster +1) , main="K-Means result with 9 clusters", pch=20, cex=2)
 
 
 
@@ -58,7 +58,7 @@ print("/n")
 print("/n")
 print("Commencing file writing of all clusters")
 
-write(km2$cluster, file = "D:\\FYP\\R\\FINAL_CLUSTERING_SCRIPT\\clusters.csv", sep = ",")
+write(km2$cluster, file = "D:\\FYP\\R\\FINAL_CLUSTERING_SCRIPT\\clusters.txt", sep = ",")
 
 
 close(fileConn)

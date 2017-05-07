@@ -1,7 +1,8 @@
 import MySQLdb
 import csv
-from ITEMCLASS import Item
-from ITEMCLASS import Item
+# from NNNITEMCLASS import Item
+# from NNNITEMCLASS import Item
+from Item_Class import uItem
 from Sales_Calculator import returnSales
 import time
 import sys
@@ -76,7 +77,7 @@ def createobjectlist():
     for it in inventorylist:
         print(it)
         print(type(it))
-        I = Item(it[0], it[1], it[2],it[3],it[4],it[5],it[6],it[7],it[8],it[9],it[10],it[11],it[12],it[13])
+        I = uItem(it[0], it[1], it[2],it[3],it[4],it[5],it[6],it[7],it[8],it[9],it[10],it[11],it[12],it[13])
         #              id,   name, description, categoryname, category, instock, inshelf, minorder, price, weight):
         objectlist.append(I)
         counter = counter +1
@@ -115,6 +116,7 @@ def insertItems():
                 ob.url, ob.suppliername, ob.supplieraddress, ob.suppliercontactnumber,ob.soldQ1,ob.soldQ2,ob.soldQ3,ob.soldQ4,ob.soldTotal)
         cursor.execute(query, args)
         db.commit()
+
 def createItemlist():
     salesitemlist = returnSales()
     return salesitemlist
@@ -173,7 +175,7 @@ def crObjfromDB():
     counter =1
     for it in dblist:
         print it
-        I = Item(counter, it[1], it[2], it[3], it[4], it[5], int(it[6]), int(it[7]), int(it[8]), it[9], it[10], it[11], it[12], it[13])
+        I = uItem(counter, it[1], it[2], it[3], it[4], it[5], int(it[6]), int(it[7]), int(it[8]), it[9], it[10], it[11], it[12], it[13])
         I.soldQ1 = int(it[14])
         I.soldQ2 = int(it[15])
         I.soldQ3 = int(it[16])
@@ -192,7 +194,7 @@ def getitemscreateobj():
     counter =1
     for it in itemslist:
         print it
-        I = Item(counter, it[1], it[2], it[3], it[4], it[5], int(it[6]), int(it[7]), int(it[8]), it[9], it[10], it[11], it[12], it[13])
+        I = uItem(counter, it[1], it[2], it[3], it[4], it[5], int(it[6]), int(it[7]), int(it[8]), it[9], it[10], it[11], it[12], it[13])
         I.soldQ1 = int(it[14])
         I.soldQ2 = int(it[15])
         I.soldQ3 = int(it[16])

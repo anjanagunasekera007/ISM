@@ -1,10 +1,14 @@
 import csv
 import sys
 import time
-from Item_Category_Class import ItemC
+# from Item_Category_Class import ItemC
 from collections import defaultdict
 import timeit
 
+l1p = []
+l2p = []
+l3p = []
+l4p = []
 
 print "BEGIN"
 
@@ -13,22 +17,22 @@ transactionlist = []
 db = []
 results = []
 
-def read():
-        with open("../DATASETS/category list.csv", 'rb') as f:
-            reader = csv.reader(f)
-            counter = 0
-            for row in reader:
-                # print row
-                # print type(row)
-                t = filter(None, row)
-                # db.append(t)
-                item = ItemC(t[0],t[1],t[2])
-                print t
-                print type(t)
-                print str(len(t))
-                print "COUNTER : " + str(counter)
-                itemobjectlist.append(item)
-                counter = counter +1
+# def read():
+#         with open("../DATASETS/category list.csv", 'rb') as f:
+#             reader = csv.reader(f)
+#             counter = 0
+#             for row in reader:
+#                 # print row
+#                 # print type(row)
+#                 t = filter(None, row)
+#                 # db.append(t)
+#                 item = ItemC(t[0],t[1],t[2])
+#                 print t
+#                 print type(t)
+#                 print str(len(t))
+#                 print "COUNTER : " + str(counter)
+#                 itemobjectlist.append(item)
+#                 counter = counter +1
 
 
 
@@ -40,7 +44,7 @@ def readtransactionlist():
         for row in reader:
             # f.append(row)
             print row
-            db.append(row)
+            transactionlist.append(row)
             # print row
             # print type(row)
             # t = filter(None, row)
@@ -96,27 +100,62 @@ def run_100(patt, mdb):
         if len(newmdb) >= minsup:
             run_100(patt + [c], newmdb)
 
-run_100([], [(i, 0) for i in xrange(len(db))])
+# run_100([], [(i, 0) for i in xrange(len(db))])
+
+def l1patterns():
+    run_100([], [(i, 0) for i in xrange(len(db))])
+
+def l2patterns():
+    run_100([], [(i, 0) for i in xrange(len(db))])
+
+def l3patterns():
+    run_100([], [(i, 0) for i in xrange(len(db))])
+
+def l4patterns():
+    run_100([], [(i, 0) for i in xrange(len(db))])
+print " ==================================== "
+readtransactionlist()
+
+l1 = transactionlist[0:2450]
+l2 = transactionlist[2451:4900]
+l3 = transactionlist[4900:7350]
+l4 = transactionlist[7350:9800]
+
+l1patterns()
+for t in results:
+    print t
+print len(results)
 
 
+print len(l1p)
+print len(l2p)
+print len(l3p)
+print len(l4p)
 
+
+print "\n"
+print len(transactionlist)
+
+
+print " ==================================== "
+sys.exit(78)
 # read()
 # sys.exit(1)
 readtransactionlist()
 # sys.exit(2)
 # replacce()
 # time.sleep(2)
-start_time = timeit.default_timer()
-run_100([], [(i, 0) for i in xrange(len(db))])
-elapsed = timeit.default_timer() - start_time
-print "--------------------"
-print elapsed
-print "--------------------"
-sys.exit(56)
-time.sleep(2)
-for u in results:
-    print u
-    print "\n"
+# start_time = timeit.default_timer()
+# run_100([], [(i, 0) for i in xrange(len(db))])
+# elapsed = timeit.default_timer() - start_time
+# print "--------------------"
+# print elapsed
+# print "--------------------"
+# sys.exit(56)
+# time.sleep(2)
+# for u in results:
+    # print u
+    # print "\n"
 # printcategorylist()
 # print "--------------------"
 # print " RESULTS : "
@@ -126,7 +165,7 @@ for u in results:
 #         print str(len(item))
 #         print "\n"
 
-print " COMPLETED"
+# print " COMPLETED"
 # print " Attempting to write : . . . "
 # myfile = open("../DATASETS/20170319.csv", 'wb')
 # wr = csv.writer(myfile, quoting=csv.QUOTE_ALL)
@@ -134,5 +173,5 @@ print " COMPLETED"
 # for item in results:
 #     wr.writerow(item)
 
-print "WRITING COMPLETED"
-print "EXITING NOW"
+# print "WRITING COMPLETED"
+# print "EXITING NOW"
