@@ -1,0 +1,8 @@
+"rules","support","confidence","lift"
+"7","{packaged fruit/vegetables} => {whole milk}",0.00396542958820539,0.3046875,1.19243993732591
+"2","{packaged fruit/vegetables} => {root vegetables}",0.00345704117946111,0.265625,2.43696070429104
+"6","{packaged fruit/vegetables} => {other vegetables}",0.00315200813421454,0.2421875,1.25166267078297
+"1","{packaged fruit/vegetables} => {bottled water}",0.00264361972547026,0.203125,1.83784211131555
+"5","{packaged fruit/vegetables} => {rolls/buns}",0.00264361972547026,0.203125,1.10433077667219
+"4","{packaged fruit/vegetables} => {yogurt}",0.0025419420437214,0.1953125,1.40007174744898
+"3","{packaged fruit/vegetables} => {soda}",0.00213523131672598,0.1640625,0.940848214285714

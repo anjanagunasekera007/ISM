@@ -1,0 +1,4 @@
+"rules","support","confidence","lift"
+"3","{canned fruit} => {whole milk}",0.00132180986273513,0.40625,1.58991991643454
+"1","{canned fruit} => {citrus fruit}",0.00111845449923742,0.34375,4.15329391891892
+"2","{canned fruit} => {other vegetables}",0.00111845449923742,0.34375,1.77655346820809

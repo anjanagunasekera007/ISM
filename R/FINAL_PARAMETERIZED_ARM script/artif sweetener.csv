@@ -1,0 +1,4 @@
+"rules","support","confidence","lift"
+"1","{artif. sweetener} => {yogurt}",0.00111845449923742,0.34375,2.4641262755102
+"3","{artif. sweetener} => {whole milk}",0.00111845449923742,0.34375,1.34531685236769
+"2","{artif. sweetener} => {other vegetables}",0.00101677681748856,0.3125,1.6150486074619

@@ -1,0 +1,3 @@
+"rules","support","confidence","lift"
+"1","{male cosmetics} => {bottled water}",0.00132180986273513,0.288888888888889,2.61381989164878
+"2","{male cosmetics} => {yogurt}",0.00101677681748856,0.222222222222222,1.59297052154195

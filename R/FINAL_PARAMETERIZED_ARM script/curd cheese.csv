@@ -1,0 +1,7 @@
+"rules","support","confidence","lift"
+"6","{curd cheese} => {whole milk}",0.00233858668022369,0.46,1.80027855153203
+"5","{curd cheese} => {other vegetables}",0.00213523131672598,0.42,2.1706253284288
+"4","{curd cheese} => {rolls/buns}",0.0016268429079817,0.32,1.73974571586512
+"1","{curd cheese} => {tropical fruit}",0.00152516522623284,0.3,2.85901162790698
+"3","{curd cheese} => {yogurt}",0.00132180986273513,0.26,1.86377551020408
+"2","{curd cheese} => {root vegetables}",0.00101677681748856,0.2,1.83488805970149

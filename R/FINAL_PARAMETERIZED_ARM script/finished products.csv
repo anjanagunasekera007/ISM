@@ -1,0 +1,9 @@
+"rules","support","confidence","lift"
+"7","{finished products} => {other vegetables}",0.00203355363497712,0.3125,1.6150486074619
+"6","{finished products} => {soda}",0.00172852058973055,0.265625,1.52327806122449
+"3","{finished products} => {pastry}",0.00142348754448399,0.21875,2.45875
+"4","{finished products} => {shopping bags}",0.00142348754448399,0.21875,2.2202334881321
+"8","{finished products} => {whole milk}",0.00142348754448399,0.21875,0.856110724233983
+"1","{finished products} => {chocolate}",0.00122013218098627,0.1875,3.77881659836066
+"2","{finished products} => {fruit/vegetable juice}",0.00101677681748856,0.15625,2.16134845288326
+"5","{finished products} => {sausage}",0.00101677681748856,0.15625,1.66311553030303

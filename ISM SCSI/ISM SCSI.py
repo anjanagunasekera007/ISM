@@ -10,12 +10,19 @@ import time
 import sys
 import json
 from ARProcessor import returnAssociations
+from Initialization import initiateStartup
 
 # from AR_Reader import ARProcessor as arp
 # import request
 # import urllib2.request
 
+status = initiateStartup()
+for g in status:
+    print g
+
+# sys.exit(999)
 punklist = getitemscreateobj()
+
 print str(len(punklist))
 # sys.exit(9876)
 for t in punklist:
@@ -98,6 +105,16 @@ def main():
     mylist = [1,2,3,4,5,6];
     return render_template('index.html', data = mylist,name="the name",mostlist=most,leastlist=least )
 
+@app.route('/dashboard', methods=['GET', 'POST'])
+def dashboard():
+    mylist = [1,2,3,4,5,6];
+    return render_template('dashboard.html', data = mylist,name="the name",mostlist=most,leastlist=least )
+
+# @app.route('/', methods=['GET', 'POST'])
+# def main():
+#     mylist = [1,2,3,4,5,6];
+#     return render_template('dashboard.html', data = mylist,name="the name",mostlist=most,leastlist=least )
+
 @app.route('/login', methods=['GET',  'POST'])
 def login():
     error = None;
@@ -109,7 +126,7 @@ def login():
 def home():
     error = None;
     listx  = [2,4,6,8,10]
-    return render_template('index.html', error=error,datalist=punklist,mostlist=most,leastlist=least)
+    return render_template('dashboard.html', error=error,datalist=punklist,mostlist=most,leastlist=least)
 
 minstock = 300
 # =============================================== ITEMS =========================================================================?

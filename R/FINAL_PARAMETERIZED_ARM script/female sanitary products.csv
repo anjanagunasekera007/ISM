@@ -1,0 +1,9 @@
+"rules","support","confidence","lift"
+"8","{female sanitary products} => {whole milk}",0.00203355363497712,0.333333333333333,1.30454967502321
+"5","{female sanitary products} => {yogurt}",0.0016268429079817,0.266666666666667,1.91156462585034
+"6","{female sanitary products} => {rolls/buns}",0.0016268429079817,0.266666666666667,1.44978809655427
+"4","{female sanitary products} => {soda}",0.00142348754448399,0.233333333333333,1.33809523809524
+"7","{female sanitary products} => {other vegetables}",0.00142348754448399,0.233333333333333,1.20590296023822
+"1","{female sanitary products} => {citrus fruit}",0.00132180986273513,0.216666666666667,2.61783374283374
+"2","{female sanitary products} => {shopping bags}",0.00111845449923742,0.183333333333333,1.86076711386309
+"3","{female sanitary products} => {bottled water}",0.00101677681748856,0.166666666666667,1.50797301441276
