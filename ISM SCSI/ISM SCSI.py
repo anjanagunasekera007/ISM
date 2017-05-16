@@ -73,6 +73,9 @@ newlist = sortlist()
 # time.sleep(2)
 most = newlist[0:5]
 least = newlist[164:]
+
+
+# sys.exit(87)
 print "--------------------------------------------------------------- 8 8 8 ---------------------------------------"
 
 
@@ -100,26 +103,50 @@ print " k j k j k j k j k jk j j jk k j k"
 #     print y.soldQ4
 #     print y.soldTotal
 
+counter  =0
+zerolist = []
+for i in least:
+    if i.soldTotal ==0:
+        print "FOUND"
+        counter = counter +1
+        zerolist.append(i)
+
+print counter
+print len(zerolist)
+
+salesloadcounter = 0
+
 @app.route('/', methods=['GET', 'POST'])
 def main():
-    mylist = [1,2,3,4,5,6];
-    return render_template('index.html', data = mylist,name="the name",mostlist=most,leastlist=least )
+    # mylist = [1,2,3,4,5,6];
+    print " AIYOOOOOOOOOOO   " + str(len(zerolist))
+    for item in zerolist:
+        print item.name
+        print item.description
+    ylist = [1,2,3,4,5,6,7]
+    return render_template('index.html',name="the name",mostlist=most,leastlist=least)
 
 @app.route('/dashboard', methods=['GET', 'POST'])
 def dashboard():
     mylist = [1,2,3,4,5,6];
-    return render_template('dashboard.html', data = mylist,name="the name",mostlist=most,leastlist=least )
+    return render_template('dashboard.html', data = mylist,name="the name",mostlist=most,leastlist=least,zlist=zerolist )
 
 # @app.route('/', methods=['GET', 'POST'])
 # def main():
 #     mylist = [1,2,3,4,5,6];
 #     return render_template('dashboard.html', data = mylist,name="the name",mostlist=most,leastlist=least )
-
+# salesloadcounter = 0
 @app.route('/login', methods=['GET',  'POST'])
 def login():
     error = None;
     listx  = [2,4,6,8,10]
-    return render_template('item_sales.html', error=error,datalist=punklist)
+    saleslist = punklist
+    salesloadcounter = 1
+    if salesloadcounter >=0:
+        print "sales loader " + str(salesloadcounter)
+        salesloadcounter = salesloadcounter +1
+        saleslist = getitemscreateobj()
+    return render_template('item_sales.html', error=error,datalist=saleslist)
 
 
 @app.route('/home', methods=['GET', 'POST'])

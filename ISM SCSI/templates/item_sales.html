@@ -800,19 +800,19 @@
                         </div>
                     </div>
 
-                     <div>
-                         <div class="row">
-                             <div class="col-lg-1"></div>
-                             <div class="col-lg-10"> <p> k k k k k k </p> </div>
-                             <div class="col-lg-1"></div>
-
-                         </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <h2>Bootstrap Docs</h2>
-                        <p>For complete documentation, please visit <a target="_blank" href="http://getbootstrap.com/css/#tables">Bootstrap's Tables Documentation</a>.</p>
-                    </div>
+{#                     <div>#}
+{#                         <div class="row">#}
+{#                             <div class="col-lg-1"></div>#}
+{#                             <div class="col-lg-10"> <p> k k k k k k </p> </div>#}
+{#                             <div class="col-lg-1"></div>#}
+{##}
+{#                         </div>#}
+{#                    </div>#}
+{##}
+{#                    <div class="col-lg-6">#}
+{#                        <h2>Bootstrap Docs</h2>#}
+{#                        <p>For complete documentation, please visit <a target="_blank" href="http://getbootstrap.com/css/#tables">Bootstrap's Tables Documentation</a>.</p>#}
+{#                    </div>#}
 
                   <!-- ============= RESTCOK NOTIFICATION MODAL ================= -->
 
@@ -863,6 +863,12 @@
 {#            alert('document is ready')#}
 {#        });#}
 
+
+$(document).ready(function(){
+            setInterval(function() {
+            window.location.reload();
+                         }, 10000);
+});
 
         function reorder(itemname,iteminshelf)
         {
