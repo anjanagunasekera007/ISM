@@ -11,6 +11,7 @@ import sys
 import json
 from ARProcessor import returnAssociations
 from Initialization import initiateStartup
+from flask import  jsonify
 
 # from AR_Reader import ARProcessor as arp
 # import request
@@ -116,6 +117,23 @@ print len(zerolist)
 
 salesloadcounter = 0
 
+# ===========================
+from delClass import uItem
+counter =0
+name = ["proudct1","product2","product3"]
+objarray = []
+for n in name:
+    obj = uItem(counter,n)
+    r = json.dumps(obj.__dict__)
+    counter = counter +1
+    objarray.append(r)
+
+
+# @app.route('/', methods=['GET', 'POST'])
+# def main():
+#     return render_template('ajaxjquery.html',dlist=objarray)
+
+
 @app.route('/', methods=['GET', 'POST'])
 def main():
     # mylist = [1,2,3,4,5,6];
@@ -141,11 +159,11 @@ def login():
     error = None;
     listx  = [2,4,6,8,10]
     saleslist = punklist
-    salesloadcounter = 1
-    if salesloadcounter >=0:
-        print "sales loader " + str(salesloadcounter)
-        salesloadcounter = salesloadcounter +1
-        saleslist = getitemscreateobj()
+    # salesloadcounter = 1
+    # if salesloadcounter >=0:
+    #     print "sales loader " + str(salesloadcounter)
+    #     salesloadcounter = salesloadcounter +1
+    #     saleslist = getitemscreateobj()
     return render_template('item_sales.html', error=error,datalist=saleslist)
 
 
@@ -176,14 +194,19 @@ def abrasivecleaner():
 
 # =============================================== ITEMS =========================================================================?
 
-@app.route('/signUpUser', methods=['POST'])
+@app.route('/signUpUser', methods=['GET','POST'])
 def signUpUser():
     print "WORKING = = = =  * * FUCKKKK"
-    user = request.form['username']
-    password = request.form['password']
-    pis = " yu gi oh"
-    printem(user,password)
-    return json.dumps({'status':'OK','user':user,'pass':password,'pi':pis});
+    # user = request.form['username']
+    # password = request.form['password']
+    # pis = " yu gi oh"
+    # printem(user,password)
+    # return json.dumps({'status':'OK','user':user,'pass':password,'pi':pis});
+    t = jsonify(objarray)
+    print t
+    return t
+
+
 
 @app.route('/itemPatterns', methods=['GET', 'POST'])
 def itemPatterns():
@@ -197,6 +220,18 @@ def itemPatterns():
     return render_template('itempatterns.html', error=error,datalist=AssociationsList)
 
 
+@app.route('/stat', methods=['GET', 'POST'])
+def stat():
+    print "WORKING = = = =  * * FUCKKKK"
+    error = None;
+    keys = request.args.get('itemname')
+    print keys
+    # user = request.form['username']
+    # password = request.form['password']
+    # pis = " yu gi oh"
+    # printem(user,password)
+    # return render_template('tables.html', error=error, datalist=punklist, mostlist=most, leastlist=least)
+    return render_template('itempatterns.html', error=error,datalist=AssociationsList)
 #************************ BUY ITEM **************************************
 @app.route('/buyitem', methods=['POST'])
 def buyitem():
@@ -219,6 +254,22 @@ def buyitem():
     time.sleep(2)
     # return json.dumps({'status':'OK','user':itemid,'pass':itemshelfcount,'pi':pis});
     return json.dumps({'user':newcount});
+
+
+@app.route('/getItemList', methods=['GET','POST'])
+def getItemList():
+    print "WORKING = = = =  * * FUCKKKK"
+    u = punklist
+    oblist = []
+    for n in punklist:
+        r = json.dumps(n.__dict__)
+        oblist.append(r)
+    # t = jsonify(u)
+    # print t
+    # for i in oblist:
+    #     print i
+    t = jsonify(oblist)
+    return t
 
 
 if __name__ == '__main__':

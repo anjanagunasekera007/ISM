@@ -8,6 +8,14 @@ from collections import defaultdict
 transactions = []
 segments = []
 
+class Fpattern:
+
+   def __init__(self, items,support):
+      self.items = items
+      self.support = support
+
+
+
 seg1 = []
 seg2 = []
 seg3 = []
@@ -98,9 +106,9 @@ def run_100(patt, mdb):
             run_100(patt + [c], newmdb)
 
 
-def getfrequentItems():
+def getfrequentItems(transactionsList):
 
-    for t in transactionsseg1:
+    for t in transactionsList:
         print type(t)
         db.append(t)
     print len(transactionsseg1)
@@ -128,16 +136,47 @@ print "8  => " + str(len(seg8)) + " = " + str(len(transactionsseg8))
 print "9  => " + str(len(seg9)) + " = " + str(len(transactionsseg9))
 # sys.exit(89)
 print " - - - - - - - - "
-time.sleep(3)
-getfrequentItems()
+# time.sleep(3)
 
+getfrequentItems(transactionsseg1)
+
+patternlist = []
 print " DONE "
-time.sleep(2)
+# time.sleep(2)
 for y in results:
     print y
+    p = Fpattern(y[0],y[1])
+    patternlist.append(p)
     # print type(y[0])
-    print y[0]
+    # print y[0]
     # print type(y[1])
-    print y[1]
+    # print y[1]
     # print len(y)
     print "\n"
+print " ======================== "
+time.sleep(2)
+for i in patternlist:
+    print i.items
+    print str(type(i.items)) + "   " + str(i.support)
+
+# sys.exit(77)
+patternlist.sort(key=lambda x: x.support, reverse=True)
+print " ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; "
+time.sleep(2)
+
+for u in patternlist:
+    print u.support
+
+print " + + + + "
+metList = patternlist[0:5]
+print len(metList)
+
+print "..................................................................."
+print " FREQUENT ITEMS OF C1"
+fitemlist = []
+for y in metList:
+    fitemlist.append(y.items)
+    print y.items
+print "...................................................................."
+
+
