@@ -841,7 +841,10 @@
 
                 </div> <!-- ================================================================ -->
                 <!-- /.row -->
-
+                <div class="row">
+                   <div class="col-sm-2">   <button id="btnPOS" type="button" class="btn btn-primary"> Initiate POS</button> </div>
+                   <div class="col-sm-2">   <button id="btnDEPLETION" type="button" class="btn btn-primary"> Initiate DEPLETION</button> </div>
+                </div>
             </div>
             <!-- /.container-fluid -->
 
@@ -901,6 +904,42 @@ $(document).ready(function(){
         {
             alert("You clicked  shelf restock")
         }
+
+         $('#btnPOS').click(function(){
+                $.ajax({
+                        url: '/initiatePOS',
+                        data: $('form').serialize(),
+                        type: 'POST',
+                        success: function(response) {
+
+                                window.location.reload()
+
+
+                        },
+                        error: function(error) {
+                            console.log(error);
+                        }
+        });
+            });
+
+         $('#btnDEPLETION').click(function(){
+        alert("CLICEKED")
+                $.ajax({
+                        url: '/initiateDEPLETION',
+                        data: $('form').serialize(),
+                        type: 'POST',
+                        success: function(response) {
+
+                                window.location.reload()
+
+
+                        },
+                        error: function(error) {
+                            console.log(error);
+
+                      }
+        });
+            });
 
 
     </script>

@@ -165,6 +165,10 @@
                         <a href="{{ url_for('login') }}"><i class="fa fa-fw fa-bar-chart-o"></i> Item Sales</a>
 {#                        <a href="{{ url_for('login') }}">log in</a>#}
                     </li>
+                    <li >
+                        <a href="{{ url_for('StockNotification') }}"><i class="fa fa-fw fa-bar-chart-o"></i> Notifications of stocks</a>
+                    </li>
+
                     <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
@@ -689,11 +693,11 @@
 {#                        <a href="{{ url_for('login') }}">log in</a>#}
 {#                    </li>#}
                     <li>
-                        <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Item Placement</a>
+                        <a href="{{ url_for('customersegments') }}"><i class="fa fa-fw fa-bar-chart-o"></i> Customer Management</a>
                     </li>
-                    <li>
-                        <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Customer management </a>
-                    </li>
+{#                    <li>#}
+{#                        <a href="{{ url_for('itemPatterns') }}"><i class="fa fa-fw fa-bar-chart-o"></i> Item Patterns</a>#}
+{#                    </li>#}
                     <!--<li>-->
                         <!--<a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>-->
                     <!--</li>-->

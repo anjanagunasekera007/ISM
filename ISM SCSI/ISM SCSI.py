@@ -1,22 +1,35 @@
 # from Item_Class import FullItem
 from flask import Flask , render_template ,json ,request
 # from Sales_Calculator import returnSales
-from Sales_Calculator import sortlist
+# from Sales_Calculator import sortlist
 # from Sales_Calculator import retunleastsold
 from Association_Class import Association
 from DBHandler import getitemscreateobj
-from DBHandler import updatesales
+# from DBHandler import updatesales
 import time
 import sys
 import json
 from ARProcessor import returnAssociations
 from Initialization import initiateStartup
 from flask import  jsonify
-
+from ParameterizedOperations import readImpact
+from ParameterizedOperations import Impact_overall
+from DBHandler import getAllRestockNotifications
+from DBHandler import getAllReorderNotifications
 # from AR_Reader import ARProcessor as arp
 # import request
 # import urllib2.request
 
+restocks = getAllRestockNotifications()
+for t in restocks:
+    print t.notification + " " + str(type(t))
+# sys.exit(666)
+pppp = readImpact()
+for y in pppp:
+    print y.name
+    print y.impactSize
+print len(pppp)
+# sys.exit(89)
 status = initiateStartup()
 for g in status:
     print g
@@ -68,14 +81,30 @@ print "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
 # sys.exit(6969)
 print "===================== 0 0 0 0 0==============="
 # sys.exit(889)
-newlist = sortlist()
+# newlist = sortlist()
+
+
+#==================================
+def sortlist(nl):
+    newlist = sorted(nl, key=lambda x: x.soldTotal, reverse=True)
+    for j in newlist:
+        print type(newlist)
+        print j.name + " Q1 :" + str(j.soldQ1) + " Q2 :" + str(j.soldQ2) + " Q3 :" + str(j.soldQ3) + " Q4 :" + str(j.soldQ4) + " Q4 :" + str(j.soldTotal)
+    return newlist
+#==================================
+from DBHandler import returnflist
+newobjlist = returnflist()
+newlist = sortlist(newobjlist)
 # print str(len(newlist))
 # print " hoooooo "
 # time.sleep(2)
 most = newlist[0:5]
 least = newlist[164:]
 
-
+print len(newobjlist)
+print len(most)
+print len(least)
+# sys.exit(8888)
 # sys.exit(87)
 print "--------------------------------------------------------------- 8 8 8 ---------------------------------------"
 
@@ -232,28 +261,102 @@ def stat():
     # printem(user,password)
     # return render_template('tables.html', error=error, datalist=punklist, mostlist=most, leastlist=least)
     return render_template('itempatterns.html', error=error,datalist=AssociationsList)
+
+@app.route('/StockNotification', methods=['GET', 'POST'])
+def StockNotification():
+    print "WORKING"
+    error = None;
+    keys = request.args.get('itemname')
+    restockNotifications = getAllRestockNotifications()
+    for k in restockNotifications:
+        print k,status
+    reorderNotifications = getAllReorderNotifications()
+    print keys
+    # user = request.form['username']
+    # password = request.form['password']
+    # pis = " yu gi oh"
+    # printem(user,password)
+    # return render_template('tables.html', error=error, datalist=punklist, mostlist=most, leastlist=least)
+    return render_template('stocks.html', error=error,restock=restockNotifications,reorder=reorderNotifications)
+
+
+from DBHandler import updateReOrderStatus
+@app.route('/createOrder', methods=['GET', 'POST'])
+def createOrder():
+    reorderNotifications = getAllReorderNotifications()
+    itemname = request.form['itemname'] + " = = = = = =  awwooooooo"
+    print itemname
+    updateReOrderStatus("Instant food products", "On order")
+    error = None;
+    # password = request.form['password']
+    # pis = " yu gi oh"
+    # printem(user,password)
+    # return render_template('tables.html', error=error, datalist=punklist, mostlist=most, leastlist=least)
+    return 0;
+
+# ---------------------------------------------
+from mergecomp import returnSegments
+from mergecomp import returnFREQUENTITEMS
+segments = returnSegments()
+print len(segments)
+
+patterns = returnFREQUENTITEMS()
+# print len(patterns)
+# sys.exit(456)
+
+
+@app.route('/customersegments', methods=['GET', 'POST'])
+def customersegments():
+    # print "WORKING"
+    # error = None;
+    # keys = request.args.get('itemname')
+    # restockNotifications = getAllRestockNotifications()
+    # reorderNotifications = getAllReorderNotifications()
+    # print keys
+    # # user = request.form['username']
+    # # password = request.form['password']
+    # # pis = " yu gi oh"
+    # # printem(user,password)
+    # # return render_template('tables.html', error=error, datalist=punklist, mostlist=most, leastlist=least)
+    return render_template('customersegments.html')
+
+
+# @app.route('/ShelfNotification', methods=['GET', 'POST'])
+# def ShelfNotification():
+#     print "WORKING"
+#     error = None;
+#     # keys = request.args.get('itemname')
+#     # print keys
+#     # user = request.form['username']
+#     # password = request.form['password']
+#     # pis = " yu gi oh"
+#     # printem(user,password)
+#     # return render_template('tables.html', error=error, datalist=punklist, mostlist=most, leastlist=least)
+#     return render_template('shelf.html', error=error,datalist=punklist,mostlist=most,leastlist=least)
+
 #************************ BUY ITEM **************************************
 @app.route('/buyitem', methods=['POST'])
 def buyitem():
-    print "WORKING = = = =  * * FUCKKKK"
-    # user = request.form['name']
-    itemid = request.form['name']
-    itemshelfcount = request.form['inshelf']
-    newcount = int(itemshelfcount) - 1
-    print "SENDING UPDATE"
-    updatesales(newcount,itemid)
-    print "COMPLETED UPDATE"
-    # itemshelfcount = int(itemshelfcount) - 1
-    # password = request.form['password']
-    print itemid
-    pis = " yu gi oh hohohohooo"
-    printem(itemid,itemshelfcount)
-    # print str(type(itemid))
-    # print str(type(itemshelfcount))
-    print " YAWOOOOZZZAAAAAA"
-    time.sleep(2)
-    # return json.dumps({'status':'OK','user':itemid,'pass':itemshelfcount,'pi':pis});
-    return json.dumps({'user':newcount});
+    # print "WORKING = = = =  * * FUCKKKK"
+    # # user = request.form['name']
+    # itemid = request.form['name']
+    # itemshelfcount = request.form['inshelf']
+    # newcount = int(itemshelfcount) - 1
+    # print "SENDING UPDATE"
+    # updatesales(newcount,itemid)
+    # print "COMPLETED UPDATE"
+    # # itemshelfcount = int(itemshelfcount) - 1
+    # # password = request.form['password']
+    # print itemid
+    # pis = " yu gi oh hohohohooo"
+    # printem(itemid,itemshelfcount)
+    # # print str(type(itemid))
+    # # print str(type(itemshelfcount))
+    # print " YAWOOOOZZZAAAAAA"
+    # time.sleep(2)
+    # # return json.dumps({'status':'OK','user':itemid,'pass':itemshelfcount,'pi':pis});
+    #
+    return 0;
 
 
 @app.route('/getItemList', methods=['GET','POST'])
@@ -271,6 +374,99 @@ def getItemList():
     t = jsonify(oblist)
     return t
 
+@app.route('/getImpactIFP', methods=['GET','POST'])
+def getImpactIFP():
+    print "WORKING = = = =  * * FUCKKKK"
+    u = punklist
+    oblist = []
+    for n in pppp:
+        r = json.dumps(n.__dict__)
+        oblist.append(r)
+    # t = jsonify(u)
+    # print t
+    # for i in oblist:
+    #     print i
+    t = jsonify(oblist)
+    return t
+
+from DBHandler import POS
+from DBHandler import  CreateItemlistfromDBRESTOCK
+from DBHandler import creteNotificationsRESTOCK
+@app.route('/initiatePOS', methods=['GET','POST'])
+def initiatePOS():
+    POS()
+    CreateItemlistfromDBRESTOCK()
+    creteNotificationsRESTOCK()
+    print "WORKING = = = =  * * FUCKKKK"
+    u = punklist
+    oblist = []
+    for n in pppp:
+        r = json.dumps(n.__dict__)
+        oblist.append(r)
+    # t = jsonify(u)
+    # print t
+    # for i in oblist:
+    #     print i
+    t = jsonify(oblist)
+    return t
+
+from DBHandler import STOCKDEPETER
+from DBHandler import CreateItemListfromDBREORDER
+from DBHandler import createNotificationsREORDER
+from DBHandler import overallExecution
+@app.route('/initiateDEPLETION', methods=['GET','POST'])
+def initiateDEPLETION():
+    print " * * * - - - * * * "
+    STOCKDEPETER()
+    CreateItemListfromDBREORDER()
+    createNotificationsREORDER()
+    print "WORKING = = = =  * * REORDER : : "
+    u = punklist
+    oblist = []
+    for n in pppp:
+        r = json.dumps(n.__dict__)
+        oblist.append(r)
+    # t = jsonify(u)
+    # print t
+    # for i in oblist:
+    #     print i
+    t = jsonify(oblist)
+    return t
+
+
+from  mergecomp import returnSegments
+segmentlist = returnSegments()
+@app.route('/getSegments', methods=['GET','POST'])
+def getSegments():
+    print " * * * - - - * * * "
+
+    for i in segmentlist:
+        print i
+    # sys.exit(777)
+    # STOCKDEPETER()
+    # CreateItemListfromDBREORDER()
+    # createNotificationsREORDER()
+    # print "WORKING = = = =  * * REORDER : : "
+    u = punklist
+    oblist = []
+    for n in segmentlist:
+        r = json.dumps(n.__dict__)
+        oblist.append(r)
+    # t = jsonify(u)
+    # print t
+    # for i in oblist:
+    #     print i
+    t = jsonify(oblist)
+    return t
+
+
+#========================= EXTERNAL FUNCTIONS =======================
+def sortlist(nl):
+    newlist = sorted(nl, key=lambda x: x.soldTotal, reverse=True)
+    for j in newlist:
+        print type(newlist)
+        print j.name + " Q1 :" + str(j.soldQ1) + " Q2 :" + str(j.soldQ2) + " Q3 :" + str(j.soldQ3) + " Q4 :" + str(j.soldQ4) + " Q4 :" + str(j.soldTotal)
+    return newlist
 
 if __name__ == '__main__':
     app.run(debug=True)

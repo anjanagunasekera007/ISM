@@ -134,7 +134,7 @@ print "6  => " + str(len(seg6)) + " = " + str(len(transactionsseg6))
 print "7  => " + str(len(seg7)) + " = " + str(len(transactionsseg7))
 print "8  => " + str(len(seg8)) + " = " + str(len(transactionsseg8))
 print "9  => " + str(len(seg9)) + " = " + str(len(transactionsseg9))
-# sys.exit(89)
+sys.exit(89)
 print " - - - - - - - - "
 # time.sleep(3)
 

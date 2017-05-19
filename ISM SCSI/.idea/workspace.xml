@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/ISM SCSI.py" line="252" />
+    <bookmark url="file://$PROJECT_DIR$/ISM SCSI.py" line="354" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5751d18b-3f9e-4ee8-a82d-920889cd5fcf" name="Default" comment="" />
@@ -14,6 +14,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/ISM SCSI$Item_Class.coverage" NAME="Item_Class Coverage Results" MODIFIED="1488144962188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ISM SCSI$mergecomp__1_.coverage" NAME="mergecomp (1) Coverage Results" MODIFIED="1495149492190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ISM SCSI$Reader.coverage" NAME="Reader Coverage Results" MODIFIED="1487152488147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ISM SCSI$clusterreader__1_.coverage" NAME="clusterreader (1) Coverage Results" MODIFIED="1492628651204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Merge" />
     <SUITE FILE_PATH="coverage/ISM SCSI$ITEMREADER.coverage" NAME="ITEMREADER Coverage Results" MODIFIED="1490270590540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -24,26 +25,29 @@
     <SUITE FILE_PATH="coverage/ISM SCSI$Data_Preprocessor.coverage" NAME="Data_Preprocessor Coverage Results" MODIFIED="1485453351764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ISM SCSI$Clean_Data.coverage" NAME="Clean_Data Coverage Results" MODIFIED="1487289885861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ISM SCSI$testFREADER.coverage" NAME="testFREADER Coverage Results" MODIFIED="1489514183827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ISM SCSI$DEL1.coverage" NAME="DEL1 Coverage Results" MODIFIED="1495208832574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ISM SCSI$Sales_Calculator.coverage" NAME="Sales_Calculator Coverage Results" MODIFIED="1489601669070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ISM SCSI$Data_loader.coverage" NAME="Data_loader Coverage Results" MODIFIED="1487013924059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ISM SCSI$ReadX.coverage" NAME="ReadX Coverage Results" MODIFIED="1487286434649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ISM SCSI$deletableThread.coverage" NAME="deletableThread Coverage Results" MODIFIED="1494915308822" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ISM SCSI$mergecomp.coverage" NAME="mergecomp Coverage Results" MODIFIED="1494970135508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Merge" />
-    <SUITE FILE_PATH="coverage/ISM SCSI$DBHandler.coverage" NAME="DBHandler Coverage Results" MODIFIED="1494365170409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ISM SCSI$mergecomp.coverage" NAME="mergecomp Coverage Results" MODIFIED="1495145628599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Merge" />
+    <SUITE FILE_PATH="coverage/ISM SCSI$DBHandler.coverage" NAME="DBHandler Coverage Results" MODIFIED="1495143082122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ISM SCSI$ItemCounter.coverage" NAME="ItemCounter Coverage Results" MODIFIED="1486986463784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ISM SCSI$EXPERIMENT_FILE.coverage" NAME="EXPERIMENT_FILE Coverage Results" MODIFIED="1493125395919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Merge" />
     <SUITE FILE_PATH="coverage/ISM SCSI$date.coverage" NAME="date Coverage Results" MODIFIED="1494360754088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Associations" />
     <SUITE FILE_PATH="coverage/ISM SCSI$Sales_Experiment.coverage" NAME="Sales_Experiment Coverage Results" MODIFIED="1487158412663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ISM SCSI$ParameterizedOperations.coverage" NAME="ParameterizedOperations Coverage Results" MODIFIED="1495095766137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ISM SCSI$clusterreader.coverage" NAME="clusterreader Coverage Results" MODIFIED="1492623440234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Cluster_Reader" />
     <SUITE FILE_PATH="coverage/ISM SCSI$ARProcessor.coverage" NAME="ARProcessor Coverage Results" MODIFIED="1494015095658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AR_Reader" />
     <SUITE FILE_PATH="coverage/ISM SCSI$testG.coverage" NAME="testG Coverage Results" MODIFIED="1489674410065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ISM SCSI$datacleaner__1_.coverage" NAME="datacleaner (1) Coverage Results" MODIFIED="1492628185728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Merge" />
+    <SUITE FILE_PATH="coverage/ISM SCSI$delFileDB.coverage" NAME="delFileDB Coverage Results" MODIFIED="1495144430239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ISM SCSI$itemER.coverage" NAME="itemER Coverage Results" MODIFIED="1491546884306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FINAL_DB" />
     <SUITE FILE_PATH="coverage/ISM SCSI$Initialization.coverage" NAME="Initialization Coverage Results" MODIFIED="1494762558701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ISM SCSI$DBHandler__1_.coverage" NAME="DBHandler (1) Coverage Results" MODIFIED="1491600431806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ISM SCSI$datacleaner.coverage" NAME="datacleaner Coverage Results" MODIFIED="1492628549834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Data_Cleaner" />
     <SUITE FILE_PATH="coverage/ISM SCSI$WWWitemER.coverage" NAME="WWWitemER Coverage Results" MODIFIED="1491578091314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FINAL_DB" />
-    <SUITE FILE_PATH="coverage/ISM SCSI$ISM_SCSI.coverage" NAME="ISM SCSI Coverage Results" MODIFIED="1495091970418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ISM SCSI$ISM_SCSI.coverage" NAME="ISM SCSI Coverage Results" MODIFIED="1495210442399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -70,8 +74,8 @@
       <file leaf-file-name="ISM SCSI.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ISM SCSI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="260" column="38" lean-forward="false" selection-start-line="260" selection-start-column="38" selection-end-line="260" selection-end-column="38" />
+            <state relative-caret-position="390">
+              <caret line="177" column="27" lean-forward="true" selection-start-line="177" selection-start-column="27" selection-end-line="177" selection-end-column="27" />
               <folding>
                 <element signature="e#34#90#0" expanded="true" />
               </folding>
@@ -79,21 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="item_sales.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/item_sales.html">
+      <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23370">
-              <caret line="779" column="56" lean-forward="false" selection-start-line="779" selection-start-column="56" selection-end-line="779" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jsex.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/jsex.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16170">
-              <caret line="539" column="16" lean-forward="false" selection-start-line="539" selection-start-column="16" selection-end-line="539" selection-end-column="16" />
+            <state relative-caret-position="690">
+              <caret line="170" column="0" lean-forward="true" selection-start-line="170" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -102,70 +96,109 @@
       <file leaf-file-name="ajaxjquery.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/ajaxjquery.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="84" column="36" lean-forward="false" selection-start-line="84" selection-start-column="36" selection-end-line="84" selection-end-column="36" />
+            <state relative-caret-position="2841">
+              <caret line="120" column="7" lean-forward="true" selection-start-line="120" selection-start-column="7" selection-end-line="120" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="delClass.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/delClass.py">
+      <file leaf-file-name="Initialization.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Initialization.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tables.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/tables.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16110">
-              <caret line="537" column="26" lean-forward="false" selection-start-line="537" selection-start-column="4" selection-end-line="537" selection-end-column="57" />
+            <state relative-caret-position="2130">
+              <caret line="72" column="22" lean-forward="false" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="mergecomp.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Merge/mergecomp.py">
+        <entry file="file://$PROJECT_DIR$/mergecomp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4680">
-              <caret line="162" column="0" lean-forward="false" selection-start-line="161" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
+            <state relative-caret-position="2370">
+              <caret line="130" column="18" lean-forward="false" selection-start-line="130" selection-start-column="4" selection-end-line="130" selection-end-column="18" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#754#2505#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index-rtl.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index-rtl.html">
+      <file leaf-file-name="deletableDBHandler.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deletableDBHandler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="930">
-              <caret line="31" column="21" lean-forward="false" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-              <folding />
+            <state relative-caret-position="691">
+              <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+              <folding>
+                <marker date="1494367737896" expanded="true" signature="1088:1186" ph="INSERT INTO reorder... " />
+                <marker date="1494367737896" expanded="true" signature="1660:1710" ph="SELECT * FRO... reorder" />
+                <marker date="1494367737896" expanded="true" signature="1939:1989" ph="SELECT * FRO... restock" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Item_Class.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Item_Class.py">
+      <file leaf-file-name="DBHandler.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DBHandler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="579">
+              <caret line="479" column="15" lean-forward="true" selection-start-line="479" selection-start-column="15" selection-end-line="479" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+                <marker date="1495208832487" expanded="true" signature="663:834" ph="CREATE TABLE... IF" />
+                <marker date="1495208832487" expanded="true" signature="895:1021" ph="INSERT INTO EMPLOYEE... " />
+                <marker date="1495208832487" expanded="true" signature="1199:1313" ph="INSERT INTO EMPLOYEE... " />
+                <marker date="1495208832487" expanded="true" signature="3863:4147" ph="INSERT INTO items... " />
+                <marker date="1495208832487" expanded="true" signature="4724:4743" ph="SELECT * FRO... items" />
+                <marker date="1495208832487" expanded="true" signature="5138:5159" ph="SELECT * FRO... restock" />
+                <marker date="1495208832487" expanded="true" signature="5701:5722" ph="SELECT * FRO... reorder" />
+                <marker date="1495208832487" expanded="true" signature="6503:6562" ph="UPDATE items... " />
+                <marker date="1495208832487" expanded="true" signature="6808:6858" ph="UPDATE items... " />
+                <marker date="1495208832487" expanded="true" signature="7105:7155" ph="UPDATE items... " />
+                <marker date="1495208832487" expanded="true" signature="8197:8216" ph="SELECT * FRO... items" />
+                <marker date="1495208832487" expanded="true" signature="10394:10476" ph="INSERT INTO restock... " />
+                <marker date="1495208832487" expanded="true" signature="10823:10921" ph="INSERT INTO reorder... " />
+                <marker date="1495208832487" expanded="true" signature="11136:11186" ph="SELECT * FRO... reorder" />
+                <marker date="1495208832487" expanded="true" signature="11402:11452" ph="SELECT * FRO... restock" />
+                <marker date="1495208832487" expanded="true" signature="12680:12739" ph="UPDATE items... " />
+                <marker date="1495208832487" expanded="true" signature="12974:13033" ph="UPDATE items... " />
+                <marker date="1495208832487" expanded="true" signature="13202:13221" ph="SELECT * FRO... items" />
+                <marker date="1495208832487" expanded="true" signature="14068:14087" ph="SELECT * FRO... items" />
+                <marker date="1495208832487" expanded="true" signature="18135:18189" ph="UPDATE reord... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DEL1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DEL1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="55" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Notification_Class.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Notification_Class.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="480">
-              <caret line="16" column="15" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="24" selection-end-column="24" />
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="deletableThread.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deletableThread.py">
+      <file leaf-file-name="item_sales.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/item_sales.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="16" />
+            <state relative-caret-position="360">
+              <caret line="780" column="50" lean-forward="true" selection-start-line="774" selection-start-column="38" selection-end-line="780" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -183,25 +216,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>{{</find>
-      <find>title</find>
-      <find>Dashboard</find>
-      <find>Tables</find>
-      <find>for</find>
-      <find>Contextual Classes</find>
-      <find>bread</find>
-      <find>Item s</find>
-      <find>createObjectlist</find>
-      <find>chart</find>
-      <find>misc</find>
-      <find>misc.</find>
-      <find>javascript</find>
-      <find>bootstrap e</find>
-      <find>returnSales</find>
-      <find>createItemlist</find>
-      <find>insertda</find>
       <find>insertdata</find>
-      <find>ilist</find>
       <find>btn1</find>
       <find>y</find>
       <find>F</find>
@@ -213,6 +228,24 @@
       <find>intro</find>
       <find>punklist</find>
       <find>jsonify</find>
+      <find>updatesales</find>
+      <find>createO</find>
+      <find>ilist</find>
+      <find>running</find>
+      <find>ge</find>
+      <find>get</find>
+      <find>OBJECTSLIST</find>
+      <find>CreateItemlistfromDB</find>
+      <find>createNo</find>
+      <find>createNotificationsREORDER</find>
+      <find>CreateItemListfromDBREORDER</find>
+      <find>9999</find>
+      <find>sortlist</find>
+      <find>sort</find>
+      <find>results</find>
+      <find>db</find>
+      <find>sys</find>
+      <find>Dashboard</find>
     </findStrings>
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -224,16 +257,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/datasets/COMBINED_ITEMS.csv" />
-        <option value="$PROJECT_DIR$/CustomerReader.py" />
-        <option value="$PROJECT_DIR$/datasets/category list.csv" />
-        <option value="$PROJECT_DIR$/datasets/ITEM_FULL_LIST.csv" />
-        <option value="$PROJECT_DIR$/templates/itemextended.html" />
-        <option value="$PROJECT_DIR$/DB/ITEMCLASS.py" />
-        <option value="$PROJECT_DIR$/datasets/full_item_detail_list.csv" />
-        <option value="$PROJECT_DIR$/FINAL_DB/itemER.py" />
-        <option value="$PROJECT_DIR$/FINAL_DB/WWWitemER.py" />
-        <option value="$PROJECT_DIR$/DB/DBHandler.py" />
         <option value="$PROJECT_DIR$/FIMiinser/UUUpxspan.py" />
         <option value="$PROJECT_DIR$/datasets/association_rules.csv" />
         <option value="$PROJECT_DIR$/Cluster_Reader/clusterreader.py" />
@@ -260,20 +283,30 @@
         <option value="$PROJECT_DIR$/ARProcessor.py" />
         <option value="$PROJECT_DIR$/templates/itempatterns.html" />
         <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/templates/itemwisesales.html" />
         <option value="$PROJECT_DIR$/Associations/date.py" />
-        <option value="$PROJECT_DIR$/DBHandler.py" />
         <option value="$PROJECT_DIR$/deletableDBHandler.py" />
         <option value="$PROJECT_DIR$/static/css/grayscale.css" />
         <option value="$PROJECT_DIR$/templates/indexx.html" />
         <option value="$PROJECT_DIR$/Initialization.py" />
         <option value="$PROJECT_DIR$/deletableThread.py" />
-        <option value="$PROJECT_DIR$/templates/item_sales.html" />
-        <option value="$PROJECT_DIR$/templates/dashboard.html" />
-        <option value="$PROJECT_DIR$/Merge/mergecomp.py" />
         <option value="$PROJECT_DIR$/delClass.py" />
         <option value="$PROJECT_DIR$/templates/jsex.html" />
         <option value="$PROJECT_DIR$/templates/ajaxjquery.html" />
+        <option value="$PROJECT_DIR$/datasets/Instant food products.csv" />
+        <option value="$PROJECT_DIR$/templates/itemwisesales.html" />
+        <option value="$PROJECT_DIR$/ParameterizedOperations.py" />
+        <option value="$PROJECT_DIR$/templates/shelf.html" />
+        <option value="$PROJECT_DIR$/templates/stocks.html" />
+        <option value="$PROJECT_DIR$/templates/item_sales.html" />
+        <option value="$PROJECT_DIR$/delFileDB.py" />
+        <option value="$PROJECT_DIR$/Merge/mergecomp.py" />
+        <option value="$PROJECT_DIR$/templates/dashboard.html" />
+        <option value="$PROJECT_DIR$/datacleaner.py" />
+        <option value="$PROJECT_DIR$/clusterreader.py" />
+        <option value="$PROJECT_DIR$/mergecomp.py" />
+        <option value="$PROJECT_DIR$/templates/customersegments.html" />
+        <option value="$PROJECT_DIR$/DEL1.py" />
+        <option value="$PROJECT_DIR$/DBHandler.py" />
         <option value="$PROJECT_DIR$/ISM SCSI.py" />
       </list>
     </option>
@@ -365,6 +398,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ISM SCSI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ISM SCSI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="datasets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ISM SCSI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ISM SCSI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Merge" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -373,7 +434,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
@@ -383,71 +444,14 @@
       <recent name="D:\Google Drive\ISM SCSI\static" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\FYP\ISM SCSI" />
+      <recent name="D:\FYP\ISM SCSI\datasets" />
       <recent name="D:\FYP\ISM SCSI\static\js" />
       <recent name="D:\FYP\ISM SCSI\static" />
       <recent name="D:\FYP\ISM SCSI\static\css" />
-      <recent name="D:\FYP\ISM SCSI\templates" />
-      <recent name="D:\FYP\ISM SCSI" />
     </key>
   </component>
   <component name="RunManager" selected="Python.ISM SCSI">
-    <configuration default="false" name="Initialization" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ISM SCSI" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Initialization.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="deletableDBHandler" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ISM SCSI" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/deletableDBHandler.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ISM SCSI/templates/index.html">
-      <method />
-    </configuration>
-    <configuration default="false" name="deletableThread" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ISM SCSI" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/deletableThread.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="mergecomp" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -464,6 +468,63 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Merge/mergecomp.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="delFileDB" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ISM SCSI" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/delFileDB.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="mergecomp (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ISM SCSI" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mergecomp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="DEL1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ISM SCSI" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DEL1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="dashboard.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ISM SCSI/templates/dashboard.html">
       <method />
     </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -719,19 +780,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Python.Sales_Calculator" />
       <item index="1" class="java.lang.String" itemvalue="Python.ISM SCSI" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Initialization" />
-      <item index="3" class="java.lang.String" itemvalue="Python.deletableDBHandler" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-      <item index="5" class="java.lang.String" itemvalue="Python.deletableThread" />
-      <item index="6" class="java.lang.String" itemvalue="Python.mergecomp" />
+      <item index="2" class="java.lang.String" itemvalue="Python.mergecomp" />
+      <item index="3" class="java.lang.String" itemvalue="Python.delFileDB" />
+      <item index="4" class="java.lang.String" itemvalue="Python.mergecomp (1)" />
+      <item index="5" class="java.lang.String" itemvalue="Python.DEL1" />
+      <item index="6" class="java.lang.String" itemvalue="JavaScript Debug.dashboard.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.mergecomp" />
-        <item index="1" class="java.lang.String" itemvalue="Python.deletableThread" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Initialization" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-        <item index="4" class="java.lang.String" itemvalue="Python.deletableDBHandler" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.dashboard.html" />
+        <item index="1" class="java.lang.String" itemvalue="Python.DEL1" />
+        <item index="2" class="java.lang.String" itemvalue="Python.mergecomp (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Python.mergecomp" />
+        <item index="4" class="java.lang.String" itemvalue="Python.delFileDB" />
       </list>
     </recent_temporary>
   </component>
@@ -761,13 +822,13 @@
     <frame x="2391" y="-9" width="2418" height="1318" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15291667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.122083336" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938188" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30990687" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28873837" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -792,77 +853,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/datasets/COMBINED_ITEMS.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50940">
-          <caret line="1698" column="53" lean-forward="false" selection-start-line="1698" selection-start-column="53" selection-end-line="1698" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FIMiner/UUUpxspan.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3120">
-          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Associations_Class.py" />
-    <entry file="file://$PROJECT_DIR$/Merge/EXPERIMENT_FILE.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3900">
-          <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datasets/alldata.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datasets/association_rules.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1200">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datasets/ARS.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="50" column="61" lean-forward="true" selection-start-line="50" selection-start-column="61" selection-end-line="50" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Associations/POGenerator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NNNClean_Data.py" />
-    <entry file="file://$PROJECT_DIR$/CustomerReader.py" />
     <entry file="file://$PROJECT_DIR$/testG.py" />
     <entry file="file://$PROJECT_DIR$/testFREADER.py" />
     <entry file="file://$PROJECT_DIR$/ReadX.py" />
     <entry file="file://$PROJECT_DIR$/Reader.py" />
-    <entry file="file://$PROJECT_DIR$/Sales_Calculator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NNNITEMCLASS.py" />
-    <entry file="file://$PROJECT_DIR$/ITEMREADER.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Data_Preprocessor.py" />
     <entry file="file://$PROJECT_DIR$/templates/itempatterns.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -899,45 +894,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/datasets/all_items.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="78" column="7" lean-forward="true" selection-start-line="78" selection-start-column="7" selection-end-line="78" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Associations/date.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/itemwisesales.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23610">
-          <caret line="787" column="29" lean-forward="false" selection-start-line="787" selection-start-column="29" selection-end-line="787" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DBHandler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6780">
-          <caret line="236" column="0" lean-forward="false" selection-start-line="236" selection-start-column="0" selection-end-line="289" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Notification_Class.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deletableDBHandler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1380">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -974,13 +934,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="912" column="71" lean-forward="false" selection-start-line="890" selection-start-column="0" selection-end-line="912" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/grayscale.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1009,28 +962,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Initialization.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2130">
-          <caret line="72" column="22" lean-forward="false" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/deletableThread.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Merge/mergecomp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4680">
-          <caret line="162" column="0" lean-forward="false" selection-start-line="161" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1038,15 +973,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="930">
           <caret line="31" column="21" lean-forward="false" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Item_Class.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="16" column="15" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="24" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1054,7 +980,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1062,15 +987,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16110">
           <caret line="537" column="26" lean-forward="false" selection-start-line="537" selection-start-column="4" selection-end-line="537" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/jsex.html">
+    <entry file="file://$PROJECT_DIR$/templates/itemwisesales.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16170">
-          <caret line="539" column="16" lean-forward="false" selection-start-line="539" selection-start-column="16" selection-end-line="539" selection-end-column="16" />
-          <folding />
+        <state relative-caret-position="360">
+          <caret line="948" column="0" lean-forward="true" selection-start-line="948" selection-start-column="0" selection-end-line="948" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datasets/Instant food products.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1078,30 +1008,213 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/jsex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="539" column="16" lean-forward="false" selection-start-line="539" selection-start-column="16" selection-end-line="539" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datasets/all_items.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/shelf.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="1239" column="0" lean-forward="false" selection-start-line="1239" selection-start-column="0" selection-end-line="1239" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/stocks.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-570">
+          <caret line="775" column="22" lean-forward="false" selection-start-line="775" selection-start-column="22" selection-end-line="775" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sales_Calculator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="169" column="0" lean-forward="true" selection-start-line="169" selection-start-column="0" selection-end-line="174" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Merge/mergecomp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="137" column="12" lean-forward="false" selection-start-line="137" selection-start-column="12" selection-end-line="137" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParameterizedOperations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-508">
+          <caret line="18" column="52" lean-forward="true" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delFileDB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datacleaner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clusterreader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="18" column="39" lean-forward="false" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ITEMREADER.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Initialization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2130">
+          <caret line="72" column="22" lean-forward="false" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mergecomp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2370">
+          <caret line="130" column="18" lean-forward="false" selection-start-line="130" selection-start-column="4" selection-end-line="130" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#754#2505#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/customersegments.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1178">
+          <caret line="1217" column="0" lean-forward="true" selection-start-line="1217" selection-start-column="0" selection-end-line="1217" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Item_Class.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/item_sales.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23370">
-          <caret line="779" column="56" lean-forward="false" selection-start-line="779" selection-start-column="56" selection-end-line="779" selection-end-column="56" />
+        <state relative-caret-position="360">
+          <caret line="780" column="50" lean-forward="true" selection-start-line="774" selection-start-column="38" selection-end-line="780" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Notification_Class.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/ajaxjquery.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="84" column="36" lean-forward="false" selection-start-line="84" selection-start-column="36" selection-end-line="84" selection-end-column="36" />
+        <state relative-caret-position="2841">
+          <caret line="120" column="7" lean-forward="true" selection-start-line="120" selection-start-column="7" selection-end-line="120" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deletableDBHandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="691">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding>
+            <marker date="1494367737896" expanded="true" signature="1088:1186" ph="INSERT INTO reorder... " />
+            <marker date="1494367737896" expanded="true" signature="1660:1710" ph="SELECT * FRO... reorder" />
+            <marker date="1494367737896" expanded="true" signature="1939:1989" ph="SELECT * FRO... restock" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DEL1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="170" column="0" lean-forward="true" selection-start-line="170" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DBHandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="479" column="15" lean-forward="true" selection-start-line="479" selection-start-column="15" selection-end-line="479" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1495208832487" expanded="true" signature="663:834" ph="CREATE TABLE... IF" />
+            <marker date="1495208832487" expanded="true" signature="895:1021" ph="INSERT INTO EMPLOYEE... " />
+            <marker date="1495208832487" expanded="true" signature="1199:1313" ph="INSERT INTO EMPLOYEE... " />
+            <marker date="1495208832487" expanded="true" signature="3863:4147" ph="INSERT INTO items... " />
+            <marker date="1495208832487" expanded="true" signature="4724:4743" ph="SELECT * FRO... items" />
+            <marker date="1495208832487" expanded="true" signature="5138:5159" ph="SELECT * FRO... restock" />
+            <marker date="1495208832487" expanded="true" signature="5701:5722" ph="SELECT * FRO... reorder" />
+            <marker date="1495208832487" expanded="true" signature="6503:6562" ph="UPDATE items... " />
+            <marker date="1495208832487" expanded="true" signature="6808:6858" ph="UPDATE items... " />
+            <marker date="1495208832487" expanded="true" signature="7105:7155" ph="UPDATE items... " />
+            <marker date="1495208832487" expanded="true" signature="8197:8216" ph="SELECT * FRO... items" />
+            <marker date="1495208832487" expanded="true" signature="10394:10476" ph="INSERT INTO restock... " />
+            <marker date="1495208832487" expanded="true" signature="10823:10921" ph="INSERT INTO reorder... " />
+            <marker date="1495208832487" expanded="true" signature="11136:11186" ph="SELECT * FRO... reorder" />
+            <marker date="1495208832487" expanded="true" signature="11402:11452" ph="SELECT * FRO... restock" />
+            <marker date="1495208832487" expanded="true" signature="12680:12739" ph="UPDATE items... " />
+            <marker date="1495208832487" expanded="true" signature="12974:13033" ph="UPDATE items... " />
+            <marker date="1495208832487" expanded="true" signature="13202:13221" ph="SELECT * FRO... items" />
+            <marker date="1495208832487" expanded="true" signature="14068:14087" ph="SELECT * FRO... items" />
+            <marker date="1495208832487" expanded="true" signature="18135:18189" ph="UPDATE reord... " />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ISM SCSI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="260" column="38" lean-forward="false" selection-start-line="260" selection-start-column="38" selection-end-line="260" selection-end-column="38" />
+        <state relative-caret-position="390">
+          <caret line="177" column="27" lean-forward="true" selection-start-line="177" selection-start-column="27" selection-end-line="177" selection-end-column="27" />
           <folding>
             <element signature="e#34#90#0" expanded="true" />
           </folding>
