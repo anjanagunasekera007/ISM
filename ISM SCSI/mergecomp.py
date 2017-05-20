@@ -8,6 +8,16 @@ from collections import defaultdict
 # transactions = []
 # segments = []
 
+
+
+# seglist = returnsegmentlist()
+#
+# for i in seglist:
+#     print i
+#
+# sys.exit(3456)
+
+
 class Fpattern:
 
    def __init__(self, items,support):
@@ -167,6 +177,10 @@ def returnSegments():
     segmentlist.append(n8)
     segmentlist.append(n9)
 
+    for u in segmentlist:
+        print u.size
+    # sys.exit(747)
+
     return segmentlist
 
 def returnFrequenetPaterns():
@@ -180,7 +194,7 @@ def returnFrequenetPaterns():
     getfrequentItems(transactionsseg8)
     getfrequentItems(transactionsseg9)
 
-returnSegments()
+# returnSegments()
 # sys.exit(99)
 # time.sleep(3)
 

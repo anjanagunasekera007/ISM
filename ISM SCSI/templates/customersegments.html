@@ -774,15 +774,16 @@
 
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
-                        <div class="panel panel-primary">
+                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <div class="row">
                                     <div class="col-xs-3">
-                                        <i class="fa fa-check-square fa-4x"></i>
+                                        <i class="fa fa-check-square fa-2x">   </i>
                                     </div>
                                     <div class="col-xs-9 text-right">
-                                        <div class="huge">5</div>
-                                        <div>Top Selling Items</div>
+                                        <div class="huge">Customer Groups</div>
+                                       <!-- <h2> Customer groups</h2> -->
+                                        <!-- <div>Top Selling Items</div> -->
                                     </div>
                                 </div>
                             </div>
@@ -794,16 +795,16 @@
                                 <thead>
                                     <tr>
 
-                                        <th>Item name</th>
-                                        <th>Item Total Sales</th>
+                                        <th>Base Segment ID</th>
+                                        <th>Number of customers</th>
 
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {% for item in mostlist %}
+                                    {% for cbase in patternlist %}
                                     <tr>
-                                        <td>{{ item.name }}</td>
-                                        <td>{{ item.soldTotal }}</td>
+                                        <td>Type : {{ cbase.segmentid }}</td>
+                                        <td>{{ cbase.size }}</td>
                                     </tr>
                                     {% endfor %}
 
@@ -816,7 +817,8 @@
 {#                            </a>#}
                         </div>
                     </div>
-{#                    <div class="col-lg-3 col-md-6">#}
+
+<!-- {#                    <div class="col-lg-3 col-md-6">#}
 {#                        <div class="panel panel-green">#}
 {#                            <div class="panel-heading">#}
 {#                                <div class="row">#}
@@ -859,24 +861,22 @@
 {#                                </div>#}
 {#                            </a>#}
 {#                        </div>#}
-{#                    </div>#}
+{#                    </div>#} -->
                     <div class="col-lg-6 col-md-12">
-                        <div class="panel panel-red">
+                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <div class="row">
                                     <div class="col-xs-3">
                                         <i class="fa fa-support fa-4x"></i>
                                     </div>
                                     <div class="col-xs-9 text-right">
-                                        <div class="huge">5</div>
-                                        <div>Least Selling Items</div>
+                                        <div class="huge">Customer Base Distribution</div>
+                                        <!-- <div>Least Selling Items</div> -->
                                     </div>
                                 </div>
                             </div>
-{#                            <a href="#">#}
                                 <div class="panel-footer">
-{#                                    <span class="pull-left">View Details</span>#}
-                                    <div class="table-responsive">
+                                   <!--  <div class="table-responsive">
                             <table class="table table-bordered table-hover table-striped">
                                 <thead>
                                     <tr>
@@ -892,44 +892,22 @@
                                         <td>{{ item.name }}</td>
                                         <td>{{ item.soldTotal }}</td>
                                     </tr>
-{#                                        =========================#}
-
-                                            <div id="detailsmodal" class="modal fade" role="dialog">
-                                              <div class="modal-dialog">
-
-                                                <!-- Modal content-->
-                                                <div class="modal-content">
-                                                  <div class="modal-header">
-                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                    <h4 class="modal-title">Modal Header</h4>
-                                                  </div>
-                                                  <div class="modal-body">
-                                                    <p>Some text in the modal.</p>
-                                                  </div>
-                                                  <div class="modal-footer">
-                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                                  </div>
-                                                </div>
-
-                                              </div>
-                                            </div>
-
-{#                                        ===========================#}
+                                      
                                     {% endfor %}
 
                                 </tbody>
                             </table>
                         </div>
                                     <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                    <div class="clearfix"></div>
+                                    <div class="clearfix"></div> -->
+                                    <canvas id="piechart"></canvas>
                                 </div>
-{#                            </a>#}
                         </div>
                     </div>
                 </div>
                 <!-- /.row -->
 
-                <div class="row">
+<!--                 <div class="row">
                     <div class="col-lg-12">
                         <div class="panel panel-default">
                             <div class="panel-heading">
@@ -996,7 +974,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="row">
                    <!--  <div class="col-lg-12">
@@ -1012,6 +990,157 @@
                     </canvas><canvas id="myChart"></canvas>
                 </div>
                 <!-- /.row -->
+
+
+                <div id="c1" class="row">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> 0 Sale Items</h3>
+                            </div>
+                            <div class="panel-body">
+
+                            <canvas id="c1chart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3"></div>
+                </div>
+
+                <div id="c2" class="row">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> 0 Sale Items</h3>
+                            </div>
+                            <div class="panel-body">
+
+                            <canvas id="c2chart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3"></div>
+                </div>
+
+                <div id="c3" class="row">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> 0 Sale Items</h3>
+                            </div>
+                            <div class="panel-body">
+
+                            <canvas id="c3chart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3"></div>
+                </div>
+
+                <div id="c4" class="row">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> 0 Sale Items</h3>
+                            </div>
+                            <div class="panel-body">
+
+                            <canvas id="c4chart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3"></div>
+                </div>
+
+
+                <div id="c5" class="row">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> 0 Sale Items</h3>
+                            </div>
+                            <div class="panel-body">
+
+                            <canvas id="c5chart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3"></div>
+                </div>
+
+
+
+                <div id="c6" class="row">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> 0 Sale Items</h3>
+                            </div>
+                            <div class="panel-body">
+
+                            <canvas id="c6chart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3"></div>
+                </div>
+
+
+                <div id="c7" class="row">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> 0 Sale Items</h3>
+                            </div>
+                            <div class="panel-body">
+
+                            <canvas id="c7chart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3"></div>
+                </div>
+
+                <div id="c8" class="row">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> 0 Sale Items</h3>
+                            </div>
+                            <div class="panel-body">
+
+                            <canvas id="c8chart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3"></div>
+                </div>
+
+                <div id="c9" class="row">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> 0 Sale Items</h3>
+                            </div>
+                            <div class="panel-body">
+
+                            <canvas id="c9chart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3"></div>
+                </div>
+
+<!-- ........................................................................................ -->
 
                 <div class="row">
                     <div class="col-lg-4">
@@ -1180,7 +1309,7 @@
            $.ajax({
         type: 'POST',
         url: '/getSegments',
-        dataType: "json",
+        dataType: "json ",
         async:false,
         success: function(response) {
             var NameArr = [];
@@ -1189,30 +1318,416 @@
             // console.log(data + "sss");
              var js = $.parseJSON('[' + response + ']');
                 console.log(js)
-                // console.log(js[0].name)
-                // console.log(js[0].soldTotal)
-                // var text ;
-                // for (i = 0; i < js.length; i++) {
-                //     NameArr.push(js[i].name)
-                // }
-                // for (i = 0; i < js.length; i++) {
-                //     TotalArr.push(js[i].soldTotal)
-                // }
-                // alert(TotalArr[0])
-                // var ctx = document.getElementById("myChart").getContext('2d');
-                // var myChart = new Chart(ctx, {
-                //   type: 'bar',
-                //   data: {
-                //     labels: NameArr,
-                //     datasets: [{
-                //       label: 'Total Sold',
-                //       data: TotalArr,
-                //       backgroundColor: "rgba(38,112,177,1)"
-                //     }]
-                //   }
-                // });
+                console.log(js[0].segmentid)
+                console.log(js[0].size)
+                var text ;
+                for (i = 0; i < js.length; i++) {
+                    NameArr.push(js[i].segmentid)
+                }
+                for (i = 0; i < js.length; i++) {
+                    TotalArr.push(js[i].size)
+                }
+                alert(TotalArr[0])
+                var ctx = document.getElementById("piechart").getContext('2d');
+                var myChart = new Chart(ctx, {
+                  type: 'bar',
+                  data: {
+                    labels: NameArr,
+                    datasets: [{
+                      label: 'Distribution overview',
+                      data: TotalArr,
+                      backgroundColor: "rgba(38,112,177,1)"
+                    }]
+                  }
+                });
         }
             });
+
+
+                      $.ajax({
+        type: 'POST',
+        url: '/getSegments',
+        dataType: "json",
+        async:false,
+        success: function(response) {
+                
+                  response = $.parseJSON('[' + response + ']');
+                  console.log(response[0]+ " ===")
+                console.log(response[0].impactSize+ " ===")
+                var NameArr = []; 
+                var ImpArr = []; 
+                var ClrArr = ["#ff0000","#990099","#ff9900","#009900","#3399ff","#666699","#00cc99","#ffff00","#ccff99"];
+                for (i = 0; i < response.length; i++) { 
+                    NameArr.push("segment " + String(response[i].segmentid))
+                    ImpArr.push(response[i].size)
+                    // ClrArr.push(response[i].color)
+                }
+                
+                var ctx = document.getElementById("myChart").getContext('2d');
+                var myChart = new Chart(ctx, {
+                  type: 'pie',
+                  data: {
+                    labels: NameArr,
+                    datasets: [{
+                      label: 'Customer Base',
+                      data: ImpArr,
+                      backgroundColor:  ClrArr
+                    }]
+                  }
+                });
+        }
+            });
+
+
+
+//=======C1
+                      $.ajax({
+        type: 'POST',
+        url: '/getpatternsc1',
+        dataType: "json",
+        async:false,
+        success: function(response) {
+                
+                  response = $.parseJSON('[' + response + ']');
+                  console.log(response[0]+ " ===")
+                console.log(response[0].impactSize+ " ===")
+                var NameArr = []; 
+                var ImpArr = []; 
+                var ClrArr = ["#ff0000","#990099","#ff9900","#009900"];
+                for (i = 0; i < response.length; i++) { 
+                    NameArr.push(response[i].items)
+                    ImpArr.push(response[i].support)
+                    // ClrArr.push(response[i].color)
+                }
+                
+                var ctx = document.getElementById("c1chart").getContext('2d');
+                var myChart = new Chart(ctx, {
+                  type: 'pie',
+                  data: {
+                    labels: NameArr,
+                    datasets: [{
+                      label: 'Customer Base',
+                      data: ImpArr,
+                      backgroundColor:  ClrArr
+                    }]
+                  }
+                });
+        }
+            });
+
+        $.ajax({
+        type: 'POST',
+        url: '/getpatternsc2',
+        dataType: "json",
+        async:false,
+        success: function(response) {
+                
+                  response = $.parseJSON('[' + response + ']');
+                  console.log(response[0]+ " ===")
+                console.log(response[0].impactSize+ " ===")
+                var NameArr = []; 
+                var ImpArr = []; 
+                var ClrArr = ["#ff0000","#990099","#ff9900","#009900"];
+                for (i = 0; i < response.length; i++) { 
+                    NameArr.push(response[i].items)
+                    ImpArr.push(response[i].support)
+                    // ClrArr.push(response[i].color)
+                }
+                
+                var ctx = document.getElementById("c2chart").getContext('2d');
+                var myChart = new Chart(ctx, {
+                  type: 'pie',
+                  data: {
+                    labels: NameArr,
+                    datasets: [{
+                      label: 'Customer Base',
+                      data: ImpArr,
+                      backgroundColor:  ClrArr
+                    }]
+                  }
+                });
+        }
+            });
+
+                $.ajax({
+        type: 'POST',
+        url: '/getpatternsc3',
+        dataType: "json",
+        async:false,
+        success: function(response) {
+                
+                  response = $.parseJSON('[' + response + ']');
+                  console.log(response[0]+ " ===")
+                console.log(response[0].impactSize+ " ===")
+                var NameArr = []; 
+                var ImpArr = []; 
+                var ClrArr = ["#ff0000","#990099","#ff9900","#009900"];
+                for (i = 0; i < response.length; i++) { 
+                    NameArr.push(response[i].items)
+                    ImpArr.push(response[i].support)
+                    // ClrArr.push(response[i].color)
+                }
+                
+                var ctx = document.getElementById("c3chart").getContext('2d');
+                var myChart = new Chart(ctx, {
+                  type: 'pie',
+                  data: {
+                    labels: NameArr,
+                    datasets: [{
+                      label: 'Customer Base',
+                      data: ImpArr,
+                      backgroundColor:  ClrArr
+                    }]
+                  }
+                });
+        }
+            });
+
+
+                $.ajax({
+        type: 'POST',
+        url: '/getpatternsc4',
+        dataType: "json",
+        async:false,
+        success: function(response) {
+                
+                  response = $.parseJSON('[' + response + ']');
+                  console.log(response[0]+ " ===")
+                console.log(response[0].impactSize+ " ===")
+                var NameArr = []; 
+                var ImpArr = []; 
+                var ClrArr = ["#ff0000","#990099","#ff9900","#009900"];
+                for (i = 0; i < response.length; i++) { 
+                    NameArr.push(response[i].items)
+                    ImpArr.push(response[i].support)
+                    // ClrArr.push(response[i].color)
+                }
+                
+                var ctx = document.getElementById("c4chart").getContext('2d');
+                var myChart = new Chart(ctx, {
+                  type: 'pie',
+                  data: {
+                    labels: NameArr,
+                    datasets: [{
+                      label: 'Customer Base',
+                      data: ImpArr,
+                      backgroundColor:  ClrArr
+                    }]
+                  }
+                });
+        }
+            });
+
+         $.ajax({
+        type: 'POST',
+        url: '/getpatternsc5',
+        dataType: "json",
+        async:false,
+        success: function(response) {
+                
+                  response = $.parseJSON('[' + response + ']');
+                  console.log(response[0]+ " ===")
+                console.log(response[0].impactSize+ " ===")
+                var NameArr = []; 
+                var ImpArr = []; 
+                var ClrArr = ["#ff0000","#990099","#ff9900","#009900"];
+                for (i = 0; i < response.length; i++) { 
+                    NameArr.push(response[i].items)
+                    ImpArr.push(response[i].support)
+                    // ClrArr.push(response[i].color)
+                }
+                
+                var ctx = document.getElementById("c5chart").getContext('2d');
+                var myChart = new Chart(ctx, {
+                  type: 'pie',
+                  data: {
+                    labels: NameArr,
+                    datasets: [{
+                      label: 'Customer Base',
+                      data: ImpArr,
+                      backgroundColor:  ClrArr
+                    }]
+                  }
+                });
+        }
+            });
+
+                  $.ajax({
+        type: 'POST',
+        url: '/getpatternsc6',
+        dataType: "json",
+        async:false,
+        success: function(response) {
+                
+                  response = $.parseJSON('[' + response + ']');
+                  console.log(response[0]+ " ===")
+                console.log(response[0].impactSize+ " ===")
+                var NameArr = []; 
+                var ImpArr = []; 
+                var ClrArr = ["#ff0000","#990099","#ff9900","#009900"];
+                for (i = 0; i < response.length; i++) { 
+                    NameArr.push(response[i].items)
+                    ImpArr.push(response[i].support)
+                    // ClrArr.push(response[i].color)
+                }
+                
+                var ctx = document.getElementById("c6chart").getContext('2d');
+                var myChart = new Chart(ctx, {
+                  type: 'pie',
+                  data: {
+                    labels: NameArr,
+                    datasets: [{
+                      label: 'Customer Base',
+                      data: ImpArr,
+                      backgroundColor:  ClrArr
+                    }]
+                  }
+                });
+        }
+            });
+
+
+                  $.ajax({
+        type: 'POST',
+        url: '/getpatternsc7',
+        dataType: "json",
+        async:false,
+        success: function(response) {
+                
+                  response = $.parseJSON('[' + responworkingtemplatese + ']');
+                  console.log(response[0]+ " ===")
+                console.log(response[0].impactSize+ " ===")
+                var NameArr = []; 
+                var ImpArr = []; 
+                var ClrArr = ["#ff0000","#990099","#ff9900","#009900"];
+                for (i = 0; i < response.length; i++) { 
+                    NameArr.push(response[i].items)
+                    ImpArr.push(response[i].support)
+                    // ClrArr.push(response[i].color)
+                }
+                
+                var ctx = document.getElementById("c7chart").getContext('2d');
+                var myChart = new Chart(ctx, {
+                  type: 'pie',
+                  data: {
+                    labels: NameArr,
+                    datasets: [{
+                      label: 'Customer Base',
+                      data: ImpArr,
+                      backgroundColor:  ClrArr
+                    }]
+                  }
+                });
+        }
+            });
+
+
+
+                        $.ajax({
+        type: 'POST',
+        url: '/getpatternsc8',
+        dataType: "json",
+        async:false,
+        success: function(response) {
+                
+                  response = $.parseJSON('[' + response + ']');
+                  console.log(response[0]+ " ===")
+                console.log(response[0].impactSize+ " ===")
+                var NameArr = []; 
+                var ImpArr = []; 
+                var ClrArr = ["#ff0000","#990099","#ff9900","#009900"];
+                for (i = 0; i < response.length; i++) { 
+                    NameArr.push(response[i].items)
+                    ImpArr.push(response[i].support)
+                    // ClrArr.push(response[i].color)
+                }
+                
+                var ctx = document.getElementById("c8chart").getContext('2d');
+                var myChart = new Chart(ctx, {
+                  type: 'pie',
+                  data: {
+                    labels: NameArr,
+                    datasets: [{
+                      label: 'Customer Base',
+                      data: ImpArr,
+                      backgroundColor:  ClrArr
+                    }]
+                  }
+                });
+        }
+            });
+
+
+        $.ajax({
+        type: 'POST',
+        url: '/getpatternsc9',
+        dataType: "json",
+        async:false,
+        success: function(response) {
+                
+                  response = $.parseJSON('[' + response + ']');
+                  console.log(response[0]+ " ===")
+                console.log(response[0].impactSize+ " ===")
+                var NameArr = []; 
+                var ImpArr = []; 
+                var ClrArr = ["#ff0000","#990099","#ff9900","#009900"];
+                for (i = 0; i < response.length; i++) { 
+                    NameArr.push(response[i].items)
+                    ImpArr.push(response[i].support)
+                    // ClrArr.push(response[i].color)
+                }
+                
+                var ctx = document.getElementById("c9chart").getContext('2d');
+                var myChart = new Chart(ctx, {
+                  type: 'pie',
+                  data: {
+                    labels: NameArr,
+                    datasets: [{
+                      label: 'Customer Base',
+                      data: ImpArr,
+                      backgroundColor:  ClrArr
+                    }]
+                  }
+                });
+        }
+            });
+
+
+
+        $.ajax({
+        type: 'POST',
+        url: '/parttimecompasss',
+        dataType: "json",
+        async:false,
+        success: function(response) {
+                
+                  response = $.parseJSON('[' + response + ']');
+                  console.log(response[0]+ " ===")
+                console.log(response[0].impactSize+ " ===")
+                var NameArr = []; 
+                var ImpArr = []; 
+                var ClrArr = ["#ff0000","#990099","#ff9900","#009900"];
+                for (i = 0; i < response.length; i++) { 
+                    NameArr.push(response[i].items)
+                    ImpArr.push(response[i].support)
+                    // ClrArr.push(response[i].color)
+                }
+                
+                var ctx = document.getElementById("c3chart").getContext('2d');
+                var myChart = new Chart(ctx, {
+                  type: 'pie',
+                  data: {
+                    labels: NameArr,
+                    datasets: [{
+                      label: 'Customer Base',
+                      data: ImpArr,
+                      backgroundColor:  ClrArr
+                    }]
+                  }
+                });
+        }
+            });
+
 
 
 

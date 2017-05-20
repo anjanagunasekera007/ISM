@@ -135,11 +135,11 @@ print " k j k j k j k j k jk j j jk k j k"
 
 counter  =0
 zerolist = []
-for i in least:
-    if i.soldTotal ==0:
-        print "FOUND"
-        counter = counter +1
-        zerolist.append(i)
+# for i in least:
+#     if i.soldTotal ==0:
+#         print "FOUND"
+#         counter = counter +1
+#         zerolist.append(i)
 
 print counter
 print len(zerolist)
@@ -176,6 +176,11 @@ def main():
 @app.route('/dashboard', methods=['GET', 'POST'])
 def dashboard():
     mylist = [1,2,3,4,5,6];
+    for i in least:
+        if i.soldTotal == 0:
+            print "FOUND"
+            # counter = counter + 1
+            zerolist.append(i)
     return render_template('dashboard.html', data = mylist,name="the name",mostlist=most,leastlist=least,zlist=zerolist )
 
 # @app.route('/', methods=['GET', 'POST'])
@@ -213,12 +218,52 @@ def Instantfoodproducts():
 @app.route('/UHTmilk', methods=['GET', 'POST'])
 def UHTmilk():
     error = None;
-    return render_template('ajaxjquery.html', error=error,datalist=punklist,mostlist=most,leastlist=least)
+    return render_template('ajaxjquery.html', error=error,item=punklist[1],mostlist=most,leastlist=least)
 
 @app.route('/abrasivecleaner', methods=['GET', 'POST'])
 def abrasivecleaner():
     error = None;
     return render_template('itemwisesales.html', error=error,item=punklist[2],minstock=minstock)
+
+@app.route('/Artificialsweetener', methods=['GET', 'POST'])
+def Artificialsweetener():
+    error = None;
+    return render_template('itemwisesales.html', error=error,item=punklist[3],minstock=minstock)
+
+@app.route('/babycosmetics', methods=['GET', 'POST'])
+def babycosmetics():
+    error = None;
+    return render_template('itemwisesales.html', error=error,item=punklist[4],minstock=minstock)
+
+@app.route('/babyfood', methods=['GET', 'POST'])
+def babyfood():
+    error = None;
+    return render_template('itemwisesales.html', error=error,item=punklist[5],minstock=minstock)
+
+@app.route('/bags', methods=['GET', 'POST'])
+def bags():
+    error = None;
+    return render_template('itemwisesales.html', error=error,item=punklist[6],minstock=minstock)
+
+@app.route('/bakingpowder', methods=['GET', 'POST'])
+def bakingpowder():
+    error = None;
+    return render_template('itemwisesales.html', error=error,item=punklist[7],minstock=minstock)
+
+@app.route('/bathroomcleaner', methods=['GET', 'POST'])
+def bathroomcleaner():
+    error = None;
+    return render_template('itemwisesales.html', error=error,item=punklist[8],minstock=minstock)
+
+@app.route('/beef', methods=['GET', 'POST'])
+def beef():
+    error = None;
+    return render_template('itemwisesales.html', error=error,item=punklist[9],minstock=minstock)
+
+@app.route('/berries', methods=['GET', 'POST'])
+def berries():
+    error = None;
+    return render_template('itemwisesales.html', error=error,item=punklist[10],minstock=minstock)
 
 
 # =============================================== ITEMS =========================================================================?
@@ -295,18 +340,30 @@ def createOrder():
     return 0;
 
 # ---------------------------------------------
-from mergecomp import returnSegments
-from mergecomp import returnFREQUENTITEMS
-segments = returnSegments()
-print len(segments)
 
-patterns = returnFREQUENTITEMS()
+#'''''''''
+from FMergeComponent import returnSegmentsFCOMP
+CustomerSegments = returnSegmentsFCOMP()
+print len(CustomerSegments)
+#'''''''''
 # print len(patterns)
 # sys.exit(456)
+# segments = returnSegments()
+# print len(segments)
 
+# patterns = returnFREQUENTITEMS()
+# print  " GENERATING THE CUSTOMER DATA NOWWWW"
+# for u in segments:
+#     print u
+#     print " [][][][]"
+# for u in segments:
+#     print u.size
+# print " m m m "
+# sys.exit(007)
 
 @app.route('/customersegments', methods=['GET', 'POST'])
 def customersegments():
+
     # print "WORKING"
     # error = None;
     # keys = request.args.get('itemname')
@@ -318,7 +375,7 @@ def customersegments():
     # # pis = " yu gi oh"
     # # printem(user,password)
     # # return render_template('tables.html', error=error, datalist=punklist, mostlist=most, leastlist=least)
-    return render_template('customersegments.html')
+    return render_template('customersegments.html',patternlist=CustomerSegments)
 
 
 # @app.route('/ShelfNotification', methods=['GET', 'POST'])
@@ -434,12 +491,12 @@ def initiateDEPLETION():
     return t
 
 
-from  mergecomp import returnSegments
-segmentlist = returnSegments()
+# from  mergecomp import returnSegments
+# segmentlist = returnSegments()
 @app.route('/getSegments', methods=['GET','POST'])
 def getSegments():
     print " * * * - - - * * * "
-
+    segmentlist = CustomerSegments
     for i in segmentlist:
         print i
     # sys.exit(777)
@@ -458,6 +515,108 @@ def getSegments():
     #     print i
     t = jsonify(oblist)
     return t
+
+from FMergeComponent import readFPatterns
+
+@app.route('/getpatternsc1', methods=['GET','POST'])
+def getpatternsc1():
+    print " * * * - - - * * * "
+    fpatterns = readFPatterns("c1")
+    oblist = []
+    for n in fpatterns:
+        r = json.dumps(n.__dict__)
+        oblist.append(r)
+    t = jsonify(oblist)
+    return t
+
+@app.route('/getpatternsc2', methods=['GET','POST'])
+def getpatternsc2():
+    print " * * * - - - * * * "
+    fpatterns = readFPatterns("c2")
+    oblist = []
+    for n in fpatterns:
+        r = json.dumps(n.__dict__)
+        oblist.append(r)
+    t = jsonify(oblist)
+    return t
+
+@app.route('/getpatternsc3', methods=['GET','POST'])
+def getpatternsc3():
+    print " * * * - - - * * * "
+    fpatterns = readFPatterns("c3")
+    oblist = []
+    for n in fpatterns:
+        r = json.dumps(n.__dict__)
+        oblist.append(r)
+    t = jsonify(oblist)
+    return t
+
+@app.route('/getpatternsc4', methods=['GET','POST'])
+def getpatternsc4():
+    print " * * * - - - * * * "
+    fpatterns = readFPatterns("c4")
+    oblist = []
+    for n in fpatterns:
+        r = json.dumps(n.__dict__)
+        oblist.append(r)
+    t = jsonify(oblist)
+    return t
+
+@app.route('/getpatternsc5', methods=['GET','POST'])
+def getpatternsc5():
+    print " * * * - - - * * * "
+    fpatterns = readFPatterns("c5")
+    oblist = []
+    for n in fpatterns:
+        r = json.dumps(n.__dict__)
+        oblist.append(r)
+    t = jsonify(oblist)
+    return t
+
+@app.route('/getpatternsc6', methods=['GET','POST'])
+def getpatternsc6():
+    print " * * * - - - * * * "
+    fpatterns = readFPatterns("c6")
+    oblist = []
+    for n in fpatterns:
+        r = json.dumps(n.__dict__)
+        oblist.append(r)
+    t = jsonify(oblist)
+    return t
+
+@app.route('/getpatternsc7', methods=['GET','POST'])
+def getpatternsc7():
+    print " * * * - - - * * * "
+    fpatterns = readFPatterns("c7")
+    oblist = []
+    for n in fpatterns:
+        r = json.dumps(n.__dict__)
+        oblist.append(r)
+    t = jsonify(oblist)
+    return t
+
+@app.route('/getpatternsc8', methods=['GET','POST'])
+def getpatternsc8():
+    print " * * * - - - * * * "
+    fpatterns = readFPatterns("c8")
+    oblist = []
+    for n in fpatterns:
+        r = json.dumps(n.__dict__)
+        oblist.append(r)
+    t = jsonify(oblist)
+    return t
+
+@app.route('/getpatternsc9', methods=['GET','POST'])
+def getpatternsc9():
+    print " * * * - - - * * * "
+    fpatterns = readFPatterns("c9")
+    oblist = []
+    for n in fpatterns:
+        r = json.dumps(n.__dict__)
+        oblist.append(r)
+    t = jsonify(oblist)
+    return t
+
 
 
 #========================= EXTERNAL FUNCTIONS =======================
