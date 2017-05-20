@@ -79,66 +79,16 @@ print(inspect(rah[1:5]))
 #************************************************************************************************************************
 print("Commencing Specialized association rule mining for -  whole milk - MINIMUM LENGTH OF RULE = 2")
 rere<-apriori(data=Groceries, parameter=list(supp=0.001,conf = 0.15,minlen=2), 
-              appearance = list(default="rhs",lhs="whole milk"),
+              appearance = list(default="rhs",lhs="baby cosmetics"),
               control = list(verbose=F))
 
 reresorted<-sort(rere, decreasing=TRUE,by="confidence")
 print(inspect(rere[1:5]))
 print(" 8 8 8 8 8 7 8 7 8 7 8 7 8 7 8 7 8 7 888888 7 8 7 8 7 8 7 8 7 8 7 8888888")
 #Write Association rules with whole milk as LHS 
-write(reresorted, file = "D:\\FYP\\R\\FINAL_RULE_MINING_SCRIPT\\whole_milk.csv", sep = ",")
+write(reresorted, file = "D:\\FYP\\R\\FINAL_RULE_MINING_SCRIPT\\baby cosmeticss.csv", sep = ",")
 
 
-#*************************************************************************************************************************
-print("Commencing Specialized association rule mining for -  Brown bread - MINIMUM LENGTH OF RULE = 2")
-rere<-apriori(data=Groceries, parameter=list(supp=0.001,conf = 0.15,minlen=2), 
-              appearance = list(default="rhs",lhs="brown bread"),
-              control = list(verbose=F))
-print(inspect(rere[1:5]))
-reresorted<-sort(rere, decreasing=TRUE,by="confidence")
-
-#Write Association rules with whole milk as LHS 
-write(reresorted, file = "D:\\FYP\\R\\FINAL_RULE_MINING_SCRIPT\\brown_bread.csv", sep = ",")
-plot(reresorted,method="graph",interactive=TRUE,shading=NA)
-#*************************************************************************************************************************
-
-#*************************************************************************************************************************
-print("Commencing Specialized association rule mining for -  beef - MINIMUM LENGTH OF RULE = 2")
-rere<-apriori(data=Groceries, parameter=list(supp=0.001,conf = 0.15,minlen=2), 
-              appearance = list(default="rhs",lhs="beef"),
-              control = list(verbose=F))
-
-reresorted<-sort(rere, decreasing=TRUE,by="confidence")
-
-#Write Association rules with whole milk as LHS 
-write(reresorted, file = "D:\\FYP\\R\\FINAL_RULE_MINING_SCRIPT\\beef.csv", sep = ",")
-#*************************************************************************************************************************
-
-#*************************************************************************************************************************
-print("Commencing Specialized association rule mining for -  chicken - MINIMUM LENGTH OF RULE = 2")
-rere<-apriori(data=Groceries, parameter=list(supp=0.001,conf = 0.15,minlen=2), 
-              appearance = list(default="rhs",lhs="cream cheese"),
-              control = list(verbose=F))
-
-reresorted<-sort(rere, decreasing=TRUE,by="confidence")
-
-#Write Association rules with whole milk as LHS 
-write(reresorted, file = "D:\\FYP\\R\\FINAL_RULE_MINING_SCRIPT\\cream cheese.csv", sep = ",")
-#*************************************************************************************************************************
-
-
-
-
-
-
-print("Prining Specialized association rule mining for -  whole milk - MINIMUM LENGTH OF RULE = 2")
-print(inspect(reresorted[1:5]))
-print("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*")
-
-library(arulesViz)
-png("D:\\FYP\\R\\mba\\wholemilk.png", width=4, height=4, units="in", res=300)
-plot(reresorted,method="graph",interactive=TRUE,shading=NA)
-dev.off()
 
 
 #==============

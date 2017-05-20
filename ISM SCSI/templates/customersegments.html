@@ -49,128 +49,31 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="dashboard.html"> ISMCxES - ZEUS Superstore(Nugegoda) - Superbranch</a>
+                
+                <a class="navbar-brand" > ACME Supermarket(Nugegoda)  </a>
 
 
 
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
-{#                <li class="dropdown">#}
-{#                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>#}
-{#                    <ul class="dropdown-menu message-dropdown">#}
-{#                        <li class="message-preview">#}
-{#                            <a href="#">#}
-{#                                <div class="media">#}
-{#                                    <span class="pull-left">#}
-{#                                        <img class="media-object" src="http://placehold.it/50x50" alt="">#}
-{#                                    </span>#}
-{#                                    <div class="media-body">#}
-{#                                        <h5 class="media-heading"><strong>John Smith</strong>#}
-{#                                        </h5>#}
-{#                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>#}
-{#                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                            </a>#}
-{#                        </li>#}
-{#                        <li class="message-preview">#}
-{#                            <a href="#">#}
-{#                                <div class="media">#}
-{#                                    <span class="pull-left">#}
-{#                                        <img class="media-object" src="http://placehold.it/50x50" alt="">#}
-{#                                    </span>#}
-{#                                    <div class="media-body">#}
-{#                                        <h5 class="media-heading"><strong>John Smith</strong>#}
-{#                                        </h5>#}
-{#                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>#}
-{#                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                            </a>#}
-{#                        </li>#}
-{#                        <li class="message-preview">#}
-{#                            <a href="#">#}
-{#                                <div class="media">#}
-{#                                    <span class="pull-left">#}
-{#                                        <img class="media-object" src="http://placehold.it/50x50" alt="">#}
-{#                                    </span>#}
-{#                                    <div class="media-body">#}
-{#                                        <h5 class="media-heading"><strong>John Smith</strong>#}
-{#                                        </h5>#}
-{#                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>#}
-{#                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                            </a>#}
-{#                        </li>#}
-{#                        <li class="message-footer">#}
-{#                            <a href="#">Read All New Messages</a>#}
-{#                        </li>#}
-{#                    </ul>#}
-{#                </li>#}
-{#                <li class="dropdown">#}
-{#                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>#}
-{#                    <ul class="dropdown-menu alert-dropdown">#}
-{#                        <li>#}
-{#                            <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>#}
-{#                        </li>#}
-{#                        <li>#}
-{#                            <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>#}
-{#                        </li>#}
-{#                        <li>#}
-{#                            <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>#}
-{#                        </li>#}
-{#                        <li>#}
-{#                            <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>#}
-{#                        </li>#}
-{#                        <li>#}
-{#                            <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>#}
-{#                        </li>#}
-{#                        <li>#}
-{#                            <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>#}
-{#                        </li>#}
-{#                        <li class="divider"></li>#}
-{#                        <li>#}
-{#                            <a href="#">View All</a>#}
-{#                        </li>#}
-{#                    </ul>#}
-{#                </li>#}
-{#                <li class="dropdown">#}
-{#                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>#}
-{#                    <ul class="dropdown-menu">#}
-{#                        <li>#}
-{#                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>#}
-{#                        </li>#}
-{#                        <li>#}
-{#                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>#}
-{#                        </li>#}
-{#                        <li>#}
-{#                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>#}
-{#                        </li>#}
-{#                        <li class="divider"></li>#}
-{#                        <li>#}
-{#                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>#}
-{#                        </li>#}
-{#                    </ul>#}
-{#                </li>#}
+
             </ul>
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
-<div class="collapse navbar-collapse navbar-ex1-collapse">
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
                  <ul class="nav navbar-nav side-nav">
                     <li >
-                        <a href="{{ url_for('home') }}"><i class="fa fa-fw fa-dashboard"></i>Home</a>
+                        <a href="{{ url_for('home') }}"><i class="fa fa-fw fa-dashboard"></i> Home</a>
                     </li>
                     <li >
-                        <a href="{{ url_for('login') }}"><i class="fa fa-fw fa-bar-chart-o"></i> Item Sales</a>
-{#                        <a href="{{ url_for('login') }}">log in</a>#}
+                        <a href="{{ url_for('itemsales') }}"><i class="fa fa-fw fa-bar-chart-o"></i> Item Sales</a>
                     </li>
-                    <li >
-                        <a href="{{ url_for('StockNotification') }}"><i class="fa fa-fw fa-bar-chart-o"></i> Notifications of stocks</a>
+                    <li  >
+                        <a href="{{ url_for('StockNotification') }}"><i class="fa fa-fw fa-bell-o"></i> Notifications </a>
                     </li>
 
                     <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Items <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
                             <li>
                                 <a href="{{ url_for('Instantfoodproducts') }}">Instant food products</a>
@@ -179,545 +82,20 @@
                                 <a href="{{ url_for('UHTmilk') }}">UHT-milk</a>
                             </li>
                             <li>
-                                <a href="{{ url_for('abrasivecleaner') }}">abrasive cleaner</a>
+                                <a href="{{ url_for('abrasivecleaner') }}">Abrasive cleaner</a>
                             </li>
                             <li>
-{#                                <a href="{{ url_for('Artificialsweetener') }}">Artificial sweetener</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('babycosmetics') }}">baby cosmetics</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('babyfood') }}">baby food</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('bags') }}">bags</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('bakingpowder') }}">baking powder</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('bathroomcleaner') }}">bathroom cleaner</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('beef') }}">beef</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('berries') }}">berries</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('beverages') }}">beverages</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('bottledbeer') }}">bottled beer</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('bottledwater') }}">bottled water</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('brandy') }}">brandy</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('brown bread') }}">brownbread</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('butter') }}">butter</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('buttermilk') }}">butter milk</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('cakebar') }}">cake bar</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('candles') }}">candles</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('candy') }}">candy</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('cannedbeer') }}">canned beer</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('cannedfish') }}">cannedfish</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('cannedfruit') }}">canned fruit</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('cannedvegetables') }}">cannedvegetables</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('catfood') }}">cat food</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('cereals') }}">cereals</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('chewinggum') }}">chewing gum</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('chicken') }}">chicken</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('chocolate') }}">chocolate</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('chocolatemarshmallow') }}">chocolate marshmallow</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('citrusfruit') }}">citrus fruit</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('cleaner') }}">cleaner</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('clingfilmbags') }}">cling film/bags</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('cocoadrinks') }}"> cocoa drinks </a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('coffee') }}">coffee</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('condensedmilk') }}">condensed milk</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('cookingchocolate') }}">cooking chocolate</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('cookware') }}">cookware</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('cream') }}">cream</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('creamcheese') }}">cream cheese</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('curd') }}">curd</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('curdcheese') }}">curd cheese</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('decalcifier') }}">decalcifier</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('dentalcare') }}">dental care</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('dessert') }}">dessert</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('detergent') }}">detergent</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('dishcleaner') }}">dish cleaner</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('dishes') }}">dishes</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('dogfood') }}">dog food</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('domesticeggs') }}">domestic eggs</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('femalesanitaryproducts') }}">female sanitary products</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('finishedproducts') }}">finished products</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('fish') }}">fish</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('flour') }}">flour</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('flowerseeds') }}">flower (seeds)</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('flowersoilfertilizer') }}">flower soil/fertilizer</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('frankfurter') }}">frankfurter</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('frozenchicken') }}">frozen chicken</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('frozendessert') }}">frozen dessert</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('frozenfish') }}">frozen fish</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('frozenfruits') }}">frozen fruits</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('frozenmeals') }}">frozen meals</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('frozenpotatoproducts') }}">frozen potato products</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('frozenvegetables') }}">frozen vegetables</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('fruitvegetablejuice') }}">fruit/vegetable juice</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('grapes') }}"> grapes</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('hairspray') }}">hair spray</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('ham') }}">ham</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('hamburgermeat') }}">hamburger meat</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('hardcheese') }}">hard cheese</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('herbs') }}">herbs</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('honey') }}">honey</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('housekeepingproducts') }}">house keeping products</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('hygienearticles') }}">hygiene articles</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('icecream') }}">ice cream</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('instantcoffee') }}">instant coffee</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('jam') }}">jam</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('ketchup') }}">ketchup</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('kitchentowels') }}">kitchen towels</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('kitchenutensil') }}">kitchen utensil</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('lightbulbs') }}">light bulbs</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('liqueur') }}">liqueur</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('liquor') }}">liquor</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('liquorappetizer') }}">liquor (appetizer)</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('liverloaf') }}">liver loaf</a>#}
-{#                            </li>liver loaf#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('longlifebakeryproduct') }}">long life bakery product</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('makeupremover') }}">make up remover</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('malecosmetics') }}">male cosmetics</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('margarine') }}">margarine</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('mayonnaise') }}">mayonnaise</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('meat') }}">meat</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('meatspreads') }}">meat spreads</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('miscbeverages') }}">misc. beverages</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('mustard') }}">mustard</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('napkins') }}">napkins</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('newspapers') }}">newspapers</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('nutsnack') }}">nut snack</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('nutsprunes') }}">nuts/prunes</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('oil') }}">oil</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('onions') }}">onions</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('organicproducts') }}">organic products</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('organicsausage') }}">organic sausage</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('othervegetables') }}">other vegetables</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('packagedfruitvegetables') }}">packaged fruit/vegetables</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('pasta') }}">pasta</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('pastry') }}">pastry</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('petcare') }}">pet care</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('photofilm') }}">photo/film</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('pickledvegetables') }}">pickled vegetables</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('pipfruit') }}">pip fruit</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('popcorn') }}">popcorn</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('pork') }}">pork</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('potplants') }}">pot plants</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('potatoproducts') }}">potato products</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('preservationproducts') }}">preservation products</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('processedcheese') }}">processed cheese</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('prosecco') }}">prosecco</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('puddingpowder') }}">pudding powder</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('readysoups') }}">ready soups</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('redblushwine') }}">red/blush wine</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('rice') }}">rice</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('rollproducts') }}">roll products</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('rollsbuns') }}">rolls/buns</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('rootvegetables') }}">root vegetables</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('rubbingalcohol') }}">rubbing alcohol</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('rum') }}">rum</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('saladdressing') }}">salad dressing</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('salt') }}">salt</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('saltysnack') }}">saltysnack</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('sauces') }}">sauces</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('sausage') }}">sausage</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('seasonalproducts') }}">seasonal products</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('semifinishedbread') }}">semi-finished bread</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('shoppingbags') }}">shopping bags</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('skincare') }}">skin care</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('slicedcheese') }}">sliced cheese</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('snackproducts') }}">snack products</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('soap') }}">soap</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('soda') }}">soda</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('softcheese') }}">soft cheese</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('softener') }}">softener</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('soundstoragemedium') }}">sound storage medium</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('soups') }}">soups</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('sparklingwine') }}">sparkling wine</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('specialtybar') }}">specialty bar</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('specialtycheese') }}">specialty cheese</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('specialtychocolate') }}">specialty chocolate</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('specialtyfat') }}">specialty fat</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('specialtyvegetables') }}">specialty vegetables</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('spices') }}">spices</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('spreadcheese') }}">spread cheese</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('sugar') }}">sugar</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('sweetspreads') }}">sweet spreads</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('syrup') }}">syrup</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('tea') }}">tea</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('tidbits') }}">tidbits</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('toiletcleaner') }}">toilet cleaner</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('tropicalfruit') }}">tropical fruit</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('turkey') }}">turkey</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('vinegar') }}">vinegar</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('waffles') }}">waffles</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('whippedsourcream') }}"> whipped/sour cream</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('whisky') }}">whisky</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('whitebread') }}">white bread</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('whitewine') }}">white wine</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('wholemilk') }}">whole milk</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('yogurt') }}">yogurt</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('zwieback') }}">zwieback</a>#}
-{#                            </li>#}
-
-
-
-
+                                <a href="{{ url_for('bakingpowder') }}">baking powder</a>
+                            </li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="{{ url_for('itemPatterns') }}"><i class="fa fa-fw fa-bar-chart-o"></i> Item Patterns</a>
+                    <li >
+                        <a href="{{ url_for('itemPatterns') }}"><i class="fa fa-fw fa-pie-chart"></i> Buying Patterns</a>
                     </li>
-{#                    <li >#}
-{#                        <a href="{{ url_for('itemPatterns') }}"><i class="fa fa-fw fa-bar-chart-o"></i> Item Patterns</a>#}
-{#                        <a href="{{ url_for('login') }}">log in</a>#}
-{#                    </li>#}
                     <li class="active">
-                        <a href="{{ url_for('customersegments') }}"><i class="fa fa-fw fa-bar-chart-o"></i> Customer Management</a>
+                        <a href="{{ url_for('customersegments') }}"><i class="fa fa-fw fa fa-group"></i> Customer Base Info</a>
                     </li>
-{#                    <li>#}
-{#                        <a href="{{ url_for('itemPatterns') }}"><i class="fa fa-fw fa-bar-chart-o"></i> Item Patterns</a>#}
-{#                    </li>#}
-                    <!--<li>-->
-                        <!--<a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>-->
-                    <!--</li>-->
-                    <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
-                        <ul id="demo" class="collapse">
-                            <li>
-                                <a href="#">Dropdown Item</a>
-                            </li>
-                            <li>
-                                <a href="#">Dropdown Item</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>
-                    </li>
-                    <li>
-                        <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
-                    </li>
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -734,7 +112,7 @@
 
 
 
-                            Dashboard <small> Customer Management</small>
+                            Customer segments <small> Segmented buying patterns</small>
 
 
 
@@ -744,32 +122,15 @@
                                 <i class="fa fa-dashboard"></i> Home
 
                             </li>
+                            <li>
+                                <i class="fa fa-desktop"></i> Customer segments
+                            </li>
                         </ol>
                     </div>
                 </div>
                 <!-- /.row -->
 
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="alert alert-info alert-dismissable">
-                            <!--<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>-->
-                            <!--<i class="fa fa-info-circle"></i>  <strong>Like SB Admin?</strong> Try out <a href="http://startbootstrap.com/template-overviews/sb-admin-2" class="alert-link">SB Admin 2</a> for additional features!-->
-     <!--====================================================-->
 
-
-
-<div class="row">
-    <div class="col-lg-1"></div>
-    <div class="col-lg-10"> p p papara pappaa   ap p p p</div>
-    <div class="col-lg-1"></div>
-</div>
-
-
-
-                            <!--===================================================-->
-                        </div>
-                    </div>
-                </div>
                 <!-- /.row -->
 
                 <div class="row">
@@ -987,7 +348,23 @@
                             </div>
                         </div>
                     </div> -->
-                    </canvas><canvas id="myChart"></canvas>
+                       <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> Customer Base Distribution</h3>
+                            </div>
+                            <div class="panel-footer">
+
+
+                                </canvas><canvas id="myChart"></canvas>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
                 </div>
                 <!-- /.row -->
 
@@ -997,7 +374,7 @@
                     <div class="col-lg-6">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> 0 Sale Items</h3>
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> Segment 1 Buying patterns</h3>
                             </div>
                             <div class="panel-body">
 
@@ -1013,7 +390,7 @@
                     <div class="col-lg-6">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> 0 Sale Items</h3>
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> Segment 2 Buying patterns</h3>
                             </div>
                             <div class="panel-body">
 
@@ -1029,7 +406,7 @@
                     <div class="col-lg-6">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> 0 Sale Items</h3>
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> Segment 3 Buying patterns</h3>
                             </div>
                             <div class="panel-body">
 
@@ -1045,7 +422,7 @@
                     <div class="col-lg-6">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> 0 Sale Items</h3>
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> Segment 4 Buying patterns</h3>
                             </div>
                             <div class="panel-body">
 
@@ -1062,7 +439,7 @@
                     <div class="col-lg-6">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> 0 Sale Items</h3>
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> Segment 5 Buying patterns</h3>
                             </div>
                             <div class="panel-body">
 
@@ -1080,7 +457,7 @@
                     <div class="col-lg-6">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> 0 Sale Items</h3>
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> Segment 6 Buying patterns</h3>
                             </div>
                             <div class="panel-body">
 
@@ -1092,12 +469,12 @@
                 </div>
 
 
-                <div id="c7" class="row">
+<!--                 <div id="c7" class="row">
                     <div class="col-lg-3"></div>
                     <div class="col-lg-6">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> 0 Sale Items</h3>
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> Segment 7 Buying patterns</h3>
                             </div>
                             <div class="panel-body">
 
@@ -1113,7 +490,7 @@
                     <div class="col-lg-6">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> 0 Sale Items</h3>
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> Segment 8 Buying patterns</h3>
                             </div>
                             <div class="panel-body">
 
@@ -1129,7 +506,7 @@
                     <div class="col-lg-6">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> 0 Sale Items</h3>
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> Segment 9 Buying patterns</h3>
                             </div>
                             <div class="panel-body">
 
@@ -1138,145 +515,9 @@
                         </div>
                     </div>
                     <div class="col-lg-3"></div>
-                </div>
+                </div> -->
 
 <!-- ........................................................................................ -->
-
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-long-arrow-right fa-fw"></i> Donut Chart</h3>
-                            </div>
-                            <div class="panel-body">
-                                <div id="morris-donut-chart"></div>
-                                <div class="text-right">
-                                    <a href="#">View Details <i class="fa fa-arrow-circle-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i> Tasks Panel</h3>
-                            </div>
-                            <div class="panel-body">
-                                <div class="list-group">
-                                    <a href="#" class="list-group-item">
-                                        <span class="badge">just now</span>
-                                        <i class="fa fa-fw fa-calendar"></i> Calendar updated
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <span class="badge">4 minutes ago</span>
-                                        <i class="fa fa-fw fa-comment"></i> Commented on a post
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <span class="badge">23 minutes ago</span>
-                                        <i class="fa fa-fw fa-truck"></i> Order 392 shipped
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <span class="badge">46 minutes ago</span>
-                                        <i class="fa fa-fw fa-money"></i> Invoice 653 has been paid
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <span class="badge">1 hour ago</span>
-                                        <i class="fa fa-fw fa-user"></i> A new user has been added
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <span class="badge">2 hours ago</span>
-                                        <i class="fa fa-fw fa-check"></i> Completed task: "pick up dry cleaning"
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <span class="badge">yesterday</span>
-                                        <i class="fa fa-fw fa-globe"></i> Saved the world
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <span class="badge">two days ago</span>
-                                        <i class="fa fa-fw fa-check"></i> Completed task: "fix error on sales page"
-                                    </a>
-                                </div>
-                                <div class="text-right">
-                                    <a href="#">View All Activity <i class="fa fa-arrow-circle-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-money fa-fw"></i> Transactions Panel</h3>
-                            </div>
-                            <div class="panel-body">
-                                <div class="table-responsive">
-                                    <table class="table table-bordered table-hover table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th>Order #</th>
-                                                <th>Order Date</th>
-                                                <th>Order Time</th>
-                                                <th>Amount (USD)</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>3326</td>
-                                                <td>10/21/2013</td>
-                                                <td>3:29 PM</td>
-                                                <td>$321.33</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3325</td>
-                                                <td>10/21/2013</td>
-                                                <td>3:20 PM</td>
-                                                <td>$234.34</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3324</td>
-                                                <td>10/21/2013</td>
-                                                <td>3:03 PM</td>
-                                                <td>$724.17</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3323</td>
-                                                <td>10/21/2013</td>
-                                                <td>3:00 PM</td>
-                                                <td>$23.71</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3322</td>
-                                                <td>10/21/2013</td>
-                                                <td>2:49 PM</td>
-                                                <td>$8345.23</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3321</td>
-                                                <td>10/21/2013</td>
-                                                <td>2:23 PM</td>
-                                                <td>$245.12</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3320</td>
-                                                <td>10/21/2013</td>
-                                                <td>2:15 PM</td>
-                                                <td>$5663.54</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3319</td>
-                                                <td>10/21/2013</td>
-                                                <td>2:13 PM</td>
-                                                <td>$943.45</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="text-right">
-                                    <a href="#">View All Transactions <i class="fa fa-arrow-circle-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <!-- /.row -->
 
             </div>
@@ -1327,7 +568,7 @@
                 for (i = 0; i < js.length; i++) {
                     TotalArr.push(js[i].size)
                 }
-                alert(TotalArr[0])
+                // alert(TotalArr[0])
                 var ctx = document.getElementById("piechart").getContext('2d');
                 var myChart = new Chart(ctx, {
                   type: 'bar',

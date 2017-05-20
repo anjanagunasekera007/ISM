@@ -8,14 +8,17 @@ class Impact_overall:
    'Common base class for all employees'
    itemCount = 0
 
-   def __init__(self, name, impactSize):
+   def __init__(self, name, impactSize,chex):
       self.name = name
       self.impactSize = impactSize
+      self.chex =  chex
 
 OLIST = []
-def readImpact():
+chexArray = ["#f15854","#decf3f","#b276b2","#b2912f","#f17Cb0","#60bd68","#faa43a","#5da5da","#4d4d4d","#433159","#f7c785"]
+def readImpact(itemname):
+    c =0
     p = []
-    with open('D:/FYP/ISM SCSI/datasets/Instant food products.csv') as csvfile:
+    with open('D:/FYP/ISM SCSI/datasets/'+itemname+'.csv') as csvfile:
         readCSV = csv.reader(csvfile, delimiter=',')
         for impact in readCSV:
             impactList.append(impact)
@@ -26,7 +29,8 @@ def readImpact():
             t = impact[1].split("=>")
             print str(len(t)) + " size" +  t[1]
 
-            oimpact = Impact_overall(t[1],impact[3])
+            oimpact = Impact_overall(t[1],impact[3],chexArray[c])
+            c = c+1
             p.append(oimpact)
             # print str(len(transaction))
             # print ";;;;;;;;;;;;;;;;;;;;;"
@@ -34,7 +38,7 @@ def readImpact():
     print len(p)
     return p
 
-readImpact()
+# readImpact()
 
 # print len(OLIST)
 #

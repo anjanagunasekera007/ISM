@@ -12,6 +12,7 @@ import json
 from ARProcessor import returnAssociations
 from Initialization import initiateStartup
 from flask import  jsonify
+# from ParameterizedOperations import readImpact
 from ParameterizedOperations import readImpact
 from ParameterizedOperations import Impact_overall
 from DBHandler import getAllRestockNotifications
@@ -24,11 +25,11 @@ restocks = getAllRestockNotifications()
 for t in restocks:
     print t.notification + " " + str(type(t))
 # sys.exit(666)
-pppp = readImpact()
-for y in pppp:
-    print y.name
-    print y.impactSize
-print len(pppp)
+# pppp = readImpact()
+# for y in pppp:
+#     print y.name
+#     print y.impactSize
+# print len(pppp)
 # sys.exit(89)
 status = initiateStartup()
 for g in status:
@@ -213,52 +214,18 @@ def Instantfoodproducts():
 @app.route('/UHTmilk', methods=['GET', 'POST'])
 def UHTmilk():
     error = None;
-    return render_template('ajaxjquery.html', error=error,item=punklist[1],mostlist=most,leastlist=least)
+    return render_template('itemwisesales.html', error=error,item=punklist[1],mostlist=most,leastlist=least)
 
 @app.route('/abrasivecleaner', methods=['GET', 'POST'])
 def abrasivecleaner():
     error = None;
     return render_template('itemwisesales.html', error=error,item=punklist[2],minstock=minstock)
 
-@app.route('/Artificialsweetener', methods=['GET', 'POST'])
-def Artificialsweetener():
-    error = None;
-    return render_template('itemwisesales.html', error=error,item=punklist[3],minstock=minstock)
-
-@app.route('/babycosmetics', methods=['GET', 'POST'])
-def babycosmetics():
-    error = None;
-    return render_template('itemwisesales.html', error=error,item=punklist[4],minstock=minstock)
-
-@app.route('/babyfood', methods=['GET', 'POST'])
-def babyfood():
-    error = None;
-    return render_template('itemwisesales.html', error=error,item=punklist[5],minstock=minstock)
-
-@app.route('/bags', methods=['GET', 'POST'])
-def bags():
-    error = None;
-    return render_template('itemwisesales.html', error=error,item=punklist[6],minstock=minstock)
-
 @app.route('/bakingpowder', methods=['GET', 'POST'])
 def bakingpowder():
     error = None;
     return render_template('itemwisesales.html', error=error,item=punklist[7],minstock=minstock)
 
-@app.route('/bathroomcleaner', methods=['GET', 'POST'])
-def bathroomcleaner():
-    error = None;
-    return render_template('itemwisesales.html', error=error,item=punklist[8],minstock=minstock)
-
-@app.route('/beef', methods=['GET', 'POST'])
-def beef():
-    error = None;
-    return render_template('itemwisesales.html', error=error,item=punklist[9],minstock=minstock)
-
-@app.route('/berries', methods=['GET', 'POST'])
-def berries():
-    error = None;
-    return render_template('itemwisesales.html', error=error,item=punklist[10],minstock=minstock)
 
 
 # =============================================== ITEMS =========================================================================?
@@ -428,7 +395,11 @@ def getItemList():
 
 @app.route('/getImpactIFP', methods=['GET','POST'])
 def getImpactIFP():
-    print "WORKING = = = =  * * FUCKKKK"
+    print "W 8 8 8 8 8 8 KK"
+    user = request.form['message']
+    print user
+    pppp = readImpact(user)
+    # sys.exit(747)
     u = punklist
     oblist = []
     for n in pppp:
@@ -581,7 +552,7 @@ def getpatternsc6():
 
 @app.route('/getpatternsc7', methods=['GET','POST'])
 def getpatternsc7():
-    print " * * * - - - * * * "
+    print " PATTERN 7 * * * - - - * * * "
     fpatterns = readFPatterns("c7")
     oblist = []
     for n in fpatterns:
@@ -592,7 +563,7 @@ def getpatternsc7():
 
 @app.route('/getpatternsc8', methods=['GET','POST'])
 def getpatternsc8():
-    print " * * * - - - * * * "
+    print "PATTERN 8 * * * - - - * * * "
     fpatterns = readFPatterns("c8")
     oblist = []
     for n in fpatterns:
@@ -603,7 +574,7 @@ def getpatternsc8():
 
 @app.route('/getpatternsc9', methods=['GET','POST'])
 def getpatternsc9():
-    print " * * * - - - * * * "
+    print "  PATTERN 9* * * - - - * * * "
     fpatterns = readFPatterns("c9")
     oblist = []
     for n in fpatterns:
