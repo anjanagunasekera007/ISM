@@ -43,121 +43,25 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="dashboard.html">SB Admin</a>
+                <a class="navbar-brand" > ACME Supermarket(Nugegoda)  </a>
             </div>
             <!-- Top Menu Items -->
-            <ul class="nav navbar-right top-nav">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
-                    <ul class="dropdown-menu message-dropdown">
-                        <li class="message-preview">
-                            <a href="#">
-                                <div class="media">
-                                    <span class="pull-left">
-                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
-                                    </span>
-                                    <div class="media-body">
-                                        <h5 class="media-heading"><strong>John Smith</strong>
-                                        </h5>
-                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="message-preview">
-                            <a href="#">
-                                <div class="media">
-                                    <span class="pull-left">
-                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
-                                    </span>
-                                    <div class="media-body">
-                                        <h5 class="media-heading"><strong>John Smith</strong>
-                                        </h5>
-                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="message-preview">
-                            <a href="#">
-                                <div class="media">
-                                    <span class="pull-left">
-                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
-                                    </span>
-                                    <div class="media-body">
-                                        <h5 class="media-heading"><strong>John Smith</strong>
-                                        </h5>
-                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="message-footer">
-                            <a href="#">Read All New Messages</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
-                    <ul class="dropdown-menu alert-dropdown">
-                        <li>
-                            <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">View All</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <div class="collapse navbar-collapse navbar-ex1-collapse">
                  <ul class="nav navbar-nav side-nav">
                     <li >
-                        <a href="{{ url_for('home') }}"><i class="fa fa-fw fa-dashboard"></i>Home</a>
+                        <a href="{{ url_for('home') }}"><i class="fa fa-fw fa-dashboard"></i> Home</a>
                     </li>
                     <li class="active">
-                        <a href="{{ url_for('login') }}"><i class="fa fa-fw fa-bar-chart-o"></i> Item Sales</a>
-{#                        <a href="{{ url_for('login') }}">log in</a>#}
+                        <a href="{{ url_for('itemsales') }}"><i class="fa fa-fw fa-bar-chart-o"></i> Item Sales</a>
                     </li>
+                    <li >
+                        <a href="{{ url_for('StockNotification') }}"><i class="fa fa-fw fa-bell-o"></i> Notifications </a>
+                    </li>
+
                     <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Items <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
                             <li>
                                 <a href="{{ url_for('Instantfoodproducts') }}">Instant food products</a>
@@ -165,546 +69,42 @@
                             <li>
                                 <a href="{{ url_for('UHTmilk') }}">UHT-milk</a>
                             </li>
-{#                            <li>#}
-{#                                <a href="{{ url_for('abrasivecleaner') }}">abrasive cleaner</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('Artificialsweetener') }}">Artificial sweetener</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('babycosmetics') }}">baby cosmetics</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('babyfood') }}">baby food</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('bags') }}">bags</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('bakingpowder') }}">baking powder</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('bathroomcleaner') }}">bathroom cleaner</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('beef') }}">beef</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('berries') }}">berries</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('beverages') }}">beverages</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('bottledbeer') }}">bottled beer</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('bottledwater') }}">bottled water</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('brandy') }}">brandy</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('brown bread') }}">brownbread</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('butter') }}">butter</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('buttermilk') }}">butter milk</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('cakebar') }}">cake bar</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('candles') }}">candles</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('candy') }}">candy</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('cannedbeer') }}">canned beer</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('cannedfish') }}">cannedfish</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('cannedfruit') }}">canned fruit</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('cannedvegetables') }}">cannedvegetables</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('catfood') }}">cat food</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('cereals') }}">cereals</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('chewinggum') }}">chewing gum</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('chicken') }}">chicken</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('chocolate') }}">chocolate</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('chocolatemarshmallow') }}">chocolate marshmallow</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('citrusfruit') }}">citrus fruit</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('cleaner') }}">cleaner</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('clingfilmbags') }}">cling film/bags</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('cocoadrinks') }}"> cocoa drinks </a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('coffee') }}">coffee</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('condensedmilk') }}">condensed milk</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('cookingchocolate') }}">cooking chocolate</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('cookware') }}">cookware</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('cream') }}">cream</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('creamcheese') }}">cream cheese</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('curd') }}">curd</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('curdcheese') }}">curd cheese</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('decalcifier') }}">decalcifier</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('dentalcare') }}">dental care</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('dessert') }}">dessert</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('detergent') }}">detergent</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('dishcleaner') }}">dish cleaner</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('dishes') }}">dishes</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('dogfood') }}">dog food</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('domesticeggs') }}">domestic eggs</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('femalesanitaryproducts') }}">female sanitary products</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('finishedproducts') }}">finished products</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('fish') }}">fish</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('flour') }}">flour</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('flowerseeds') }}">flower (seeds)</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('flowersoilfertilizer') }}">flower soil/fertilizer</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('frankfurter') }}">frankfurter</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('frozenchicken') }}">frozen chicken</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('frozendessert') }}">frozen dessert</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('frozenfish') }}">frozen fish</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('frozenfruits') }}">frozen fruits</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('frozenmeals') }}">frozen meals</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('frozenpotatoproducts') }}">frozen potato products</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('frozenvegetables') }}">frozen vegetables</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('fruitvegetablejuice') }}">fruit/vegetable juice</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('grapes') }}"> grapes</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('hairspray') }}">hair spray</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('ham') }}">ham</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('hamburgermeat') }}">hamburger meat</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('hardcheese') }}">hard cheese</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('herbs') }}">herbs</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('honey') }}">honey</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('housekeepingproducts') }}">house keeping products</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('hygienearticles') }}">hygiene articles</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('icecream') }}">ice cream</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('instantcoffee') }}">instant coffee</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('jam') }}">jam</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('ketchup') }}">ketchup</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('kitchentowels') }}">kitchen towels</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('kitchenutensil') }}">kitchen utensil</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('lightbulbs') }}">light bulbs</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('liqueur') }}">liqueur</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('liquor') }}">liquor</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('liquorappetizer') }}">liquor (appetizer)</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('liverloaf') }}">liver loaf</a>#}
-{#                            </li>liver loaf#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('longlifebakeryproduct') }}">long life bakery product</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('makeupremover') }}">make up remover</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('malecosmetics') }}">male cosmetics</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('margarine') }}">margarine</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('mayonnaise') }}">mayonnaise</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('meat') }}">meat</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('meatspreads') }}">meat spreads</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('miscbeverages') }}">misc. beverages</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('mustard') }}">mustard</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('napkins') }}">napkins</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('newspapers') }}">newspapers</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('nutsnack') }}">nut snack</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('nutsprunes') }}">nuts/prunes</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('oil') }}">oil</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('onions') }}">onions</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('organicproducts') }}">organic products</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('organicsausage') }}">organic sausage</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('othervegetables') }}">other vegetables</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('packagedfruitvegetables') }}">packaged fruit/vegetables</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('pasta') }}">pasta</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('pastry') }}">pastry</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('petcare') }}">pet care</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('photofilm') }}">photo/film</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('pickledvegetables') }}">pickled vegetables</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('pipfruit') }}">pip fruit</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('popcorn') }}">popcorn</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('pork') }}">pork</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('potplants') }}">pot plants</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('potatoproducts') }}">potato products</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('preservationproducts') }}">preservation products</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('processedcheese') }}">processed cheese</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('prosecco') }}">prosecco</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('puddingpowder') }}">pudding powder</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('readysoups') }}">ready soups</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('redblushwine') }}">red/blush wine</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('rice') }}">rice</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('rollproducts') }}">roll products</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('rollsbuns') }}">rolls/buns</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('rootvegetables') }}">root vegetables</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('rubbingalcohol') }}">rubbing alcohol</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('rum') }}">rum</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('saladdressing') }}">salad dressing</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('salt') }}">salt</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('saltysnack') }}">saltysnack</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('sauces') }}">sauces</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('sausage') }}">sausage</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('seasonalproducts') }}">seasonal products</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('semifinishedbread') }}">semi-finished bread</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('shoppingbags') }}">shopping bags</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('skincare') }}">skin care</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('slicedcheese') }}">sliced cheese</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('snackproducts') }}">snack products</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('soap') }}">soap</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('soda') }}">soda</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('softcheese') }}">soft cheese</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('softener') }}">softener</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('soundstoragemedium') }}">sound storage medium</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('soups') }}">soups</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('sparklingwine') }}">sparkling wine</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('specialtybar') }}">specialty bar</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('specialtycheese') }}">specialty cheese</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('specialtychocolate') }}">specialty chocolate</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('specialtyfat') }}">specialty fat</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('specialtyvegetables') }}">specialty vegetables</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('spices') }}">spices</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('spreadcheese') }}">spread cheese</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('sugar') }}">sugar</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('sweetspreads') }}">sweet spreads</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('syrup') }}">syrup</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('tea') }}">tea</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('tidbits') }}">tidbits</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('toiletcleaner') }}">toilet cleaner</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('tropicalfruit') }}">tropical fruit</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('turkey') }}">turkey</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('vinegar') }}">vinegar</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('waffles') }}">waffles</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('whippedsourcream') }}"> whipped/sour cream</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('whisky') }}">whisky</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('whitebread') }}">white bread</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('whitewine') }}">white wine</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('wholemilk') }}">whole milk</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('yogurt') }}">yogurt</a>#}
-{#                            </li>#}
-{#                            <li>#}
-{#                                <a href="{{ url_for('zwieback') }}">zwieback</a>#}
-{#                            </li>#}
-
-
-
-
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="{{ url_for('itemPatterns') }}"><i class="fa fa-fw fa-bar-chart-o"></i> Item Patterns</a>
-                    </li>
-{#                    <li >#}
-{#                        <a href="{{ url_for('itemPatterns') }}"><i class="fa fa-fw fa-bar-chart-o"></i> Item Patterns</a>#}
-{#                        <a href="{{ url_for('login') }}">log in</a>#}
-{#                    </li>#}
-                    <li>
-                        <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Item Placement</a>
-                    </li>
-                    <li>
-                        <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Customer management </a>
-                    </li>
-                    <!--<li>-->
-                        <!--<a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>-->
-                    <!--</li>-->
-                    <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
-                        <ul id="demo" class="collapse">
                             <li>
-                                <a href="#">Dropdown Item</a>
+                                <a href="{{ url_for('abrasivecleaner') }}">Abrasive cleaner</a>
                             </li>
                             <li>
-                                <a href="#">Dropdown Item</a>
+                                <a href="{{ url_for('Artificialsweetener') }}">Artificial sweetener</a>
+                            </li>
+                            <li>
+                                <a href="{{ url_for('babycosmetics') }}">Baby cosmetics</a>
+                            </li>
+                            <li>
+                                <a href="{{ url_for('babyfood') }}">Baby food</a>
+                            </li>
+                            <li>
+                                <a href="{{ url_for('bags') }}">bags</a>
+                            </li>
+                            <li>
+                                <a href="{{ url_for('bakingpowder') }}">baking powder</a>
+                            </li>
+                            <li>
+                                <a href="{{ url_for('bathroomcleaner') }}">bathroom cleaner</a>
+                            </li>
+                            <li>
+                                <a href="{{ url_for('beef') }}">beef</a>
+                            </li>
+                            <li>
+                                <a href="{{ url_for('berries') }}">berries</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>
+                        <a href="{{ url_for('itemPatterns') }}"><i class="fa fa-fw fa-pie-chart"></i> Buying Patterns</a>
                     </li>
                     <li>
-                        <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
+                        <a href="{{ url_for('customersegments') }}"><i class="fa fa-fw fa fa-group"></i> Customer Base Info</a>
                     </li>
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -718,14 +118,12 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Tables
-{#                                    {% for tyty in datalist %}#}
-{#                                    <li>{{ tyty }}</li>#}
-{#                                    {% endfor %}#}
+                            Item Sales Overview
+
                         </h1>
                         <ol class="breadcrumb">
                             <li>
-                                <i class="fa fa-dashboard"></i>  <a href="dashboard.html">ISM SCSI</a>
+                                <i class="fa fa-dashboard"></i>  ISMCxES
                             </li>
                             <li class="active">
                                 <i class="fa fa-table"></i> Item Sales
@@ -751,23 +149,16 @@
                                         <th>Item Total Sales</th>
                                         <th>Item price</th>
                                         <th>Item In stock</th>
-                                        <th>ADD ITEM TO SHELF</th>
+                                        <!-- <th>ADD ITEM TO SHELF</th> -->
 {#                                        <th><b> Shelf Capacity</b></th>#}
                                         <th>Items In shelf</th>
-                                        <th>BUY ITEM</th>
+                                        <!-- <th>BUY ITEM</th> -->
 {#                                        <th>Item In shelf</th>#}
 
 
                                     </tr>
                                 </thead>
                                 <tbody>
-
-{#                                    <tr class="active">#}
-{#                                        <td>/dashboard.html</td>#}
-{#                                        <td>1265</td>#}
-{#                                        <td>32.3%</td>#}
-{#                                        <td>$321.33</td>#}
-{#                                    </tr>#}
 
 
                                     {% for item in datalist %}
@@ -786,12 +177,12 @@
                                         <td> <div id="{{ item.soldTotal }}     "> {{ item.soldTotal }}     </div>    </td>
                                         <td> <div id="{{ item.price }}"> {{ item.price }}$ </div>      </td>
                                         <td>{{ item.instock }}      </td>
-                                        <td>  <button onclick="restockshelf()" type="button" class="btn btn-default" id="{{ item.id }}"> + </button> </td>
+                                        <!-- <td>  <button onclick="restockshelf()" type="button" class="btn btn-default" id="{{ item.id }}"> + </button> </td> -->
 {#                                        <td> <b> {{ item.inshelf  }}</b></td>#}
 
                                         <td> <div id="{{ item.name }}">{{ item.inshelf }} </div></td>
 
-                                        <td> <button onclick="reorder('{{ item.name }}','{{ item.inshelf }}')" type="button" class="btn btn-default" id="{{ item.id }}" > - </button></td>
+                                        <!-- <td> <button onclick="reorder('{{ item.name }}','{{ item.inshelf }}')" type="button" class="btn btn-default" id="{{ item.id }}" > - </button></td> -->
                                     </tr>
                                     {% endfor %}
 
@@ -800,19 +191,6 @@
                         </div>
                     </div>
 
-{#                     <div>#}
-{#                         <div class="row">#}
-{#                             <div class="col-lg-1"></div>#}
-{#                             <div class="col-lg-10"> <p> k k k k k k </p> </div>#}
-{#                             <div class="col-lg-1"></div>#}
-{##}
-{#                         </div>#}
-{#                    </div>#}
-{##}
-{#                    <div class="col-lg-6">#}
-{#                        <h2>Bootstrap Docs</h2>#}
-{#                        <p>For complete documentation, please visit <a target="_blank" href="http://getbootstrap.com/css/#tables">Bootstrap's Tables Documentation</a>.</p>#}
-{#                    </div>#}
 
                   <!-- ============= RESTCOK NOTIFICATION MODAL ================= -->
 
@@ -862,9 +240,7 @@
 
     <script type="text/javascript">
 
-{#        $( document ).ready(function() {#}
-{#            alert('document is ready')#}
-{#        });#}
+
 
 
 $(document).ready(function(){

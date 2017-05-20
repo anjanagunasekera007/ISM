@@ -135,11 +135,11 @@ print " k j k j k j k j k jk j j jk k j k"
 
 counter  =0
 zerolist = []
-# for i in least:
-#     if i.soldTotal ==0:
-#         print "FOUND"
-#         counter = counter +1
-#         zerolist.append(i)
+for i in least:
+    if i.soldTotal ==0:
+        print "FOUND"
+        counter = counter +1
+        zerolist.append(i)
 
 print counter
 print len(zerolist)
@@ -167,20 +167,15 @@ for n in name:
 def main():
     # mylist = [1,2,3,4,5,6];
     print " AIYOOOOOOOOOOO   " + str(len(zerolist))
-    for item in zerolist:
-        print item.name
-        print item.description
+    # for item in zerolist:
+    #     print item.name
+    #     print item.description
     ylist = [1,2,3,4,5,6,7]
     return render_template('index.html',name="the name",mostlist=most,leastlist=least)
 
 @app.route('/dashboard', methods=['GET', 'POST'])
 def dashboard():
     mylist = [1,2,3,4,5,6];
-    for i in least:
-        if i.soldTotal == 0:
-            print "FOUND"
-            # counter = counter + 1
-            zerolist.append(i)
     return render_template('dashboard.html', data = mylist,name="the name",mostlist=most,leastlist=least,zlist=zerolist )
 
 # @app.route('/', methods=['GET', 'POST'])
@@ -188,8 +183,8 @@ def dashboard():
 #     mylist = [1,2,3,4,5,6];
 #     return render_template('dashboard.html', data = mylist,name="the name",mostlist=most,leastlist=least )
 # salesloadcounter = 0
-@app.route('/login', methods=['GET',  'POST'])
-def login():
+@app.route('/itemsales', methods=['GET',  'POST'])
+def itemsales():
     error = None;
     listx  = [2,4,6,8,10]
     saleslist = punklist
