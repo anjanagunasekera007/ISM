@@ -395,8 +395,27 @@ def updateSHELF_POS(name):
     # args = (20,"UHT-milk")
     # cursor.execute(sql)
     db.commit()
+# 000000000000000000000000000000000000 NEWWW 000000000000000000000000000000000
+def INVERSEupdateSTOCK(qty,name):
+    # sql = "UPDATE items SET instock = instock - "+ "%s" + "WHERE itemname = '%s'"
+    cursor.execute("UPDATE items SET instock = instock + %s WHERE itemname = %s",
+                (qty, name))
+    # args = (20,"UHT-milk")
+    # cursor.execute(sql)
+    db.commit()
+
+def INVERSEupdateSHELF_POS(name):
+    # sql = "UPDATE items SET instock = instock - "+ "%s" + "WHERE itemname = '%s'"
+    cursor.execute("UPDATE items SET inshelf = inshelf + %s WHERE itemname = %s",
+                (5, name))
+    # args = (20,"UHT-milk")
+    # cursor.execute(sql)
+    db.commit()
 
 
+
+
+# 0000000000000000000000000000000000000000000000000000000000000000000000
 def CreateItemlistfromDBRESTOCK():
     DBItemlist = []
     sql = "SELECT * FROM items"
@@ -530,7 +549,7 @@ def STOCKDEPETER():
     print "ORDERING ITEMS"
     # updateSTOCK(192,"Instant food products")
     updateSTOCK(200,"bags")
-    updateSTOCK(250,"cake bar")
+    updateSTOCK(250,"cream")
     updateSTOCK(200,"canned beer")
     updateSTOCK(200,"canned fish")
     updateSTOCK(100,"curd cheese")
@@ -571,6 +590,35 @@ print("-----------------------------")
 # time.sleep(2)
 # creteNotifications()
 # POS()
+#00000000000000000000000000000000000000000000000000000000000000
+def inversePOS():
+    print "Buying items"
+    INVERSEupdateSHELF_POS("UHT-milk")
+    INVERSEupdateSHELF_POS("baby food")
+    INVERSEupdateSHELF_POS("bathroom cleaner")
+    INVERSEupdateSHELF_POS("bottled beer")
+    INVERSEupdateSHELF_POS("beverages")
+    INVERSEupdateSHELF_POS("cooking chocolate")
+    INVERSEupdateSHELF_POS("curd")
+    INVERSEupdateSHELF_POS("frozen fish")
+    INVERSEupdateSHELF_POS("liquor")
+    INVERSEupdateSHELF_POS("long life bakery product")
+    INVERSEupdateSHELF_POS("mustard")
+    INVERSEupdateSHELF_POS("ice cream")
+
+def inverseSTOCKDEPETER():
+    print "ORDERING ITEMS"
+    # updateSTOCK(192,"Instant food products")
+    INVERSEupdateSTOCK(200,"bags")
+    INVERSEupdateSTOCK(250,"cream")
+    INVERSEupdateSTOCK(200,"canned beer")
+    INVERSEupdateSTOCK(200,"canned fish")
+    INVERSEupdateSTOCK(100,"curd cheese")
+    INVERSEupdateSTOCK(280, "frozen meals")
+
+#00000000000000000000000000000000000000000000000000000000000000
+
+
 
 def updateReOrderStatus(name,status):
     # sql = "UPDATE items SET instock = instock - "+ "%s" + "WHERE itemname = '%s'"

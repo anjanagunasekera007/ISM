@@ -276,7 +276,7 @@ def StockNotification():
     keys = request.args.get('itemname')
     restockNotifications = getAllRestockNotifications()
     for k in restockNotifications:
-        print k,status
+        print k.status
     reorderNotifications = getAllReorderNotifications()
     print keys
     # user = request.form['username']

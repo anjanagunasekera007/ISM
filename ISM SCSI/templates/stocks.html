@@ -210,7 +210,7 @@
                                                 <thead>
                                                     <tr>
 
-                                                        <th>Reorder Item name/th>
+                                                        <th>Reorder Item name</th>
                                                         <th>Order QTY</th>
                                                         <th>Status</th>
                                                         <th></th>
@@ -370,7 +370,7 @@
 
         $( ".sc" ).click(function() {
                  // $('#detailsmodal').modal('show')
-                alert($(this).val());
+{#                alert($(this).val());#}
                    $.ajax({
             url: '/createOrder',
             data: {'itemname': $(this).val()},
