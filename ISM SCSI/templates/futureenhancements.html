@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ISM</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../static/css/sb-admin.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <!-- <link href="../static/css/plugins/morris.css" rel="stylesheet"> -->
+
+    <!-- Custom Fonts -->
+    <link href="../static/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" > ACME Supermarket(Nugegoda)  </a>
+
+
+
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+
+            </ul>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+                 <div class="collapse navbar-collapse navbar-ex1-collapse">
+                 <ul class="nav navbar-nav side-nav">
+                    <li >
+                        <a href="{{ url_for('home') }}"><i class="fa fa-fw fa-dashboard"></i> Home</a>
+                    </li>
+                    <li >
+                        <a href="{{ url_for('itemsales') }}"><i class="fa fa-fw fa-bar-chart-o"></i> Item Sales</a>
+                    </li>
+                    <li  >
+                        <a href="{{ url_for('StockNotification') }}"><i class="fa fa-fw fa-bell-o"></i> Notifications </a>
+                    </li>
+
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Items <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo" class="collapse">
+                            <li>
+                                <a href="{{ url_for('Instantfoodproducts') }}">Instant food products</a>
+                            </li>
+                            <li>
+                                <a href="{{ url_for('UHTmilk') }}">UHT-milk</a>
+                            </li>
+                            <li>
+                                <a href="{{ url_for('abrasivecleaner') }}">Abrasive cleaner</a>
+                            </li>
+                            <li>
+                                <a href="{{ url_for('bakingpowder') }}">baking powder</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('itemPatterns') }}"><i class="fa fa-fw fa-pie-chart"></i> Buying Patterns</a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('customersegments') }}"><i class="fa fa-fw fa fa-group"></i> Customer Base Info</a>
+                    </li>
+                                         <li class="active">
+                        <a href="{{ url_for('futureenhancements') }}"><i class="fa fa-fw fa fa-bank"></i> Future Enhancements</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+
+
+
+                            Future Enhancements <small> </small>
+
+
+
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li>
+                                <i class="fa fa-dashboard"></i>  ISMCxES
+                            </li>
+                            <li class="active">
+                                <i class="fa fa-bell"></i> Future Enhancements
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+
+                 <div class="row">
+                       <div class="col-sm-2"></div>  
+                       <div class="col-sm-8">
+                           
+
+                            <div class="row">
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading"><h2> Reorder restock quantity selection </h2> </div>
+                                      <div class="panel-body">The quantity that needs to be ordered will differ from time to time so the manager should be able to order the exact quantity that he needs for the establishement instead of a fixed quantity.
+                                      <img src="../static/img/orderitems.jpg">
+                                      </div>
+                                      <div class="panel-footer">
+                                                    <p> The content will be available in deployment <b>3.0</b></p> 
+                                                    <p> Current deployment version <b>2.5</b></p>
+                                      </div>
+                                    </div>
+                            </div>
+
+
+                       </div>  
+                       <div class="col-sm-2"></div>  
+                </div>
+
+                <div class="row">
+                       <div class="col-sm-2"></div>  
+                       <div class="col-sm-8">
+                           
+
+                            <div class="row">
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading"><h2> Intergration to a live data feed </h2> </div>
+                                      <div class="panel-body"> Since the data in a supermarket are not kept in files it is necessary to enable a live data feed that can update the database which provides data for this system.
+                                      <img src="../static/img/datafeed.jpg">
+                                      </div>
+                                      <div class="panel-footer">
+                                                    <p> The content will be available in deployment <b>4.0</b></p> 
+                                                    <p> Current deployment version <b>2.5</b></p>
+                                      </div>
+                                    </div>
+                            </div>
+
+
+                       </div>  
+                       <div class="col-sm-2"></div>  
+                </div>
+
+
+               <div class="row">
+                       <div class="col-sm-2"></div>  
+                       <div class="col-sm-8">
+                           
+
+                            <div class="row">
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading"><h2> Sales Prediction </h2> </div>
+                                      <div class="panel-body"> Lack of timed data prevented this feature from being implemented. However with proper data it is possible to predict which items will be sold  and their respective time periods. tracking of slow moving and fast moving items ca be enahnced greatly with this enabled.
+                                      <img src="../static/img/salesprediction.jpg">
+                                      </div>
+                                      <div class="panel-footer">
+                                                    <p> The content will be available in deployment <b>4.0</b></p> 
+                                                    <p> Current deployment version <b>2.5</b></p>
+                                      </div>
+                                    </div>
+                            </div>
+
+
+                       </div>  
+                       <div class="col-sm-2"></div>  
+                </div>
+
+
+                <div class="row">
+                       <div class="col-sm-2"></div>  
+                       <div class="col-sm-8">
+                           
+
+                            <div class="row">
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading"><h2> Item placement Optimization </h2> </div>
+                                      <div class="panel-body"> As discovered from the research optimizing the placement of items in the retail establishemnts changes and increases the exposure of the establishment to the customers therefor yielding better satisfied customers and an optimized shopping experience
+                                      <img src="../static/img/retaillayout.jpg">
+                                      </div>
+                                      <div class="panel-footer">
+                                                    <p> The content will be available in deployment <b>4.0</b></p> 
+                                                    <p> Current deployment version <b>2.5</b></p>
+                                      </div>
+                                    </div>
+                            </div>
+
+
+                       </div>  
+                       <div class="col-sm-2"></div>  
+                </div>
+
+                <div class="row">
+                       <div class="col-sm-2"></div>  
+                       <div class="col-sm-8">
+                           
+
+                            <div class="row">
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading"><h2> Database Distribution </h2> </div>
+                                      <div class="panel-body"> As in the research the retail establishemnts are not standalone outlets they are interconected through network to regional office's and then to a central head office. The monitoring process of the stocks from a HQ must be enabled in order to achieve full realization of the retail goals.
+                                      <img src="../static/img/managementhierachy.png">
+                                      </div>
+                                      <div class="panel-footer">
+                                                    <p> The content will be available in deployment <b>4.0</b></p> 
+                                                    <p> Current deployment version <b>2.5</b></p>
+                                      </div>
+                                    </div>
+                            </div>
+
+
+                       </div>  
+                       <div class="col-sm-2"></div>  
+                </div>
+
+                <div class="row">
+                       <div class="col-sm-2"></div>  
+                       <div class="col-sm-8">
+                           
+
+                            <div class="row">
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading"><h2> Categorical Optimization </h2> </div>
+                                      <div class="panel-body"> Aquiring proper categories of items and their subcategories and relavant information will provide the base for a better optimization in category mining and layout optimization.
+                                      <img src="../static/img/categoryhierarchy.png">
+                                      </div>
+                                      <div class="panel-footer">
+                                                    <p> The content will be available in deployment <b>4.0</b></p> 
+                                                    <p> Current deployment version <b>2.5</b></p>
+                                      </div>
+                                    </div>
+                            </div>
+
+
+                       </div>  
+                       <div class="col-sm-2"></div>  
+                </div>
+
+               <!--  <div class="row">
+                       <div class="col-sm-2"></div>  
+                       <div class="col-sm-8">
+                           
+
+                            <div class="row">
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading"><h2> Reorder restock quantity selection </h2> </div>
+                                      <div class="panel-body">The quantity that needs to be ordered will differ from time to time so the manager should be able to order the exact quantity that he needs for the establishement instead of a fixed quantity.
+                                      <img src="../static/img/categoryhierarchy.jpg">
+                                      </div>
+                                      <div class="panel-footer">
+                                                    <p> The content will be available in deployment <b>4.0</b></p> 
+                                                    <p> Current deployment version <b>2.5</b></p>
+                                      </div>
+                                    </div>
+                            </div>
+
+
+                       </div>  
+                       <div class="col-sm-2"></div>  
+                </div> -->
+
+             
+
+             
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+    <!-- ================================================================= -->
+<div id="sendingordermodal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    <!-- ======================================================================== -->
+
+    <!-- jQuery -->
+    <script src="../static/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../static/js/bootstrap.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+  <!--   <script src="../static/js/plugins/morris/raphael.min.js"></script>
+    <script src="../static/js/plugins/morris/morris.min.js"></script>
+    <script src="../static/js/plugins/morris/morris-data.js"></script> -->
+
+    <script type="text/javascript">
+
+
+   $(document).ready(function(){
+
+
+
+        //    $.ajax({
+        // type: 'POST',
+        // url: '/createOrder',
+        // dataType: "json",
+        // data: {'message': $(this).val()},
+        // async:false,
+        // success: function(response) {
+
+        // }
+        //     });
+
+
+
+});
+
+// function showmodal() {
+//     console.log("peeee")
+//     $('#sendingordermodal').show();
+// }
+
+// $(".btn").on("click", function (event) {
+//     var uid = $(this).data("uid");
+//     // $(this) will be refer to button which was clicked 
+//     console.log(uid)
+// });
+
+
+// $('.alert').each(function() {
+//     var $this = $(this);
+//     $this.popover({
+//       trigger: 'hover',
+//       placement: 'right',
+//       html: true,
+//       content: $this.find('.userInfo').html()  
+//     });
+// });
+
+// $('#details').on('click', function() {
+//     $('#sendingordermodal').show();
+//     // alert(" LOLOL")
+// });
+  
+
+
+
+
+        $( ".sc" ).click(function() {
+                 // $('#detailsmodal').modal('show')
+{#                alert($(this).val());#}
+                   $.ajax({
+            url: '/createOrder',
+            data: {'itemname': $(this).val()},
+            type: 'POST',
+            success: function(response) {
+
+                    location.reload();
+            },
+            error: function(error) {
+                console.log(error);
+                // alert("not working")
+                location.reload();
+            }
+        });
+    });
+           
+    </script>
+
+</body>
+
+
+</html>

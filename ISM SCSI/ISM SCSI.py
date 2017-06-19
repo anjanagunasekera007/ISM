@@ -5,6 +5,7 @@ from flask import Flask , render_template ,json ,request
 # from Sales_Calculator import retunleastsold
 from Association_Class import Association
 from DBHandler import getitemscreateobj
+# from DBHandlerEXP import createObjectlist
 # from DBHandler import updatesales
 import time
 import sys
@@ -37,6 +38,7 @@ for g in status:
 
 # sys.exit(999)
 punklist = getitemscreateobj()
+# punklist = createObjectlist()
 
 print str(len(punklist))
 # sys.exit(9876)
@@ -232,7 +234,6 @@ def bakingpowder():
 
 @app.route('/signUpUser', methods=['GET','POST'])
 def signUpUser():
-    print "WORKING = = = =  * * FUCKKKK"
     # user = request.form['username']
     # password = request.form['password']
     # pis = " yu gi oh"
@@ -246,7 +247,6 @@ def signUpUser():
 
 @app.route('/itemPatterns', methods=['GET', 'POST'])
 def itemPatterns():
-    print "WORKING = = = =  * * FUCKKKK"
     error = None;
     # user = request.form['username']
     # password = request.form['password']
@@ -258,7 +258,6 @@ def itemPatterns():
 
 @app.route('/stat', methods=['GET', 'POST'])
 def stat():
-    print "WORKING = = = =  * * FUCKKKK"
     error = None;
     keys = request.args.get('itemname')
     print keys
@@ -354,8 +353,8 @@ def customersegments():
 #     return render_template('shelf.html', error=error,datalist=punklist,mostlist=most,leastlist=least)
 
 #************************ BUY ITEM **************************************
-@app.route('/buyitem', methods=['POST'])
-def buyitem():
+@app.route('/itemplacement', methods=['POST'])
+def itemplacement():
     # print "WORKING = = = =  * * FUCKKKK"
     # # user = request.form['name']
     # itemid = request.form['name']
@@ -380,7 +379,6 @@ def buyitem():
 
 @app.route('/getItemList', methods=['GET','POST'])
 def getItemList():
-    print "WORKING = = = =  * * FUCKKKK"
     u = punklist
     oblist = []
     for n in punklist:
@@ -420,12 +418,11 @@ def initiatePOS():
     POS()
     CreateItemlistfromDBRESTOCK()
     creteNotificationsRESTOCK()
-    print "WORKING = = = =  * * FUCKKKK"
     u = punklist
     oblist = []
-    for n in pppp:
-        r = json.dumps(n.__dict__)
-        oblist.append(r)
+    # for n in pppp:
+    #     r = json.dumps(n.__dict__)
+    #     oblist.append(r)
     # t = jsonify(u)
     # print t
     # for i in oblist:
@@ -436,6 +433,7 @@ def initiatePOS():
 from DBHandler import STOCKDEPETER
 from DBHandler import CreateItemListfromDBREORDER
 from DBHandler import createNotificationsREORDER
+from DBHandler import resetPOSSTOCKS
 from DBHandler import overallExecution
 @app.route('/initiateDEPLETION', methods=['GET','POST'])
 def initiateDEPLETION():
@@ -446,15 +444,25 @@ def initiateDEPLETION():
     print "WORKING = = = =  * * REORDER : : "
     u = punklist
     oblist = []
-    for n in pppp:
-        r = json.dumps(n.__dict__)
-        oblist.append(r)
+    # for n in pppp:
+    #     r = json.dumps(n.__dict__)
+    #     oblist.append(r)
     # t = jsonify(u)
     # print t
     # for i in oblist:
     #     print i
     t = jsonify(oblist)
     return t
+
+@app.route('/resetdb', methods=['GET','POST'])
+def resetdb():
+    print " * * * -  RESETTINGGGGGG- - * * * "
+    time.sleep(2)
+    print "RESET COMPLETED"
+    time.sleep(2)
+    resetPOSSTOCKS()
+    u = True
+    return u
 
 
 # from  mergecomp import returnSegments
@@ -583,6 +591,21 @@ def getpatternsc9():
     t = jsonify(oblist)
     return t
 
+@app.route('/futureenhancements', methods=['GET', 'POST'])
+def futureenhancements():
+
+    # print "WORKING"
+    # error = None;
+    # keys = request.args.get('itemname')
+    # restockNotifications = getAllRestockNotifications()
+    # reorderNotifications = getAllReorderNotifications()
+    # print keys
+    # # user = request.form['username']
+    # # password = request.form['password']
+    # # pis = " yu gi oh"
+    # # printem(user,password)
+    # # return render_template('tables.html', error=error, datalist=punklist, mostlist=most, leastlist=least)
+    return render_template('futureenhancements.html',patternlist=CustomerSegments)
 
 
 #========================= EXTERNAL FUNCTIONS =======================

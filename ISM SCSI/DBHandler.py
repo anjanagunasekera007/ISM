@@ -86,10 +86,10 @@ def createobjectlist():
         objectlist.append(I)
         counter = counter +1
 
-def printobjects():
-    for ob in finalobjectlist:
-        print(ob.id+" =>" + ob.name + " " + ob.description + " " + ob.category + " " + ob.instock + " " + ob.inshelf + " " + ob.shelfcapacity + " " + ob.weight + " " + ob.price + " UUU" + str(ob.soldQ1)+"+"+ str(ob.soldQ2)+ "+"+str(ob.soldQ3)+"+"+ str(ob.soldQ4) + "  TOTAL " + str(ob.soldTotal)
-)
+# def printobjects():
+#     for ob in finalobjectlist:
+#         print(ob.id+" =>" + ob.name + " " + ob.description + " " + ob.category + " " + ob.instock + " " + ob.inshelf + " " + ob.shelfcapacity + " " + ob.weight + " " + ob.price + " UUU" + str(ob.soldQ1)+"+"+ str(ob.soldQ2)+ "+"+str(ob.soldQ3)+"+"+ str(ob.soldQ4) + "  TOTAL " + str(ob.soldTotal)
+# )
 
 # def insertItems():
 #     for ob in objectlist:
@@ -534,26 +534,26 @@ def POS():
     print "Buying items"
     updateSHELF_POS("UHT-milk")
     updateSHELF_POS("baby food")
-    updateSHELF_POS("bathroom cleaner")
-    updateSHELF_POS("bottled beer")
-    updateSHELF_POS("beverages")
-    updateSHELF_POS("cooking chocolate")
-    updateSHELF_POS("curd")
-    updateSHELF_POS("frozen fish")
-    updateSHELF_POS("liquor")
-    updateSHELF_POS("long life bakery product")
-    updateSHELF_POS("mustard")
-    updateSHELF_POS("ice cream")
+    # updateSHELF_POS("bathroom cleaner")
+    # updateSHELF_POS("bottled beer")
+    # updateSHELF_POS("beverages")
+    # updateSHELF_POS("cooking chocolate")
+    # updateSHELF_POS("curd")
+    # updateSHELF_POS("frozen fish")
+    # updateSHELF_POS("liquor")
+    # updateSHELF_POS("long life bakery product")
+    # updateSHELF_POS("mustard")
+    # updateSHELF_POS("ice cream")
 
 def STOCKDEPETER():
     print "ORDERING ITEMS"
     # updateSTOCK(192,"Instant food products")
     updateSTOCK(200,"bags")
     updateSTOCK(250,"cream")
-    updateSTOCK(200,"canned beer")
-    updateSTOCK(200,"canned fish")
-    updateSTOCK(100,"curd cheese")
-    updateSTOCK(280, "frozen meals")
+    # updateSTOCK(200,"canned beer")
+    # updateSTOCK(200,"canned fish")
+    # updateSTOCK(100,"curd cheese")
+    # updateSTOCK(280, "frozen meals")
 
     # updateSTOCK(400,"herbs")
     # updateSTOCK(400,"liqueur")
@@ -595,27 +595,46 @@ def inversePOS():
     print "Buying items"
     INVERSEupdateSHELF_POS("UHT-milk")
     INVERSEupdateSHELF_POS("baby food")
-    INVERSEupdateSHELF_POS("bathroom cleaner")
-    INVERSEupdateSHELF_POS("bottled beer")
-    INVERSEupdateSHELF_POS("beverages")
-    INVERSEupdateSHELF_POS("cooking chocolate")
-    INVERSEupdateSHELF_POS("curd")
-    INVERSEupdateSHELF_POS("frozen fish")
-    INVERSEupdateSHELF_POS("liquor")
-    INVERSEupdateSHELF_POS("long life bakery product")
-    INVERSEupdateSHELF_POS("mustard")
-    INVERSEupdateSHELF_POS("ice cream")
+    # INVERSEupdateSHELF_POS("bathroom cleaner")
+    # INVERSEupdateSHELF_POS("bottled beer")
+    # INVERSEupdateSHELF_POS("beverages")
+    # INVERSEupdateSHELF_POS("cooking chocolate")
+    # INVERSEupdateSHELF_POS("curd")
+    # INVERSEupdateSHELF_POS("frozen fish")
+    # INVERSEupdateSHELF_POS("liquor")
+    # INVERSEupdateSHELF_POS("long life bakery product")
+    # INVERSEupdateSHELF_POS("mustard")
+    # INVERSEupdateSHELF_POS("ice cream")
 
 def inverseSTOCKDEPETER():
     print "ORDERING ITEMS"
     # updateSTOCK(192,"Instant food products")
     INVERSEupdateSTOCK(200,"bags")
     INVERSEupdateSTOCK(250,"cream")
-    INVERSEupdateSTOCK(200,"canned beer")
-    INVERSEupdateSTOCK(200,"canned fish")
-    INVERSEupdateSTOCK(100,"curd cheese")
-    INVERSEupdateSTOCK(280, "frozen meals")
+    # INVERSEupdateSTOCK(200,"canned beer")
+    # INVERSEupdateSTOCK(200,"canned fish")
+    # INVERSEupdateSTOCK(100,"curd cheese")
+    # INVERSEupdateSTOCK(280, "frozen meals")
 
+def DeleteRecordsREORDER():
+    # cursor.execute("DELETE * FROM lol")
+    # db.commit()
+    sql = "TRUNCATE reorder"
+    cursor.execute(sql)
+    db.commit()
+
+def DeleteRecordsRRESTOCK():
+    # cursor.execute("DELETE * FROM lol")
+    # db.commit()
+    sql = "TRUNCATE restock"
+    cursor.execute(sql)
+    db.commit()
+
+def resetPOSSTOCKS():
+    inverseSTOCKDEPETER()
+    inversePOS()
+    DeleteRecordsREORDER()
+    DeleteRecordsRRESTOCK()
 #00000000000000000000000000000000000000000000000000000000000000
 
 
